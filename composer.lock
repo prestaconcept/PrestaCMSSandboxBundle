@@ -1,5 +1,5 @@
 {
-    "hash": "e906dff48f3d13f9a95823c4708c8aeb",
+    "hash": "46447b3c2c565e6a2ac38e08162fe895",
     "packages": [
         {
             "name": "doctrine/common",
@@ -448,12 +448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/phpcr-odm",
-                "reference": "9b40eeba7780a766d02b5b3101c65c10ec6ae8fa"
+                "reference": "60c0bdf267316e5dd97a56288bfa70d7eb2b362e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/phpcr-odm/archive/9b40eeba7780a766d02b5b3101c65c10ec6ae8fa.zip",
-                "reference": "9b40eeba7780a766d02b5b3101c65c10ec6ae8fa",
+                "url": "https://github.com/doctrine/phpcr-odm/archive/60c0bdf267316e5dd97a56288bfa70d7eb2b362e.zip",
+                "reference": "60c0bdf267316e5dd97a56288bfa70d7eb2b362e",
                 "shasum": ""
             },
             "require": {
@@ -471,7 +471,7 @@
                 "midgard/phpcr": ">=1.3",
                 "symfony/yaml": ">=2.0.0,<2.3.0-dev"
             },
-            "time": "2013-01-28 09:44:13",
+            "time": "2013-01-30 13:15:39",
             "bin": [
                 "bin/phpcrodm",
                 "bin/phpcrodm.php"
@@ -1441,8 +1441,14 @@
             "target-dir": "Presta/CMSCoreBundle",
             "source": {
                 "type": "git",
-                "url": "git@www.gitorious.local:symfony2-bundles/prestacmscorebundle.git",
-                "reference": "c38f43a40cbd14f6e14ccc8c96cd92dd32e892c6"
+                "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle",
+                "reference": "a3b7dda299b0b903c23f13c5481a802de6a46105"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/a3b7dda299b0b903c23f13c5481a802de6a46105",
+                "reference": "a3b7dda299b0b903c23f13c5481a802de6a46105",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
@@ -1455,13 +1461,14 @@
                 "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*",
                 "sonata-project/seo-bundle": "dev-master"
             },
-            "time": "2013-01-29 17:20:15",
+            "time": "2013-01-30 16:07:53",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
                     "Presta\\CMSCoreBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1471,10 +1478,14 @@
                     "email": "nbastien@prestaconcept.net"
                 }
             ],
-            "description": "PrestaCMS Core bundle : handle website, theme and pages",
-            "homepage": "http://www.gitorious.local/symfony2-bundles/prestacmscorebundle",
+            "description": "PrestaCMS Core bundle : CMS based on Symfony2 and Symfony-CMF",
+            "homepage": "https://github.com/prestaconcept/PrestaCMSCoreBundle",
             "keywords": [
-                "PrestaCMS Core"
+                "Symfony2",
+                "cms",
+                "bundle",
+                "prestaconcept",
+                "symfony-cmf"
             ]
         },
         {
@@ -1625,12 +1636,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "028079797f3040ccc12812359e44c0fdd93e8432"
+                "reference": "531de599182b2936327c4f77f3af03841377b9dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataAdminBundle/archive/028079797f3040ccc12812359e44c0fdd93e8432.zip",
-                "reference": "028079797f3040ccc12812359e44c0fdd93e8432",
+                "url": "https://github.com/sonata-project/SonataAdminBundle/archive/531de599182b2936327c4f77f3af03841377b9dc.zip",
+                "reference": "531de599182b2936327c4f77f3af03841377b9dc",
                 "shasum": ""
             },
             "require": {
@@ -1655,7 +1666,7 @@
                 "sonata-project/doctrine-orm-admin-bundle": "dev-master",
                 "sonata-project/intl-bundle": "dev-master"
             },
-            "time": "2013-01-29 21:08:52",
+            "time": "2013-01-30 11:51:31",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -1964,12 +1975,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/sonata-project/SonataSeoBundle.git",
-                "reference": "1d33ff7e6db6098c4e4eb35bae0f54cd5996462b"
+                "reference": "d8b5248e804d68cdd7ead6f0033417167dfd6eec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataSeoBundle/archive/1d33ff7e6db6098c4e4eb35bae0f54cd5996462b.zip",
-                "reference": "1d33ff7e6db6098c4e4eb35bae0f54cd5996462b",
+                "url": "https://api.github.com/repos/sonata-project/SonataSeoBundle/zipball/d8b5248e804d68cdd7ead6f0033417167dfd6eec",
+                "reference": "d8b5248e804d68cdd7ead6f0033417167dfd6eec",
                 "shasum": ""
             },
             "require": {
@@ -1977,7 +1988,7 @@
                 "symfony/symfony": "2.*",
                 "sonata-project/exporter": "dev-master"
             },
-            "time": "2013-01-19 17:46:46",
+            "time": "2013-01-30 15:13:36",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
