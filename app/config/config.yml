@@ -144,3 +144,8 @@ presta_cms_core:
             host: www.prestacms-sandbox.en.local
             website: /website/sandbox
             locale: en
+
+symfony_cmf_menu:
+    menu_basepath: /website/sandbox/menu
+    multilang:
+      locales: %locales%
