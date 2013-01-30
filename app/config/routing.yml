@@ -6,3 +6,21 @@
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #    prefix:   /_internal
+
+#Sonata Admin
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+
+PrestaCMSCoreBundle:
+    resource: "@PrestaCMSCoreBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+phpcrodmbrowser:
+    resource: @SonataDoctrinePHPCRAdminBundle/Resources/config/routing/phpcrodmbrowser.xml
+    prefix: /admin/browser

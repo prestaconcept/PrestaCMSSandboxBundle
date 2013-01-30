@@ -1,11 +1,12 @@
 {
-    "name": "symfony/framework-standard-edition",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "name": "presta-cms/sandbox",
+    "description": "Sandbox for Presta CMS",
     "autoload": {
         "psr-0": { "": "src/" }
     },
+    "minimum-stability": "dev",
     "repositories": [
-        { "type": "composer", "url": "http://satis.local" },
+        { "type": "composer", "url": "http://satis.local" }
     ],
     "require": {
         "php": ">=5.3.3",
@@ -24,7 +25,10 @@
         "kriswallsmith/assetic": "1.1.*@dev",
 
         "doctrine/doctrine-fixtures-bundle": "dev-master",
-        "sonata-project/doctrine-orm-admin-bundle": "dev-master",
+
+        "sonata-project/admin-bundle": "dev-master",
+        "sonata-project/easy-extends-bundle": "dev-master",
+
         "presta/cms-core-bundle": "dev-master",
 
         "leafo/lessphp": "dev-master",
