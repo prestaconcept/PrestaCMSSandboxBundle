@@ -16,19 +16,19 @@ Override standard Layout to add application css, js...
     {% endstylesheets %}
 {% endblock %}
 
-{#{% block javascripts %}#}
-    {#{{  parent() }}#}
+{% block javascripts %}
+    {{  parent() }}
 
-    {#{{ tinymce_init() }}#}
+    {{ tinymce_init() }}
 
-    {#<script type="text/javascript">#}
-    {#function initWysiwyg()#}
-    {#{#}
-        {#&#123;&#35;#}
-            {#Tmp code from tinymce_init()#}
-            {#Should follow https://github.com/stfalcon/TinymceBundle/issues/73 and correct it#}
-         {#&#35;&#125;#}
-        {#initTinyMCE({"include_jquery":false,"tinymce_jquery":false,"language":"fr","theme":{"simple":{"mode":"textareas","theme":"advanced","theme_advanced_buttons1":"fullscreen,code,separator,bold,italic,underline,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink","theme_advanced_toolbar_location":"top","theme_advanced_toolbar_align":"left","theme_advanced_statusbar_location":"bottom","paste_auto_cleanup_on_paste":true,"plugins":"fullscreen","language":"fr"}},"tinymce_buttons":[],"external_plugins":[],"jquery_script_url":"\/bundles\/stfalcontinymce\/vendor\/tiny_mce\/tiny_mce.jquery.js"});#}
-    {#}#}
-    {#</script>#}
-{#{% endblock %}#}
+    <script type="text/javascript">
+    function initWysiwyg()
+    {
+        {#
+            Tmp code from tinymce_init()
+            Should follow https://github.com/stfalcon/TinymceBundle/issues/73 and correct it
+         #}
+        initTinyMCE({"include_jquery":false,"tinymce_jquery":false,"language":"fr","theme":{"simple":{"mode":"textareas","theme":"advanced","theme_advanced_buttons1":"fullscreen,code,separator,bold,italic,underline,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink","theme_advanced_toolbar_location":"top","theme_advanced_toolbar_align":"left","theme_advanced_statusbar_location":"bottom","paste_auto_cleanup_on_paste":true,"plugins":"fullscreen","language":"fr"}},"tinymce_buttons":[],"external_plugins":[],"jquery_script_url":"\/bundles\/stfalcontinymce\/vendor\/tiny_mce\/tiny_mce.jquery.js"});
+    }
+    </script>
+{% endblock %}

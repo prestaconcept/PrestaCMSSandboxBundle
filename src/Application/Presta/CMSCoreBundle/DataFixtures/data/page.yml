@@ -1,0 +1,55 @@
+pages:
+    home:
+        name: 'home'
+        type: 'cms_page'
+        template: 'default'
+        meta:
+            title:
+                en: "Homepage"
+                fr: "Acceuil"
+            keywords:
+                en: "cms symfony 2"
+                fr: "cms symfony 2"
+            description:
+                en: "Presta CMS Sandox by Prestaconcept"
+                fr: "Presta CMS Sandox by Prestaconcept"
+        zones:
+            content:
+                10:
+                    name: main
+                    type: presta_cms.block.simple
+                    is_editable: true
+                    settings:
+                        content: |
+                            loremipsum
+        children: []
+
+    about:
+        name: 'about'
+        type: 'cms_page'
+        template: 'sidebar'
+        url:
+            en: 'about'
+            fr: 'a-propos'
+        meta:
+            title:
+                en: "About"
+                fr: "A propos"
+        zones:
+            content:
+                10:
+                    name: main
+                    type: presta_cms.block.simple
+                    is_editable: true
+                    settings:
+                        content: |
+                            loremipsum
+            sidebar:
+                10:
+                    name: main
+                    type: presta_cms.block.simple
+                    is_editable: true
+                    settings:
+                        content: |
+                            loremipsum
+        children: []

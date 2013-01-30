@@ -5,6 +5,6 @@ parameters:
 #        caches:
 #            meta: liip_doctrine_cache.ns.meta
 #            nodes: liip_doctrine_cache.ns.nodes
-    phpcr_workspace: default
+    phpcr_workspace: sandbox
     phpcr_user: admin
     phpcr_pass: admin

@@ -2,8 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: '@PrestaCMSCoreBundle/Resources/config/config.yml' }
-#    - { resource: '@ApplicationPrestaCMSCoreBundle/Resources/config/config_website.yml' }
-
+    - { resource: '@PrestaCMSCoreBundle/Resources/config/theme_default.yml' }
 
 framework:
     #esi:             ~
@@ -32,6 +31,7 @@ assetic:
     use_controller: false
     bundles:
         - ApplicationSonataAdminBundle
+        - ApplicationPrestaCMSCoreBundle
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -89,6 +89,7 @@ doctrine_phpcr:
                 - en
                 - de
 sonata_block:
+    default_contexts: [cms]
     blocks:
         sonata.block.service.text:
 
@@ -131,4 +132,15 @@ sonata_admin:
                             Presta CMS is sponsored by <a href="www.prestaconcept.net">PrestaConcept</a>
                         </p>
 
-
+presta_cms_core:
+    multiple_website: false
+    default_website: prestaconcept
+    hosts:
+        -
+            host: www.prestacms-sandbox.fr.local
+            website: /website/sandbox
+            locale: fr
+        -
+            host: www.prestacms-sandbox.en.local
+            website: /website/sandbox
+            locale: en
