@@ -5,6 +5,29 @@ php:
   - 5.3
   - 5.4
 
-before_script: composer install
+env:
+  - TRANSPORT=jackrabbit
+  - TRANSPORT=midgard_sqlite MIDGARD_EXT_VERSION=ratatoskr
+  - TRANSPORT=midgard_mysql MIDGARD_EXT_VERSION=ratatoskr
+  - TRANSPORT=midgard_sqlite MIDGARD_EXT_VERSION=gjallarhorn
+  - TRANSPORT=midgard_mysql MIDGARD_EXT_VERSION=gjallarhorn
+  - TRANSPORT=doctrine_dbal
+
+before_script:
+  - cp app/config/phpcr_${TRANSPORT}.yml.dist app/config/phpcr.yml
+  - cp app/config/parameters.yml.dist app/config/parameters.yml
+  - ./app/tests/travis_${TRANSPORT}.sh
+  - app/console doctrine:phpcr:workspace:create sandbox_test
+  - app/console doctrine:phpcr:register-system-node-types -e=test
 
 script: phpunit -c app
+
+notifications:
+  email: "nbastien@prestaconcept.net"
+
+matrix:
+  allow_failures:
+    - env: TRANSPORT=midgard_sqlite MIDGARD_EXT_VERSION=ratatoskr
+    - env: TRANSPORT=midgard_mysql MIDGARD_EXT_VERSION=ratatoskr
+    - env: TRANSPORT=midgard_sqlite MIDGARD_EXT_VERSION=gjallarhorn
+    - env: TRANSPORT=midgard_mysql MIDGARD_EXT_VERSION=gjallarhorn
