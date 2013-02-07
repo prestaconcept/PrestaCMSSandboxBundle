@@ -13,6 +13,7 @@ This is a sandbox to test the [PrestaCMSCorebundle](https://github.com/prestacon
 
 This project is still under heaving development and is not yet ready to use in production.
 PrestaConcept is currently developing it for their new website.
+
 If you want to have some informations about the projet progession you can register to our [google group](https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs)
 
 ### Front website with custom theming ###
@@ -49,8 +50,8 @@ If you want to have some informations about the projet progession you can regist
 
 ## Documentation ##
 
-1) [Set-up](https://github.com/prestaconcept/prestacms-sandbox/tree/master/app/Resources/docs/1-set-up.md)
-2) ...
+    1. [Set-up](https://github.com/prestaconcept/prestacms-sandbox/tree/master/app/Resources/docs/1-set-up.md)
+    2. ...
 
 ## Features ##
 
@@ -70,4 +71,4 @@ If you need help about this project you can [post a message on our google group]
 
 ---
 
-This project is supported by [PrestaConcept](http://www.prestaconcept.net)
+*This project is supported by [PrestaConcept](http://www.prestaconcept.net)*
