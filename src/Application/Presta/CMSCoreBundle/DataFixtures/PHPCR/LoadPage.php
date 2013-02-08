@@ -9,43 +9,17 @@
  */
 namespace Application\Presta\CMSCoreBundle\DataFixtures\PHPCR;
 
-use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use PHPCR\Util\NodeHelper;
 use Symfony\Component\Yaml\Parser;
-
-use Presta\CMSCoreBundle\Document\Website;
-use Presta\CMSCoreBundle\Document\Theme;
-use Presta\CMSCoreBundle\Document\Page;
-use Presta\CMSCoreBundle\Document\Zone;
-use Presta\CMSCoreBundle\Document\Block;
+use Presta\CMSCoreBundle\DataFixtures\PHPCR\BasePageFixture;
 
 /**
  * @author     Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class LoadPage extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
+class LoadPage extends BasePageFixture
 {
-    protected $manager;
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getOrder()
-    {
-        return 20;
-    }
-
-    /**
-     * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
-     */
-    public function setContainer(ContainerInterface $container = null)
-    {
-        $this->container = $container;
-    }
-
     /**
      * Création des pages de contenu
      *
@@ -63,69 +37,71 @@ class LoadPage extends AbstractFixture implements ContainerAwareInterface, Order
         $yaml = new Parser();
         $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
         foreach ($datas['pages'] as $page) {
-            $this->createPage($page['name'], $root, $page['type'], $page['template'], $page['meta'], $page['zones'], $page['children']);
+            $this->createPage($page, $root);
         }
 
         $this->manager->flush();
     }
 
     /**
-     * @param $name
-     * @param $parent
-     * @param $type
-     * @param $template
-     * @param $data
-     * @param $blocks
-     * @return \Presta\CMSCoreBundle\Document\Page
+     * {@inherit}
      */
-    protected function createPage($name, $parent, $type, $template, $meta, $zones = null, $children = null)
+    protected function configureZones(array $page)
     {
-        $meta += array('title' => array('en' => '', 'fr' => ''), 'keywords' => array('en' => '', 'fr' => ''), 'description' => array('en' => '', 'fr' => ''));
-        $page = new Page();
-        $page->setName($name);
-        $page->setParent($parent);
-        $page->setIsActive(true);
-        $page->setType($type);
-        $page->setTemplate($template);
-        $this->manager->persist($page);
-        $page->setTitle($meta['title']['en']);
-        $page->setMetaDescription($meta['description']['en']);
-        $page->setMetaKeywords($meta['keywords']['en']);
-        $this->manager->bindTranslation($page, 'en');
-        $page->setTitle($meta['title']['fr']);
-        $page->setMetaDescription($meta['description']['fr']);
-        $page->setMetaKeywords($meta['keywords']['fr']);
-        $this->manager->bindTranslation($page, 'fr');
-
-
-        //Creation des blocks
-        if ($zones != null) {
-            foreach ($zones as $zoneName => $zone) {
-                $pageZone = new Zone();
-                $pageZone->setParentDocument($page);
-                $pageZone->setName($zoneName);
-                $this->manager->persist($pageZone);
-                foreach ($zone as $position => $blockConfiguration) {
-                    $blockConfiguration += array('name' => null, 'is_editable' => false, 'is_deletable' => false, 'settings' => array());
-
-                    $block = new Block();
-                    $block->setParent($pageZone);
-                    $block->setType($blockConfiguration['type']);
-                    if (strlen($blockConfiguration['name'])) {
-                        $block->setName($blockConfiguration['name']);
-                    } else {
-                        $block->setName($blockConfiguration['type'] . '-' . $position);
-                    }
-                    $block->setIsEditable($blockConfiguration['is_editable']);
-                    $block->setIsDeletable($blockConfiguration['is_deletable']);
-                    $block->setPosition($position);
-                    $block->setIsActive(true);
-                    $block->setSettings($blockConfiguration['settings']);
-                    $this->manager->persist($block);
-                }
+        if (!is_null($page['zones'])) {
+            return $page;
+        }
+        if ($page['template'] == 'default') {
+            $page['zones'] = array(
+                'content' => array(
+                    10 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
+                ),
+            );
+            if (count($page['children']) > 1) {
+                $page['zones']['content'][20] = array('name' => 'children', 'type' => 'presta_cms.block.page_children');
             }
+        }
+        if ($page['template'] == 'sidebar') {
+            $page['zones'] = array(
+                'content' => array(
+                    10 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
+                ),
+                'left' => array(
+                    10 => array('type' => 'presta_cms.block.simple'),
+                    20 => array('type' => 'presta_cms.block.simple')
+                )
+            );
         }
 
         return $page;
+    }
+
+    /**
+     * {@inherit}
+     */
+    protected function configureBlock(array $block)
+    {
+        $block = parent::configureBlock($block);
+
+        if (count($block['settings'])) {
+            return;
+        }
+
+        switch ($block['type']) {
+            case 'presta_cms.block.simple':
+                $block['settings'] = array(
+                    'title' => 'This is a paragraph block',
+                    'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor est. Vivamus a imperdiet ante. Mauris ut dapibus tellus. Etiam vel enim justo, sit amet vulputate sem. Phasellus eleifend laoreet congue. Sed eu magna nunc, vel porttitor elit. '
+                );
+                break;
+            case 'presta_cms.block.page_children':
+                $block['settings'] = array(
+                    'title' => 'This is a page children block',
+                    'content' => 'This block displays all page children, each child rendering can be customize by taking advantage of the pages types possibilities.'
+                );
+                break;
+        }
+
+        return $block;
     }
 }

@@ -19,10 +19,48 @@ pages:
                     name: main
                     type: presta_cms.block.simple
                     is_editable: true
-                    settings:
-                        content: |
-                            loremipsum
         children: []
+    demo:
+        name: 'demo'
+        meta:
+            title:
+                en: "Demonstration"
+                fr: "Démonstration"
+            keywords:
+                en: "cms symfony 2"
+                fr: "cms symfony 2"
+            description:
+                en: "Demonstration by Prestaconcept"
+                fr: "Démonstration by Prestaconcept"
+        children:
+            fullpage:
+                name: 'fullpage'
+            sidebar:
+                name: 'sidebar'
+                template: 'sidebar'
+    projects:
+        name: 'projects'
+        type: 'cms_page'
+        template: 'default'
+        meta:
+            title:
+                en: "Projects"
+                fr: "Nos projets"
+            keywords:
+                en: "cms symfony 2"
+                fr: "cms symfony 2"
+            description:
+                en: "Projects by Prestaconcept"
+                fr: "Nos projets by Prestaconcept"
+        children:
+            presta-cms:
+                name: 'presta-cms'
+                type: 'cms_page'
+                template: 'sidebar'
+            presta-sitemap:
+                name: 'presta-sitemap'
+                type: 'cms_page'
+                template: 'sidebar'
 
     about:
         name: 'about'
@@ -35,21 +73,3 @@ pages:
             title:
                 en: "About"
                 fr: "A propos"
-        zones:
-            content:
-                10:
-                    name: main
-                    type: presta_cms.block.simple
-                    is_editable: true
-                    settings:
-                        content: |
-                            loremipsum
-            sidebar:
-                10:
-                    name: main
-                    type: presta_cms.block.simple
-                    is_editable: true
-                    settings:
-                        content: |
-                            loremipsum
-        children: []

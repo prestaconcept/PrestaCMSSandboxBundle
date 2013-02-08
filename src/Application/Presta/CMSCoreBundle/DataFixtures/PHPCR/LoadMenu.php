@@ -9,15 +9,12 @@
  */
 namespace Application\Presta\CMSCoreBundle\DataFixtures\PHPCR;
 
-use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use PHPCR\Util\NodeHelper;
+use Symfony\Component\Yaml\Parser;
 
-use Symfony\Cmf\Bundle\MenuBundle\Document\MenuNode;
-use Symfony\Cmf\Bundle\MenuBundle\Document\MultilangMenuNode;
+use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseMenuFixture;
 
 use Presta\CMSCoreBundle\Document\Website;
 use Presta\CMSCoreBundle\Document\Website\Theme;
@@ -25,24 +22,8 @@ use Presta\CMSCoreBundle\Document\Website\Theme;
 /**
  * @author     Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class LoadMenu extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
+class LoadMenu extends BaseMenuFixture
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function getOrder()
-    {
-        return 30;
-    }
-
-    /**
-     * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
-     */
-    public function setContainer(ContainerInterface $container = null)
-    {
-        $this->container = $container;
-    }
-
     /**
      * Création des menus de navigation
      *
@@ -50,50 +31,28 @@ class LoadMenu extends AbstractFixture implements ContainerAwareInterface, Order
      */
     public function load(ObjectManager $manager)
     {
+        $this->manager = $manager;
         $session = $manager->getPhpcrSession();
 
-        //création namespace menu
+        //Create namespace menu
         NodeHelper::createPath($session, '/website/sandbox/menu');
         $root = $manager->find(null, '/website/sandbox/menu');
         $content_path = '/website/sandbox/page';
 
-        $main = $this->createMenuItem($manager, $root, 'main', array('en' => 'Homepage', 'fr' => 'Accueil'), $manager->find(null, "$content_path/home"));
+        $main = $this->createMenuNode($root, 'main', array('en' => 'Homepage', 'fr' => 'Accueil'), $manager->find(null, "$content_path/home"));
         $main->setChildrenAttributes(array("class" => "menu_main"));
 
-        $about = $this->createMenuItem($manager, $main, 'about', array('en' => 'About', 'fr' => 'A propos'), $manager->find(null, "$content_path/about"));
+        $yaml = new Parser();
+        $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
+        foreach ($datas['pages'] as $page) {
+            $this->createMenuForPage($main, $page, $content_path);
+        }
+
+        //Example using a symfony route
+        $this->createMenuNode($main, 'admin-item', 'Admin', null, null, 'sonata_admin_dashboard');
+        //Example of external link
+        $this->createMenuNode($main, 'prestaconcept-item', 'By PrestaConcept', null, 'http://www.prestaconcept.net/');
 
         $manager->flush();
-    }
-
-    /**
-     * @see CMF-Sandbox
-     * @return a Navigation instance with the specified information
-     */
-    protected function createMenuItem($dm, $parent, $name, $label, $content, $uri = null, $route = null)
-    {
-        $menuitem = is_array($label) ? new MultilangMenuNode() : new MenuNode();
-        $menuitem->setParent($parent);
-        $menuitem->setName($name);
-
-        $dm->persist($menuitem); // do persist before binding translation
-
-        if (null !== $content) {
-            $menuitem->setContent($content);
-        } else if (null !== $uri) {
-            $menuitem->setUri($uri);
-        } else if (null !== $route) {
-            $menuitem->setRoute($route);
-        }
-
-        if (is_array($label)) {
-            foreach ($label as $locale => $l) {
-                $menuitem->setLabel($l);
-                $dm->bindTranslation($menuitem, $locale);
-            }
-        } else {
-            $menuitem->setLabel($label);
-        }
-
-        return $menuitem;
     }
 }
