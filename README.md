@@ -67,14 +67,13 @@ As Symfony uses [Composer](http://getcomposer.org/) to manage its dependencies, 
 
 If you don't have Composer yet, download it following the instructions on http://getcomposer.org/ or just run the following command:
 
-   curl -s http://getcomposer.org/installer | php
+    curl -s http://getcomposer.org/installer | php
 
 Then, use the `create-project` command to generate a new Symfony application:
 
-   php composer.phar create-project presta/cms-sandbox path/to/install/prestacms-sandbox -s dev
+    php composer.phar create-project presta/cms-sandbox path/to/install/prestacms-sandbox -s dev
 
-Composer will install Symfony and all its dependencies under the
-`path/to/install` directory.
+Composer will install Symfony and all its dependencies under the `path/to/install` directory.
 
 ### Create the database ###
 
