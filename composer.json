@@ -28,6 +28,7 @@
         "sonata-project/easy-extends-bundle": "dev-master",
 
         "presta/cms-core-bundle": "dev-master",
+        "jackalope/jackalope-doctrine-dbal": "dev-master",
 
         "leafo/lessphp": "dev-master",
         "stfalcon/tinymce-bundle": "dev-master"
