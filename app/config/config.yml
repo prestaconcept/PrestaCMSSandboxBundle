@@ -50,6 +50,7 @@ doctrine:
         dbname:   "%database_name%"
         user:     "%database_user%"
         password: "%database_password%"
+        path:     %database_path%
         charset:  UTF8
 
     orm:
@@ -101,7 +102,6 @@ sonata_admin:
         layout:  ApplicationSonataAdminBundle::custom_layout.html.twig
     dashboard:
         blocks:
-            - { position: hidden, type: presta_cms.block.dashboard.cms, settings: {display: 'sonata'}}
             -
                 position: left
                 type: sonata.block.service.text
@@ -134,19 +134,26 @@ sonata_admin:
                         </p>
 
 presta_cms_core:
-    multiple_website: false
-    default_website: prestaconcept
-    hosts:
-        -
-            host: www.prestacms-sandbox.fr.local
-            website: /website/sandbox
-            locale: fr
-        -
-            host: www.prestacms-sandbox.en.local
-            website: /website/sandbox
-            locale: en
+    websites:
+        prestacms-sandbox:
+            path: /website/sandbox
+            hosts:
+                dev:
+                    en:
+                        locale: en
+                        host: www.prestacms-sandbox.en.local
+                    fr:
+                        locale: fr
+                        host: www.prestacms-sandbox.fr.local
+                prod:
+                    en:
+                        locale: en
+                        host: www.prestacms-sandbox.com
+                    fr:
+                        locale: fr
+                        host:  www.prestacms-sandbox.fr
+
 
 symfony_cmf_menu:
-    menu_basepath: /website/sandbox/menu
     multilang:
       locales: %locales%
