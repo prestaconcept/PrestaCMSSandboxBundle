@@ -10,7 +10,6 @@
 namespace Application\Presta\CMSCoreBundle\DataFixtures\PHPCR;
 
 use Doctrine\Common\Persistence\ObjectManager;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use PHPCR\Util\NodeHelper;
 use Symfony\Component\Yaml\Parser;
 use Presta\CMSCoreBundle\DataFixtures\PHPCR\BasePageFixture;

@@ -67,5 +67,4 @@ class LoadWebsite extends AbstractFixture implements ContainerAwareInterface, Or
         // Commit $document and $block to the database
         $manager->flush();
     }
-
 }

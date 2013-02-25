@@ -10,14 +10,12 @@
 namespace Application\Presta\CMSCoreBundle\DataFixtures\PHPCR;
 
 use Doctrine\Common\Persistence\ObjectManager;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use PHPCR\Util\NodeHelper;
 use Symfony\Component\Yaml\Parser;
 
 use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseMenuFixture;
 
 use Presta\CMSCoreBundle\Document\Website;
-use Presta\CMSCoreBundle\Document\Website\Theme;
 
 /**
  * @author     Nicolas Bastien <nbastien@prestaconcept.net>

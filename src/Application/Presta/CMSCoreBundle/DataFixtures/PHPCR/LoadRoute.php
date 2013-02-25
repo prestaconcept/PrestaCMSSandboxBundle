@@ -9,18 +9,13 @@
  */
 namespace Application\Presta\CMSCoreBundle\DataFixtures\PHPCR;
 
-use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use PHPCR\Util\NodeHelper;
 use Symfony\Component\Yaml\Parser;
 
 use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseRouteFixture;
 
 use Presta\CMSCoreBundle\Document\Website;
-use Presta\CMSCoreBundle\Document\Website\Theme;
 
 /**
  * @author     Nicolas Bastien <nbastien@prestaconcept.net>

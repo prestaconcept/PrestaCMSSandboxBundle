@@ -16,9 +16,6 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use PHPCR\Util\NodeHelper;
 
-use Symfony\Cmf\Bundle\MenuBundle\Document\MenuNode;
-use Symfony\Cmf\Bundle\MenuBundle\Document\MultilangMenuNode;
-
 use Presta\CMSCoreBundle\Document\Zone;
 use Presta\CMSCoreBundle\Document\Block;
 
