@@ -35,21 +35,18 @@ class LoadMenu extends BaseMenuFixture
         //Create namespace menu
         NodeHelper::createPath($session, '/website/sandbox/menu');
         $root = $manager->find(null, '/website/sandbox/menu');
-        $content_path = '/website/sandbox/page';
+        $contentPath = '/website/sandbox/page';
 
-        $main = $this->createMenuNode($root, 'main', array('en' => 'Homepage', 'fr' => 'Accueil'), $manager->find(null, "$content_path/home"));
+        $main = $this->createNavigationRootNode($root, 'main', array('en' => 'Main navigation', 'fr' => 'Menu principal'));
         $main->setChildrenAttributes(array("class" => "menu_main"));
 
         $yaml = new Parser();
         $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
         foreach ($datas['pages'] as $page) {
-            $this->createMenuForPage($main, $page, $content_path);
+            $this->createMenuForPage($main, $page, $contentPath);
         }
 
-        //Example using a symfony route
-        $this->createMenuNode($main, 'admin-item', 'Admin', null, null, 'sonata_admin_dashboard');
-        //Example of external link
-        $this->createMenuNode($main, 'prestaconcept-item', 'By PrestaConcept', null, 'http://www.prestaconcept.net/');
+        $singlePages = $this->createNavigationRootNode($root, 'single_pages', array('en' => 'Singles Pages', 'fr' => 'Pages simples'));
 
         $manager->flush();
     }
