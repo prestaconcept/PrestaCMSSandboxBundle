@@ -24,6 +24,10 @@ Override standard Layout to add application css, js...
     <script type="text/javascript">
     function initWysiwyg()
     {
+        var i;
+        for (i = 0; i < tinyMCE.editors.length; i++) {
+            tinyMCE.editors[i].remove(); // or destroy() ?
+        }
         {#
             Tmp code from tinymce_init()
             Should follow https://github.com/stfalcon/TinymceBundle/issues/73 and correct it
