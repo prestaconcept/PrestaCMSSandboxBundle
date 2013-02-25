@@ -1,6 +1,6 @@
 imports:
     - { resource: parameters.yml }
-    - { resource: phpcr.yml }
+    - { resource: phpcr_doctrine_dbal.yml }
     - { resource: security.yml }
     - { resource: '@PrestaCMSCoreBundle/Resources/config/config.yml' }
     - { resource: '@PrestaCMSCoreBundle/Resources/config/theme_default.yml' }
