@@ -5,7 +5,17 @@ php:
   - 5.4
 
 before_script:
+  - pear install pear/PHP_CodeSniffer
+  - phpenv rehash
   - cp app/config/parameters.yml.dist app/config/parameters.yml
+  - composer install --dev
+  - app/console doctrine:database:create
+  - app/console doctrine:schema:create
+  - chmod 777 app/database app/logs app/cache
+  - chmod 777 app/database/*
+  - app/console doctrine:phpcr:init:dbal
+  - app/console doctrine:phpcr:register-system-node-types
+  - app/console doctrine:phpcr:fixtures:load --no-interaction
 
 script:
   - phpcs --extensions=php -n --standard=PSR2 --report=full src
