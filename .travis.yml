@@ -7,5 +7,9 @@ php:
 before_script:
   - cp app/config/parameters.yml.dist app/config/parameters.yml
 
+script:
+  - phpcs --extensions=php -n --standard=PSR2 --report=full src
+
+
 notifications:
   email: "nbastien@prestaconcept.net"
