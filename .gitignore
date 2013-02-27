@@ -12,3 +12,4 @@ app/config/phpcr.yml
 .idea/*
 
 app.sqlite
+web/uploads/media/*

@@ -19,6 +19,10 @@ pages:
                     name: main
                     type: presta_cms.block.simple
                     is_editable: true
+                20:
+                    name: media
+                    type: presta_cms.block.media
+                    is_editable: true
         children: []
     demo:
         name: 'demo'

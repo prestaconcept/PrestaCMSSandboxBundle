@@ -91,7 +91,7 @@ Sandbox is configured to work on SQLite. Database file will be create it app/dat
 
 If you want more documentation about settings up Doctrine PHPCR-ODM with Jackrabbit or Midgard, have a look at
 the [specific documentation](http://symfony.com/doc/master/cmf/tutorials/installing-configuring-doctrine-phpcr-odm.html) or
-the [cmf-sandbox set-up]()
+the [cmf-sandbox set-up](https://github.com/symfony-cmf/cmf-sandbox)
 
 ### Virtual host ###
 

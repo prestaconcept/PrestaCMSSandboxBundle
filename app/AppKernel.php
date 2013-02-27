@@ -30,6 +30,11 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Sonata\SeoBundle\SonataSeoBundle(),
 
+            //Media Bundle
+            new Sonata\MediaBundle\SonataMediaBundle(),
+            new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
+            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+
             // Doctrine PHPCR
             new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
 
@@ -49,6 +54,7 @@ class AppKernel extends Kernel
 
             new Presta\CMSCoreBundle\PrestaCMSCoreBundle(),
             new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
+            new Presta\CMSMediaBundle\PrestaCMSMediaBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
