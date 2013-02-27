@@ -1,0 +1,19 @@
+presta_cms_core:
+    websites:
+        prestacms-sandbox:
+            path: /website/sandbox
+            hosts:
+                dev:
+                    en:
+                        locale: en
+                        host: www.prestacms-sandbox.en.local
+                    fr:
+                        locale: fr
+                        host: www.prestacms-sandbox.fr.local
+                prod:
+                    en:
+                        locale: en
+                        host: www.prestacms-sandbox.com
+                    fr:
+                        locale: fr
+                        host:  www.prestacms-sandbox.fr

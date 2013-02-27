@@ -4,6 +4,11 @@ imports:
     - { resource: security.yml }
     - { resource: '@PrestaCMSCoreBundle/Resources/config/config.yml' }
     - { resource: '@PrestaCMSCoreBundle/Resources/config/theme_default.yml' }
+    - { resource: bundles/sonata_admin.yml }
+    - { resource: bundles/sonata_block.yml }
+    - { resource: bundles/sonata_media.yml }
+    - { resource: bundles/presta_cms_core.yml }
+
 
 framework:
     #esi:             ~
@@ -52,6 +57,8 @@ doctrine:
         password: "%database_password%"
         path:     %database_path%
         charset:  UTF8
+        types:
+            json: Sonata\Doctrine\Types\JsonType
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
@@ -90,70 +97,8 @@ doctrine_phpcr:
                 - fr
                 - en
                 - de
-sonata_block:
-    default_contexts: [cms]
-    blocks:
-        sonata.block.service.text:
-
-sonata_admin:
-    title:      Presta CMS Sandbox
-    templates:
-        # default global templates
-        layout:  ApplicationSonataAdminBundle::custom_layout.html.twig
-    dashboard:
-        blocks:
-            -
-                position: left
-                type: sonata.block.service.text
-                settings:
-                    content: |
-                        <h2>Welcome in Presta CMS Sandbox</h2>
-                        <p>
-                            This is an early release and will be enhanced progressively.
-                        </p>
-                        <p>
-                            Right now features are :
-                            <ul>
-                                <li>Multiple websites by configuration</li>
-                                <li>Multilangue</li>
-                                <li>Custom theming</li>
-                                <li>Page administration</li>
-                            </ul>
-                        </p>
-                        <p>
-                            You can use it freely for your project, open / correct tickets on Github via Pull request.
-                        </p>
-                        <p>
-                            We hope it will help you on your project.
-                        </p>
-                        <p>
-                            Presta CMS is based on Symfony CMF so we would like to thanks people working on it.
-                        </p>
-                        <p>
-                            Presta CMS is sponsored by <a href="www.prestaconcept.net">PrestaConcept</a>
-                        </p>
-
-presta_cms_core:
-    websites:
-        prestacms-sandbox:
-            path: /website/sandbox
-            hosts:
-                dev:
-                    en:
-                        locale: en
-                        host: www.prestacms-sandbox.en.local
-                    fr:
-                        locale: fr
-                        host: www.prestacms-sandbox.fr.local
-                prod:
-                    en:
-                        locale: en
-                        host: www.prestacms-sandbox.com
-                    fr:
-                        locale: fr
-                        host:  www.prestacms-sandbox.fr
-
 
 symfony_cmf_menu:
     multilang:
       locales: %locales%
+

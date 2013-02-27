@@ -1,0 +1,5 @@
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.block.service.text:
+        sonata.admin.block.admin_list:
