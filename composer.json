@@ -35,7 +35,8 @@
 
         "presta/cms-media-bundle": "dev-master",
         "sonata-project/media-bundle": "2.1.*@dev",
-        "sonata-project/doctrine-orm-admin-bundle": "2.1.*@dev"
+        "sonata-project/doctrine-orm-admin-bundle": "2.1.*@dev",
+        "presta/cms-theme-basic-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

@@ -55,6 +55,7 @@ class AppKernel extends Kernel
             new Presta\CMSCoreBundle\PrestaCMSCoreBundle(),
             new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
             new Presta\CMSMediaBundle\PrestaCMSMediaBundle(),
+            new Presta\CMSThemeBasicBundle\PrestaCMSThemeBasicBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

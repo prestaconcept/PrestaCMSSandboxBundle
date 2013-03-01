@@ -8,7 +8,8 @@ before_script:
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
   - cp app/config/parameters.yml.dist app/config/parameters.yml
-  - composer install --dev
+  - wget http://getcomposer.org/composer.phar
+  - php composer.phar install --dev
   - php app/console doctrine:database:create
   - php app/console doctrine:schema:create
   - chmod 777 app/database app/logs app/cache
