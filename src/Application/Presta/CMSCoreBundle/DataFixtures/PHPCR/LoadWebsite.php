@@ -56,7 +56,7 @@ class LoadWebsite extends AbstractFixture implements ContainerAwareInterface, Or
         $website->setDefaultLocale('fr');
         $website->setActive(true);
         $website->setDefault(true);
-        $website->setTheme('default');
+        $website->setTheme('creative');
         $website->setName('sandbox');
 
         $manager->persist($website);

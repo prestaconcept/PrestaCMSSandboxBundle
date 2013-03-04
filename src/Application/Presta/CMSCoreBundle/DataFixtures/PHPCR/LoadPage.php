@@ -60,7 +60,7 @@ class LoadPage extends BasePageFixture
                 $page['zones']['content'][20] = array('name' => 'children', 'type' => 'presta_cms.block.page_children');
             }
         }
-        if ($page['template'] == 'sidebar') {
+        if ($page['template'] == 'left-sidebar') {
             $page['zones'] = array(
                 'content' => array(
                     10 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
