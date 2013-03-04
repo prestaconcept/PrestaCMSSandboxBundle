@@ -90,7 +90,7 @@ class LoadPage extends BasePageFixture
             case 'presta_cms.block.simple':
                 $block['settings'] = array(
                     'title' => 'This is a paragraph block',
-                    'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor est. Vivamus a imperdiet ante. Mauris ut dapibus tellus. Etiam vel enim justo, sit amet vulputate sem. Phasellus eleifend laoreet congue. Sed eu magna nunc, vel porttitor elit. '
+                    'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et auctor est. Vivamus a imperdiet ante. Mauris ut dapibus tellus. Etiam vel enim justo, sit amet vulputate sem. Phasellus eleifend laoreet congue. Sed eu magna nunc, vel porttitor elit. ',
                 );
                 break;
             case 'presta_cms.block.page_children':
@@ -100,6 +100,7 @@ class LoadPage extends BasePageFixture
                 );
                 break;
         }
+        $block['is_editable'] = true;
 
         return $block;
     }

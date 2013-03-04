@@ -41,7 +41,7 @@ pages:
                 name: 'fullpage'
             sidebar:
                 name: 'sidebar'
-                template: 'sidebar'
+                template: 'left-sidebar'
     projects:
         name: 'projects'
         type: 'cms_page'
@@ -60,16 +60,16 @@ pages:
             presta-cms:
                 name: 'presta-cms'
                 type: 'cms_page'
-                template: 'sidebar'
+                template: 'left-sidebar'
             presta-sitemap:
                 name: 'presta-sitemap'
                 type: 'cms_page'
-                template: 'sidebar'
+                template: 'left-sidebar'
 
     about:
         name: 'about'
         type: 'cms_page'
-        template: 'sidebar'
+        template: 'left-sidebar'
         url:
             en: 'about'
             fr: 'a-propos'
