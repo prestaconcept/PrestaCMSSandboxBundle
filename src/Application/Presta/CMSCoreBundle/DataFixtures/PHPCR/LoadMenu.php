@@ -38,7 +38,7 @@ class LoadMenu extends BaseMenuFixture
         $contentPath = '/website/sandbox/page';
 
         $main = $this->createNavigationRootNode($root, 'main', array('en' => 'Main navigation', 'fr' => 'Menu principal'));
-        $main->setChildrenAttributes(array("class" => "menu_main"));
+        $main->setChildrenAttributes(array("class" => "nav"));
 
         $yaml = new Parser();
         $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
