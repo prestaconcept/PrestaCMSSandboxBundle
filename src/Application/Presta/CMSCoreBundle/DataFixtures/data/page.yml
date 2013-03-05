@@ -23,6 +23,10 @@ pages:
                     name: media
                     type: presta_cms.block.media
                     is_editable: true
+                30:
+                    name: container
+                    type: presta_cms.block.container
+                    is_editable: true
         children: []
     demo:
         name: 'demo'
@@ -39,9 +43,31 @@ pages:
         children:
             fullpage:
                 name: 'fullpage'
-            sidebar:
-                name: 'sidebar'
+                meta:
+                    title:
+                        en: "Fullpage layout"
+                        fr: "Gabarit pleine page"
+            left-sidebar:
+                name: 'left-sidebar'
                 template: 'left-sidebar'
+                meta:
+                    title:
+                        en: "Left sidebar layout"
+                        fr: "Gabarit colonne gauche"
+            right-sidebar:
+                name: 'right-sidebar'
+                template: 'right-sidebar'
+                meta:
+                    title:
+                        en: "Right sidebar layout"
+                        fr: "Gabarit colonne droite"
+            sample:
+                name: 'sample'
+                template: 'sample'
+                meta:
+                    title:
+                        en: "Theme sample page"
+                        fr: "Thème par d'exemple"
     projects:
         name: 'projects'
         type: 'cms_page'
@@ -57,13 +83,17 @@ pages:
                 en: "Projects by Prestaconcept"
                 fr: "Nos projets by Prestaconcept"
         children:
-            presta-cms:
-                name: 'presta-cms'
-                type: 'cms_page'
+            presta-cms-core:
+                name: 'presta-cms-core'
+                template: 'left-sidebar'
+            presta-cms-media:
+                name: 'presta-cms-media'
+                template: 'left-sidebar'
+            presta-cms-theme-basic:
+                name: 'presta-cms-theme-basic'
                 template: 'left-sidebar'
             presta-sitemap:
                 name: 'presta-sitemap'
-                type: 'cms_page'
                 template: 'left-sidebar'
 
     about:

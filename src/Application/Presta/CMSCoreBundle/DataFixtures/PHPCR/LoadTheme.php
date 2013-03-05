@@ -50,28 +50,48 @@ class LoadTheme extends AbstractFixture implements ContainerAwareInterface, Orde
         $session = $manager->getPhpcrSession();
 
         //création namespace menu
-        NodeHelper::createPath($session, '/website/sandbox/theme/default');
-        $root = $manager->find(null, '/website/sandbox/theme/default');
+        NodeHelper::createPath($session, '/website/sandbox/theme/creative');
+        $root = $manager->find(null, '/website/sandbox/theme/creative');
 
-        $zone = new Zone('top');
-        $zone->setParentDocument($root);
-        $manager->persist($zone);
+        $zoneFooterLeft = new Zone('footer_left');
+        $zoneFooterLeft->setParentDocument($root);
+        $manager->persist($zoneFooterLeft);
 
-        //Create top block
+        $ipsumString = '<p>Lorem sequat ipsum dolor lorem sit amet, consectetur adipiscing dolor elit. Aenean nisl orci, condimentum.</p>'
+            . '<p>Consectetur adipiscing elit aeneane lorem lipsum, condimentum ultrices consequat eu, vehicula mauris lipsum adipiscing lipsum aenean orci lorem.</p>';
+
+        //Create About Us block
         $block = new Block();
-        $block->setName('main');
-        $block->setParent($zone);
+        $block->setName('about-us');
+        $block->setParent($zoneFooterLeft);
         $block->setType('presta_cms.block.simple');
         $block->setPosition(10);
-        $block->setSetting('title', 'Welcome on this sandbox');
-        $block->setSetting('content', '<p>This is an early release and we are still working on it</p>');
-
+        $block->setSetting('title', 'About Us');
+        $block->setSetting('content', $ipsumString);
         $manager->persist($block);
-
         $manager->bindTranslation($block, 'en');
 
-        $block->setSetting('title', 'Bienvenue sur cette démonstration');
-        $block->setSetting('content', '<p>Ceci est une démo du Presta CMS</p><p>Nous sommes encore en plein développement merci de votre compréhension</p>');
+        $block->setSetting('title', 'A propos');
+        $block->setSetting('content', $ipsumString);
+        $manager->bindTranslation($block, 'fr');
+
+        $zoneFooterMiddle = new Zone('footer_middle');
+        $zoneFooterMiddle->setParentDocument($root);
+        $manager->persist($zoneFooterMiddle);
+
+        //Create About Us block
+        $block = new Block();
+        $block->setName('links');
+        $block->setParent($zoneFooterMiddle);
+        $block->setType('presta_cms.block.sitemap');
+        $block->setPosition(10);
+        $block->setSetting('title', 'Useful Links');
+        $block->setSetting('depth', 1);
+        $block->setSetting('root_node', '/website/sandbox/page/demo');
+        $manager->persist($block);
+        $manager->bindTranslation($block, 'en');
+
+        $block->setSetting('title', 'Liens utiles');
         $manager->bindTranslation($block, 'fr');
 
         $manager->flush();
