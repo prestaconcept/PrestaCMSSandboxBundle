@@ -1,5 +1,5 @@
 {
-    "hash": "63edd5bff8e92ef59c2a882809556920",
+    "hash": "039430abe19edb2b8e9db7eac7841484",
     "packages": [
         {
             "name": "doctrine/common",
@@ -1648,6 +1648,57 @@
             ],
             "description": "PrestaCMS Media bundle : Add media blocks to PrestaCMS",
             "homepage": "https://github.com/prestaconcept/PrestaCMSMediaBundle",
+            "keywords": [
+                "media",
+                "Symfony2",
+                "cms",
+                "bundle",
+                "prestaconcept",
+                "symfony-cmf"
+            ]
+        },
+        {
+            "name": "presta/cms-theme-basic-bundle",
+            "version": "dev-master",
+            "target-dir": "Presta/CMSThemeBasicBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prestaconcept/PrestaCMSThemeBasicBundle.git",
+                "reference": "70aa326c376d1927b0a3566aabd7c98394a64d9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/70aa326c376d1927b0a3566aabd7c98394a64d9a",
+                "reference": "70aa326c376d1927b0a3566aabd7c98394a64d9a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "presta/cms-core-bundle": "dev-master",
+                "sonata-project/media-bundle": "2.1.*@dev"
+            },
+            "time": "2013-02-27 16:47:03",
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Presta\\CMSThemeBasicBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Bastien",
+                    "email": "nbastien@prestaconcept.net",
+                    "homepage": "http://www.prestaconcept.net/"
+                }
+            ],
+            "description": "PrestaCMS Theme Basic bundle : Basic themes for PrestaCMS",
+            "homepage": "https://github.com/prestaconcept/PrestaCMSThemeBasicBundle",
             "keywords": [
                 "media",
                 "Symfony2",
@@ -3380,6 +3431,33 @@
             "keywords": [
                 "templating"
             ]
+        },
+        {
+            "name": "twitter/bootstrap",
+            "version": "v2.3.0",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/twitter/bootstrap.git",
+                "reference": "v2.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twitter/bootstrap/zipball/v2.3.0",
+                "reference": "v2.3.0",
+                "shasum": ""
+            },
+            "time": "2013-02-08 06:13:13",
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "http://twitter.github.com/bootstrap/",
+            "keywords": [
+                "css",
+                "bootstrap"
+            ]
         }
     ],
     "packages-dev": null,
@@ -3399,6 +3477,7 @@
         "stfalcon/tinymce-bundle": 20,
         "presta/cms-media-bundle": 20,
         "sonata-project/media-bundle": 20,
-        "sonata-project/doctrine-orm-admin-bundle": 20
+        "sonata-project/doctrine-orm-admin-bundle": 20,
+        "presta/cms-theme-basic-bundle": 20
     }
 }
