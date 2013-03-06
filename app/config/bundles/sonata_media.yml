@@ -1,5 +1,5 @@
 sonata_media:
-    default_context: default
+    default_context: prestacms
     db_driver: doctrine_orm # or doctrine_mongodb, doctrine_phpcr
     contexts:
         default:  # the default context is mandatory
@@ -13,7 +13,19 @@ sonata_media:
                 small: { width: 100 , quality: 70}
                 big:   { width: 500 , quality: 70}
                 large:   { width: 700 , quality: 70}
-
+        prestacms:
+            providers:
+                - sonata.media.provider.image
+            formats:
+                page_wide: { width: 940 , quality: 70}
+                page_sidebar: { width: 200 , quality: 70}
+                page_content: { width: 600 , quality: 70}
+                gallery_full: { width: 850 , quality: 70}
+                gallery_horizontal_thumb: { height: 110 , quality: 70}
+                gallery_vertical_thumb: { width: 110 , quality: 70}
+                carousel_full: { width: 940 , height: 400 , quality: 70}
+                carousel_medium: { width: 200 , height: 150 , quality: 70}
+                carousel_small: { width: 150 , height: 90 , quality: 70}
     cdn:
         server:
             path: /uploads/media # http://media.sonata-project.org/
