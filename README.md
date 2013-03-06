@@ -87,6 +87,14 @@ Sandbox is configured to work on SQLite. Database file will be create it app/dat
     app/console doctrine:phpcr:register-system-node-types
     app/console doctrine:phpcr:fixtures:load --no-interaction
 
+If you have 'make' installed on your machine, you can use the install command
+
+    make install
+
+:speech_balloon: : if you have a permission denied error, you just need to add the execution right on your console
+
+    chmod +x app/console
+
 ---
 
 If you want more documentation about settings up Doctrine PHPCR-ODM with Jackrabbit or Midgard, have a look at
