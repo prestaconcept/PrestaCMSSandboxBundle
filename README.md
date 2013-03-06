@@ -1,4 +1,4 @@
-Presta CMS Sandbox [![Build Status](https://secure.travis-ci.org/prestaconcept/prestacms-sandbox.png?branch=master)](http://travis-ci.org/prestaconcept/prestacms-sandbox)
+Presta CMS Sandbox [![Build Status](https://secure.travis-ci.org/prestaconcept/prestacms-sandbox.png)](http://travis-ci.org/prestaconcept/prestacms-sandbox)
 =============
 
 
@@ -10,42 +10,10 @@ It is based on :
 * [**Symfony Standard edition**](https://github.com/symfony/symfony-standard)
 * [**Symfony CMF**](http://symfony.com/doc/master/cmf/index.html)
 
-[WIP] This project is still under heaving development and is not yet ready to use in production.
+** Important ** :construction: [WIP] This project is still under heaving development and is not yet ready to use in production.
 PrestaConcept is currently developing it for their new website.
 
-If you want to have some informations about the projet progession you can register to our [google group](https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs)
-
-### Front website with custom theming ###
-
-#### English version ####
-![PrestaCMS Dashboard](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/frontend-english.png)
-
-
-#### French version ####
-![PrestaCMS Dashboard](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/frontend-french.png)
-
-
-### Integrated with Sonata Admin ###
-![PrestaCMS Dashboard](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-dashboard.png)
-
-### Manage multiple front website from the same backend ###
-
-#### Listing ####
-![Website listing](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-website-list.png)
-
-#### Edition ####
-![Website edition](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-website-edit.png)
-
-### Themes administration ###
-
-#### Listing ####
-![Theme listing](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-theme-list.png)
-
-#### Edition for a website ####
-![Theme edition](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-theme-edit.png)
-
-### Content administration ###
-![Page edition](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-page-edit.png)
+If you want to have some informations about the projet progession you can register to our :speech_balloon: [google group](https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs)
 
 ## Features ##
 
@@ -58,6 +26,45 @@ If you want to have some informations about the projet progession you can regist
 - [ ] Demonstration multiple website
 - [ ] Add media block
 - [ ] Add a nice documentation
+
+### Front website with custom theming ###
+
+PrestaCMS is made to be easily customized.
+
+It can be plugged to several themes and can benefit of Symfony template inheritance to extends them.
+
+#### Creative Homepage ####
+![PrestaCMS Creative Homepage](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/creative-home.jpg)
+
+Creative is the first of our basic theme. It use [LESS](http://lesscss.org/) and is based on [Twitter Boostrap](http://twitter.github.com/bootstrap/)
+
+
+### Integrated with Sonata Admin ###
+
+![PrestaCMS Dashboard](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-dashboard.jpg)
+
+### Manage multiple front website from the same backend ###
+
+#### Website administration ####
+
+![PrestaCMS Website administration](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-website-administration.jpg)
+
+PrestaCMS can managed multiple websites, each of theme can have a theme, handle multiple locales and have there own content structure.
+
+
+#### Themes administration ####
+
+![PrestaCMS theme administration](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-theme-administration.jpg)
+
+Theme administration allow you to edit the content which is present on every pages of your site like the footer.
+
+#### Content administration ####
+
+![Page edition](https://raw.github.com/prestaconcept/prestacms-sandbox/master/app/Resources/docs/assets/backend-page-edit.jpg)
+
+Each page can have a different template on which you can add as many block as you need.
+
+Thanks to a generic block system easily extendable, your pages can render eaverything you need.
 
 ## Installing PrestaCMS Sandbox ##
 
@@ -126,14 +133,14 @@ As PrestaCMS depends on host configuration, you have to set up virtual hosts for
 
 ## Ask for help ##
 
-If you need help about this project you can [post a message on our google group](https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs)
+:speech_balloon: If you need help about this project you can [post a message on our google group](https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs)
 
 
 ---
 
 *This project is supported by [PrestaConcept](http://www.prestaconcept.net)*
 
-**Usefull links**
+:book: **Usefull links**
  * [**PrestaCMSCorebundle Documentation**](https://github.com/prestaconcept/PrestaCMSCoreBundle)
  * [**PrestaConcept Bundles**](https://github.com/prestaconcept)
  * [**Symfony CMF Documentation**](http://symfony.com/doc/master/cmf/index.html)
