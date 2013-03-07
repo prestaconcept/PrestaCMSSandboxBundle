@@ -68,6 +68,72 @@ pages:
                     title:
                         en: "Theme sample page"
                         fr: "Thème par d'exemple"
+    medias:
+        name: 'medias'
+        meta:
+            title:
+                en: "Medias integration"
+                fr: "Intégration de médias"
+            keywords:
+                en: "cms symfony 2"
+                fr: "cms symfony 2"
+            description:
+                en: "Demonstration of Medias integration in Presta CMS"
+                fr: "Exemple d'intégration de médias dans PrestaCMS"
+        children:
+            carousel:
+                name: 'carousel'
+                template: 'default'
+                meta:
+                    title:
+                        en: "Carousel example"
+                        fr: "Exemple de carousel"
+                zones:
+                    content:
+                        10:
+                            name: main
+                            type: presta_cms.block.carousel
+                            is_editable: true
+            media:
+                name: 'media'
+                template: 'default'
+                meta:
+                    title:
+                        en: "Advanced Media example"
+                        fr: "Exemple de media avancé"
+                zones:
+                    content:
+                        10:
+                            name: main
+                            type: presta_cms.block.media_advanced
+                            is_editable: true
+            gallery-vertical:
+                name: 'gallery-vertical'
+                template: 'default'
+                meta:
+                    title:
+                        en: "Vertical gallery example"
+                        fr: "Exemple de gallerie verticale"
+                zones:
+                    content:
+                        10:
+                            name: main
+                            type: presta_cms.block.gallery_advanced
+                            is_editable: true
+            gallery-horizontal:
+                name: 'gallery-horizontal'
+                template: 'default'
+                meta:
+                    title:
+                        en: "Horizontal gallery example"
+                        fr: "Exemple de gallerie horizontal"
+                zones:
+                    content:
+                        10:
+                            name: main
+                            type: presta_cms.block.gallery_advanced
+                            is_editable: true
+
     projects:
         name: 'projects'
         type: 'cms_page'
