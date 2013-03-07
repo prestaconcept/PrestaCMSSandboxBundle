@@ -1552,12 +1552,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "64b3cc67ec4e03a452f69d729226757fb1cd955a"
+                "reference": "c96c53a65d818f489c5ba2f1d8dbc53185f3675e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/64b3cc67ec4e03a452f69d729226757fb1cd955a",
-                "reference": "64b3cc67ec4e03a452f69d729226757fb1cd955a",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/c96c53a65d818f489c5ba2f1d8dbc53185f3675e",
+                "reference": "c96c53a65d818f489c5ba2f1d8dbc53185f3675e",
                 "shasum": ""
             },
             "require": {
@@ -1613,12 +1613,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSMediaBundle.git",
-                "reference": "587ba64090c2e15b2c2ea8b09b40f6f828fb527c"
+                "reference": "3dc67a4b17db64c31c3d7aa96d9c72e1dfe47d76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSMediaBundle/zipball/587ba64090c2e15b2c2ea8b09b40f6f828fb527c",
-                "reference": "587ba64090c2e15b2c2ea8b09b40f6f828fb527c",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSMediaBundle/zipball/3dc67a4b17db64c31c3d7aa96d9c72e1dfe47d76",
+                "reference": "3dc67a4b17db64c31c3d7aa96d9c72e1dfe47d76",
                 "shasum": ""
             },
             "require": {
@@ -1664,12 +1664,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSThemeBasicBundle.git",
-                "reference": "d9b4975962144e43ec41d576d0604d21e9a64a0b"
+                "reference": "84962ebd19267ecd26907336e7a7bbb47011650e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/d9b4975962144e43ec41d576d0604d21e9a64a0b",
-                "reference": "d9b4975962144e43ec41d576d0604d21e9a64a0b",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/84962ebd19267ecd26907336e7a7bbb47011650e",
+                "reference": "84962ebd19267ecd26907336e7a7bbb47011650e",
                 "shasum": ""
             },
             "require": {
