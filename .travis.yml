@@ -9,7 +9,7 @@ before_script:
   - phpenv rehash
   - cp app/config/parameters.yml.dist app/config/parameters.yml
   - wget http://getcomposer.org/composer.phar
-  - php composer.phar install --dev
+  - php composer.phar install
   - php app/console doctrine:database:create
   - php app/console doctrine:schema:create
   - chmod 777 app/database app/logs app/cache
