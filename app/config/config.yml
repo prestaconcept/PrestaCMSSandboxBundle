@@ -82,21 +82,29 @@ doctrine_phpcr:
         password: %phpcr_pass%
     # enable the ODM layer
     odm:
-        auto_mapping: true
         auto_generate_proxy_classes: %kernel.debug%
         locales:
             en:
-                - en
-                - de
-                - fr
-            de:
-                - de
                 - en
                 - fr
             fr:
                 - fr
                 - en
-                - de
+        #auto_mapping: true
+        #auto_mapping is not working due to a MappingException in Sonata Media
+        #Invalid mapping file 'Sonata.MediaBundle.Document.BaseGallery.phpcr.xml' for class 'Sonata\MediaBundle\Document\BaseGallery'
+        document_managers:
+            default:
+                mappings:
+                    ApplicationPrestaCMSCoreBundle: ~
+                    PrestaCMSCoreBundle: ~
+                    SymfonyCmfRoutingExtraBundle: ~
+                    SymfonyCmfTreeBrowserBundle: ~
+                    SonataDoctrinePHPCRAdminBundle: ~
+                    SymfonyCmfBlockBundle: ~
+                    SymfonyCmfContentBundle: ~
+                    SymfonyCmfMenuBundle: ~
+                    SymfonyCmfCoreBundle: ~
 
 symfony_cmf_menu:
     multilang:
