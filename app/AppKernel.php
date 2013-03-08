@@ -35,6 +35,8 @@ class AppKernel extends Kernel
             new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
 
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+
             // Doctrine PHPCR
             new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
 
@@ -69,6 +71,6 @@ class AppKernel extends Kernel
 
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
+        $loader->load(__DIR__ . '/config/config_' . $this->getEnvironment() . '.yml');
     }
 }

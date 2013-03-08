@@ -8,13 +8,13 @@ install:
 	app/console doctrine:phpcr:init:dbal
 	app/console doctrine:phpcr:register-system-node-types
 	app/console doctrine:phpcr:fixtures:load --no-interaction
+	app/console doctrine:fixture:load --no-interaction
 
 deploy-configure:
 	curl -s http://getcomposer.org/installer | php
 	php composer.phar install
 	app/console assets:install web
 	app/console assetic:dump --env=prod
-	@echo "You may need to configure app/config/parameters.yml for the first install"
 
 deploy-install:
 	app/console cache:clear --env=prod
@@ -22,7 +22,9 @@ deploy-install:
 	chmod 777 app/database/*
 	chmod -R 777 web/uploads
 
-deploy-update:
+deploy-update: cc install
+
+cc:
 	app/console cache:clear --env=prod
 
 cs:
