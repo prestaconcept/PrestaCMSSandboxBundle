@@ -114,21 +114,34 @@ As PrestaCMS depends on host configuration, you have to set up virtual hosts for
 
 **/etc/hosts**
 
-    127.0.0.1 www.prestacms-sandbox.fr.local prestacms-sandbox.fr.local
-    127.0.0.1 www.prestacms-sandbox.en.local prestacms-sandbox.en.local
+    127.0.0.1 sandbox.prestacms.com.local
+    127.0.0.1 sandbox.prestacms.fr.local
 
 **vhosts.conf**
 
     #PrestaCMS Sandbox
     <VirtualHost 127.0.0.1:80>
-        DocumentRoot /home/nbastien/Workspace/RetD/prestacms-sandbox/web
+        DocumentRoot /home/nbastien/www/prestaconcept/prestacms-sandbox/web
 
-        Servername www.prestacms-sandbox.fr.local
-        Serveralias www.prestacms-sandbox.en.local
+        Servername sandbox.prestacms.com.local
+        Serveralias sandbox.prestacms.fr.local
 
-        ErrorLog "logs/error_log"
-        CustomLog "logs/access_log" common
+        ErrorLog "/var/log/apache2/prestacms-sandbox-error.log"
+        CustomLog "/var/log/apache2/prestacms-sandbox-access.log" common
+
+        <Directory />
+            Options FollowSymLinks
+            AllowOverride None
+        </Directory>
+
+        <Directory /home/nbastien/www/prestaconcept/prestacms-sandbox/web>
+            Options Indexes FollowSymLinks MultiViews
+            AllowOverride All
+            Order allow,deny
+            allow from all
+        </Directory>
     </VirtualHost>
+
 
 
 ## Ask for help ##
