@@ -1664,12 +1664,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSThemeBasicBundle.git",
-                "reference": "84962ebd19267ecd26907336e7a7bbb47011650e"
+                "reference": "a02771927f54106e5c798c31031ce015cd970ec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/84962ebd19267ecd26907336e7a7bbb47011650e",
-                "reference": "84962ebd19267ecd26907336e7a7bbb47011650e",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/a02771927f54106e5c798c31031ce015cd970ec6",
+                "reference": "a02771927f54106e5c798c31031ce015cd970ec6",
                 "shasum": ""
             },
             "require": {
