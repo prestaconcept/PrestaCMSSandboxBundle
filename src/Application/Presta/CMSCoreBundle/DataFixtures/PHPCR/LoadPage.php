@@ -83,7 +83,7 @@ class LoadPage extends BasePageFixture
         $block = parent::configureBlock($block);
 
         if (count($block['settings'])) {
-            return;
+            return $block;
         }
 
         switch ($block['type']) {
