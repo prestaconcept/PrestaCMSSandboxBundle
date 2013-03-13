@@ -17,6 +17,11 @@ _sonata_admin:
     type: sonata_admin
     prefix: /admin
 
+#override sonata routes
+sonata_admin_dashboard:
+    pattern: /admin
+    defaults: { _controller: SonataAdminBundle:Core:dashboard }
+
 PrestaCMSCoreBundle:
     resource: "@PrestaCMSCoreBundle/Resources/config/routing.yml"
     prefix:   /admin
