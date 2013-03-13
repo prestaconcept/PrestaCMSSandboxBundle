@@ -1,6 +1,14 @@
 Presta CMS Sandbox [![Build Status](https://secure.travis-ci.org/prestaconcept/prestacms-sandbox.png)](http://travis-ci.org/prestaconcept/prestacms-sandbox)
 =============
 
+##Online demo
+
+:information_source: PrestaCMS Demo is online in english and french :
+
+http://sandbox.prestacms.com and http://sandbox.prestacms.fr
+
+Administration is under /admin
+
 
 ## Overview ##
 
