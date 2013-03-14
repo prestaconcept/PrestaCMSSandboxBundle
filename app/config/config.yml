@@ -3,7 +3,6 @@ imports:
     - { resource: phpcr_doctrine_dbal.yml }
     - { resource: security.yml }
     - { resource: '@PrestaCMSCoreBundle/Resources/config/config.yml' }
-    - { resource: '@PrestaCMSCoreBundle/Resources/config/theme_default.yml' }
     - { resource: bundles/sonata_admin.yml }
     - { resource: bundles/sonata_block.yml }
     - { resource: bundles/sonata_media.yml }
