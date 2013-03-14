@@ -24,6 +24,11 @@ deploy-install:
 
 deploy-update: cc install
 
+refresh:
+	app/console doctrine:phpcr:fixtures:load --no-interaction
+	app/console doctrine:fixture:load --no-interaction
+	app/console cache:clear --env=prod
+
 cc:
 	app/console cache:clear --env=prod
 
