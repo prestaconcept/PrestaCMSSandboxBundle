@@ -21,7 +21,7 @@ pages:
                     is_editable: true
                 20:
                     name: media
-                    type: presta_cms.block.media
+                    type: presta_cms.block.media_advanced
                     is_editable: true
                 30:
                     name: container
