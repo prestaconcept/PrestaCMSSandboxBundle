@@ -6,7 +6,7 @@ pages:
         meta:
             title:
                 en: "Homepage"
-                fr: "Acceuil"
+                fr: "Accueil"
             keywords:
                 en: "cms symfony 2"
                 fr: "cms symfony 2"
