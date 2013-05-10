@@ -12,3 +12,4 @@ app/config/phpcr.yml
 
 app.sqlite
 web/uploads/media/*
+/nbproject
