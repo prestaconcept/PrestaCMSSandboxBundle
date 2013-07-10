@@ -1,7 +1,6 @@
 pages:
     home:
         name: 'home'
-        type: 'cms_page'
         template: 'default'
         meta:
             title:
@@ -151,7 +150,6 @@ pages:
 
     projects:
         name: 'projects'
-        type: 'cms_page'
         template: 'default'
         meta:
             title:
@@ -179,7 +177,6 @@ pages:
 
     about:
         name: 'about'
-        type: 'cms_page'
         template: 'left-sidebar'
         url:
             en: 'about'
