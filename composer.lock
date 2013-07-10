@@ -1557,7 +1557,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "7d18e48f9d36e8a75f494bbb6b8ff270b09afd76"
+                "reference": "fe763b00418dbabf9c79015767e3adbb5da523b6"
             },
             "dist": {
                 "type": "zip",
