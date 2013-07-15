@@ -1557,12 +1557,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "fe763b00418dbabf9c79015767e3adbb5da523b6"
+                "reference": "350f4cf3c0412de60199d63e0f1293c20508bbbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/7d18e48f9d36e8a75f494bbb6b8ff270b09afd76",
-                "reference": "7d18e48f9d36e8a75f494bbb6b8ff270b09afd76",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/350f4cf3c0412de60199d63e0f1293c20508bbbf",
+                "reference": "350f4cf3c0412de60199d63e0f1293c20508bbbf",
                 "shasum": ""
             },
             "require": {

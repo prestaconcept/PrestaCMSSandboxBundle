@@ -2,6 +2,11 @@ imports:
 #    - { resource: '@PrestaCMSThemeBasicBundle/Resources/config/config.yml' }
     - { resource: '@PrestaCMSThemeBasicBundle/Resources/config/theme/creative.yml' }
 
+sonata_admin:
+  dashboard:
+      blocks:
+          - { position: right, type: presta_cms.block.dashboard.cms }
+
 presta_cms_core:
     websites:
         prestacms-sandbox:
