@@ -9,38 +9,32 @@
     },
     "minimum-stability":"dev",
     "require":{
-        "php":">=5.3.3",
-        "symfony/symfony":"2.1.*",
-        "doctrine/orm":">=2.2.3,<2.4-dev",
-        "doctrine/doctrine-bundle":"1.1.*",
-        "twig/extensions":"1.0.*@dev",
-        "symfony/assetic-bundle":"2.1.*",
-        "symfony/swiftmailer-bundle":"2.1.*",
-        "symfony/monolog-bundle":"2.1.*",
-        "sensio/distribution-bundle":"2.1.*",
-        "sensio/framework-extra-bundle":"2.1.*",
-        "sensio/generator-bundle":"2.1.*",
-        "jms/security-extra-bundle":"1.2.*",
-        "jms/di-extra-bundle":"1.1.*",
-        "kriswallsmith/assetic":"1.1.*@dev",
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.3.*",
+        "doctrine/orm": ">=2.2.3,<2.4-dev",
+        "doctrine/doctrine-bundle": "1.2.*",
+        "twig/extensions": "1.0.*",
+        "symfony/assetic-bundle": "2.3.*",
+        "symfony/swiftmailer-bundle": "2.3.*",
+        "symfony/monolog-bundle": "2.3.*",
+        "sensio/distribution-bundle": "2.3.*",
+        "sensio/framework-extra-bundle": "2.3.*",
+        "sensio/generator-bundle": "2.3.*",
+        "incenteev/composer-parameter-handler": "~2.0",
 
-        "doctrine/doctrine-fixtures-bundle":"dev-master",
-
-        "sonata-project/admin-bundle":"2.1.*@dev",
-        "sonata-project/media-bundle":"2.1.*@dev",
-        "sonata-project/doctrine-orm-admin-bundle":"2.1.*@dev",
-
-        "doctrine/doctrine-fixtures-bundle":"2.1.*@dev",
+        "sonata-project/admin-bundle":"2.2.*@dev",
+        "sonata-project/media-bundle":"2.2.*@dev",
+        "sonata-project/doctrine-orm-admin-bundle":"2.2.*@dev",
         "sonata-project/easy-extends-bundle":"2.1.*@dev",
 
-        "jackalope/jackalope-doctrine-dbal":"1.0.*@dev",
+        "doctrine/doctrine-fixtures-bundle":"2.1.*",
 
-        "presta/cms-core-bundle":"dev-master",
+        "presta/cms-core-bundle": "2.3.*@dev",
         "presta/cms-media-bundle":"dev-master",
         "presta/cms-theme-basic-bundle":"dev-master",
+        "jackalope/jackalope-doctrine-dbal":"1.0.*@dev",
 
-        "leafo/lessphp":"0.3.*@dev",
-        "stfalcon/tinymce-bundle":"dev-master"
+        "stfalcon/tinymce-bundle":"0.3.*@dev"
     },
     "scripts":{
         "post-install-cmd":[
@@ -59,7 +53,9 @@
     "extra":{
         "symfony-app-dir":"app",
         "symfony-web-dir":"web",
-        "symfony-assets-install":"symlink",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        },
         "branch-alias":{
             "dev-master":"2.1.x-dev"
         }
