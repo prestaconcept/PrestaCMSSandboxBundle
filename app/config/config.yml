@@ -97,7 +97,7 @@ doctrine_phpcr:
                 mappings:
                     ApplicationPrestaCMSCoreBundle: ~
                     PrestaCMSCoreBundle: ~
-                    SymfonyCmfRoutingExtraBundle: ~
+                    SymfonyCmfRoutingBundle: ~
                     SymfonyCmfTreeBrowserBundle: ~
                     SonataDoctrinePHPCRAdminBundle: ~
                     SymfonyCmfBlockBundle: ~
@@ -105,7 +105,4 @@ doctrine_phpcr:
                     SymfonyCmfMenuBundle: ~
                     SymfonyCmfCoreBundle: ~
 
-symfony_cmf_menu:
-    multilang:
-      locales: %locales%
 
