@@ -6,7 +6,7 @@ install:
 	chmod 777 app/database/*
 	chmod -R 777 web/uploads
 	app/console doctrine:phpcr:init:dbal
-	app/console doctrine:phpcr:register-system-node-types
+	app/console doctrine:phpcr:repository:init
 	app/console doctrine:phpcr:fixtures:load --no-interaction
 	app/console doctrine:fixture:load --no-interaction
 
