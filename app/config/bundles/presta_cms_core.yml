@@ -8,6 +8,8 @@ sonata_admin:
           - { position: right, type: presta_cms.block.dashboard.cms }
 
 presta_cms_core:
+    default_website: /website/sandbox
+    default_locale: en
     websites:
         prestacms-sandbox:
             path: /website/sandbox
