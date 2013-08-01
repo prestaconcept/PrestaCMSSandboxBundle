@@ -37,7 +37,7 @@ class LoadMenu extends BaseMenuFixture
         $root = $manager->find(null, '/website/sandbox/menu');
         $contentPath = '/website/sandbox/page';
 
-        $main = $this->createNavigationRootNode($root, 'main', array('en' => 'Main navigation', 'fr' => 'Menu principal'));
+        $main = $this->createNavigationRootNode($root, 'main', array('en' => 'Main navigation', 'fr' => 'Menu principal'), $contentPath);
         $main->setChildrenAttributes(array("class" => "nav"));
 
         $yaml = new Parser();
@@ -46,7 +46,7 @@ class LoadMenu extends BaseMenuFixture
             $this->createMenuForPage($main, $page, $contentPath);
         }
 
-        $singlePages = $this->createNavigationRootNode($root, 'single_pages', array('en' => 'Singles Pages', 'fr' => 'Pages simples'));
+        $singlePages = $this->createNavigationRootNode($root, 'single_pages', array('en' => 'Singles Pages', 'fr' => 'Pages simples'), $contentPath);
 
         $manager->flush();
     }
