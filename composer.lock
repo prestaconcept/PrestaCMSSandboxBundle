@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8186ec51aec2b6e87c67e5f5eda92b20",
+    "hash": "79e87ddc67142ed0beb51b99d2135e57",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1075,7 +1075,7 @@
         },
         {
             "name": "jackalope/jackalope-doctrine-dbal",
-            "version": "dev-master",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jackalope/jackalope-doctrine-dbal.git",
@@ -3083,12 +3083,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "1.1.0-RC1"
+                "reference": "c3e0c82a92da2973ffbab1f06f7144dae8701112"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/1.1.0-RC1",
-                "reference": "1.1.0-RC1",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/c3e0c82a92da2973ffbab1f06f7144dae8701112",
+                "reference": "c3e0c82a92da2973ffbab1f06f7144dae8701112",
                 "shasum": ""
             },
             "require": {
@@ -3133,7 +3133,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2013-07-31 21:06:34"
+            "time": "2013-08-05 11:18:50"
         },
         {
             "name": "symfony-cmf/routing-bundle",
@@ -3633,16 +3633,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "dev-master",
+            "version": "v1.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "0e63ef04a00fb238ee457708f8b4e8918aa51d7e"
+                "reference": "v1.13.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/0e63ef04a00fb238ee457708f8b4e8918aa51d7e",
-                "reference": "0e63ef04a00fb238ee457708f8b4e8918aa51d7e",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.13.2",
+                "reference": "v1.13.2",
                 "shasum": ""
             },
             "require": {
@@ -3678,7 +3678,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-07-24 03:16:45"
+            "time": "2013-08-03 15:35:31"
         }
     ],
     "packages-dev": [
@@ -3689,6 +3689,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "twig/twig": 0,
         "sonata-project/admin-bundle": 20,
         "sonata-project/media-bundle": 20,
         "sonata-project/doctrine-orm-admin-bundle": 20,
@@ -3696,7 +3697,7 @@
         "presta/cms-core-bundle": 20,
         "presta/cms-media-bundle": 20,
         "presta/cms-theme-basic-bundle": 20,
-        "jackalope/jackalope-doctrine-dbal": 20,
+        "jackalope/jackalope-doctrine-dbal": 10,
         "stfalcon/tinymce-bundle": 20
     },
     "platform": {

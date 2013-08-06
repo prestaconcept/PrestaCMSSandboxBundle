@@ -14,6 +14,7 @@
         "doctrine/orm": ">=2.2.3,<2.4-dev",
         "doctrine/doctrine-bundle": "1.2.*",
         "twig/extensions": "1.0.*",
+        "twig/twig": "@stable",
         "symfony/assetic-bundle": "2.3.*",
         "symfony/swiftmailer-bundle": "2.3.*",
         "symfony/monolog-bundle": "2.3.*",
@@ -32,7 +33,8 @@
         "presta/cms-core-bundle": "2.3.*@dev",
         "presta/cms-media-bundle":"dev-master",
         "presta/cms-theme-basic-bundle":"dev-master",
-        "jackalope/jackalope-doctrine-dbal":"1.0.*@dev",
+
+        "jackalope/jackalope-doctrine-dbal": "1.0.0-beta3",
 
         "stfalcon/tinymce-bundle":"0.3.*@dev"
     },
