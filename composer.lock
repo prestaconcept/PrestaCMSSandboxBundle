@@ -792,16 +792,16 @@
         },
         {
             "name": "doctrine/phpcr-odm",
-            "version": "1.0.0-beta3",
+            "version": "1.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/phpcr-odm.git",
-                "reference": "1.0.0-beta3"
+                "reference": "1.0.0-beta4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/1.0.0-beta3",
-                "reference": "1.0.0-beta3",
+                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/1.0.0-beta4",
+                "reference": "1.0.0-beta4",
                 "shasum": ""
             },
             "require": {
@@ -811,13 +811,13 @@
                 "phpcr/phpcr-utils": "~1.0.0-beta6"
             },
             "require-dev": {
-                "symfony/yaml": ">=2.0.0,<2.4.0-dev"
+                "symfony/yaml": "~2.0"
             },
             "suggest": {
-                "jackalope/jackalope-doctrine-dbal": ">=1.0.0-beta2",
-                "jackalope/jackalope-jackrabbit": ">=1.0.0-beta3",
+                "jackalope/jackalope-doctrine-dbal": ">=1.0.0-beta3",
+                "jackalope/jackalope-jackrabbit": ">=1.0.0-beta4",
                 "midgard/phpcr": ">=1.3",
-                "symfony/yaml": ">=2.0.0,<2.4.0-dev"
+                "symfony/yaml": "~2.0"
             },
             "bin": [
                 "bin/phpcrodm",
@@ -861,7 +861,7 @@
                 "odm",
                 "phpcr"
             ],
-            "time": "2013-07-26 16:37:37"
+            "time": "2013-08-04 15:47:27"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1496,12 +1496,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/lessphp.git",
-                "reference": "366fb52798d4f120503af0703da11cba4ad06f8d"
+                "reference": "bc334d218be693bf571161df3b092530e1444a9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/lessphp/zipball/366fb52798d4f120503af0703da11cba4ad06f8d",
-                "reference": "366fb52798d4f120503af0703da11cba4ad06f8d",
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/bc334d218be693bf571161df3b092530e1444a9a",
+                "reference": "bc334d218be693bf571161df3b092530e1444a9a",
                 "shasum": ""
             },
             "type": "library",
@@ -1529,7 +1529,7 @@
             ],
             "description": "lessphp is a compiler for LESS written in PHP.",
             "homepage": "http://leafo.net/lessphp/",
-            "time": "2013-07-09 16:25:09"
+            "time": "2013-08-06 07:25:47"
         },
         {
             "name": "monolog/monolog",
@@ -1726,16 +1726,16 @@
             },
             "require": {
                 "doctrine/phpcr-bundle": "1.0.0-beta3",
-                "doctrine/phpcr-odm": "1.0.0-beta3",
+                "doctrine/phpcr-odm": "1.0.0-beta4",
                 "leafo/lessphp": "0.3.*@dev",
                 "php": ">=5.3.3",
                 "sonata-project/doctrine-phpcr-admin-bundle": "1.0.0-beta1",
                 "sonata-project/seo-bundle": "2.1.*@dev",
                 "symfony-cmf/block-bundle": "1.0.0-beta3",
                 "symfony-cmf/content-bundle": "1.0.0-RC1",
-                "symfony-cmf/core-bundle": "1.0.0-RC1",
-                "symfony-cmf/menu-bundle": "1.0.0-RC1",
-                "symfony-cmf/routing-bundle": "1.1.0-RC1",
+                "symfony-cmf/core-bundle": "1.0.0-RC2",
+                "symfony-cmf/menu-bundle": "1.0.0-RC2",
+                "symfony-cmf/routing-bundle": "1.1.0-RC2",
                 "symfony-cmf/tree-browser-bundle": "1.0.0-beta2",
                 "symfony/framework-bundle": "~2.2"
             },
@@ -1780,7 +1780,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-08-01 14:40:47"
+            "time": "2013-08-06 10:25:14"
         },
         {
             "name": "presta/cms-media-bundle",
@@ -2145,12 +2145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-                "reference": "03ff77585eaff60058b33a98793168b4d3865c2c"
+                "reference": "1a0573f41b674f88ae3fe9a77ce1e4679019b92a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/03ff77585eaff60058b33a98793168b4d3865c2c",
-                "reference": "03ff77585eaff60058b33a98793168b4d3865c2c",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/1a0573f41b674f88ae3fe9a77ce1e4679019b92a",
+                "reference": "1a0573f41b674f88ae3fe9a77ce1e4679019b92a",
                 "shasum": ""
             },
             "require": {
@@ -2427,16 +2427,16 @@
         },
         {
             "name": "sonata-project/exporter",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/exporter.git",
-                "reference": "1.3.0"
+                "reference": "1.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/1.3.0",
-                "reference": "1.3.0",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/1.3.1",
+                "reference": "1.3.1",
                 "shasum": ""
             },
             "require": {
@@ -2477,7 +2477,7 @@
                 "export",
                 "xls"
             ],
-            "time": "2013-06-06 20:59:26"
+            "time": "2013-08-05 08:50:12"
         },
         {
             "name": "sonata-project/jquery-bundle",
@@ -2956,17 +2956,17 @@
         },
         {
             "name": "symfony-cmf/core-bundle",
-            "version": "1.0.0-RC1",
+            "version": "1.0.0-RC2",
             "target-dir": "Symfony/Cmf/Bundle/CoreBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/CoreBundle.git",
-                "reference": "1.0.0-RC1"
+                "reference": "1.0.0-RC2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/CoreBundle/zipball/1.0.0-RC1",
-                "reference": "1.0.0-RC1",
+                "url": "https://api.github.com/repos/symfony-cmf/CoreBundle/zipball/1.0.0-RC2",
+                "reference": "1.0.0-RC2",
                 "shasum": ""
             },
             "require": {
@@ -3013,21 +3013,21 @@
             "keywords": [
                 "Symfony CMF"
             ],
-            "time": "2013-08-01 05:46:17"
+            "time": "2013-08-04 16:03:38"
         },
         {
             "name": "symfony-cmf/menu-bundle",
-            "version": "1.0.0-RC1",
+            "version": "1.0.0-RC2",
             "target-dir": "Symfony/Cmf/Bundle/MenuBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/MenuBundle.git",
-                "reference": "1.0.0-RC1"
+                "reference": "1.0.0-RC2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/MenuBundle/zipball/1.0.0-RC1",
-                "reference": "1.0.0-RC1",
+                "url": "https://api.github.com/repos/symfony-cmf/MenuBundle/zipball/1.0.0-RC2",
+                "reference": "1.0.0-RC2",
                 "shasum": ""
             },
             "require": {
@@ -3074,7 +3074,7 @@
                 "Symfony CMF",
                 "menu"
             ],
-            "time": "2013-08-01 06:54:31"
+            "time": "2013-08-04 16:01:42"
         },
         {
             "name": "symfony-cmf/routing",
@@ -3137,17 +3137,17 @@
         },
         {
             "name": "symfony-cmf/routing-bundle",
-            "version": "1.1.0-RC1",
+            "version": "1.1.0-RC2",
             "target-dir": "Symfony/Cmf/Bundle/RoutingBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/RoutingBundle.git",
-                "reference": "1.1.0-RC1"
+                "reference": "1.1.0-RC2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingBundle/zipball/1.1.0-RC1",
-                "reference": "1.1.0-RC1",
+                "url": "https://api.github.com/repos/symfony-cmf/RoutingBundle/zipball/1.1.0-RC2",
+                "reference": "1.1.0-RC2",
                 "shasum": ""
             },
             "require": {
@@ -3193,7 +3193,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2013-08-01 05:47:13"
+            "time": "2013-08-04 16:04:56"
         },
         {
             "name": "symfony-cmf/tree-browser-bundle",
