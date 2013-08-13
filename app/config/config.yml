@@ -36,6 +36,7 @@ assetic:
     bundles:
         - ApplicationSonataAdminBundle
         - ApplicationPrestaCMSCoreBundle
+        - PrestaCMSCoreBundle
         - PrestaCMSThemeBasicBundle
 
     filters:
@@ -102,4 +103,5 @@ doctrine_phpcr:
                     CmfMenuBundle: ~
                     CmfCoreBundle: ~
 
-
+knp_menu:
+    twig: true

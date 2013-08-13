@@ -22,9 +22,12 @@ PrestaCMSCoreBundle:
     resource: "@PrestaCMSCoreBundle/Resources/config/routing.yml"
     prefix:   /admin
 
-phpcrodmbrowser:
-    resource: @SonataDoctrinePHPCRAdminBundle/Resources/config/routing/phpcrodmbrowser.xml
-    prefix: /admin/browser
+#phpcrodmbrowser:
+#    resource: @SonataDoctrinePHPCRAdminBundle/Resources/config/routing/phpcrodmbrowser.xml
+#    prefix: /admin/browser
+tree:
+    resource: "@SonataDoctrinePHPCRAdminBundle/Resources/config/routing/phpcrodmbrowser.xml"
+    prefix: /phpcrodmbrowser
 
 gallery:
     resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'
