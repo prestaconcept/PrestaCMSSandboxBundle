@@ -16,8 +16,8 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use PHPCR\Util\NodeHelper;
 
-use Presta\CMSCoreBundle\Document\Zone;
-use Presta\CMSCoreBundle\Document\Block;
+use Presta\CMSCoreBundle\Doctrine\Phpcr\Zone;
+use Presta\CMSCoreBundle\Doctrine\Phpcr\Block;
 
 /**
  * @author     Nicolas Bastien <nbastien@prestaconcept.net>

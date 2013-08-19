@@ -15,7 +15,7 @@ use Symfony\Component\Yaml\Parser;
 
 use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseMenuFixture;
 
-use Presta\CMSCoreBundle\Document\Website;
+use Presta\CMSCoreBundle\Doctrine\Phpcr\Website;
 
 /**
  * @author     Nicolas Bastien <nbastien@prestaconcept.net>
