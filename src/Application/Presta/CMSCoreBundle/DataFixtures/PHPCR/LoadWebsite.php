@@ -12,11 +12,12 @@ namespace Application\Presta\CMSCoreBundle\DataFixtures\PHPCR;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
+use Presta\CMSCoreBundle\Factory\ModelFactoryInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use PHPCR\Util\NodeHelper;
 
-use Presta\CMSCoreBundle\Document\Website;
+use Presta\CMSCoreBundle\Doctrine\Phpcr\Website;
 
 /**
  * @author     Nicolas Bastien <nbastien@prestaconcept.net>
@@ -39,6 +40,14 @@ class LoadWebsite extends AbstractFixture implements ContainerAwareInterface, Or
         $this->container = $container;
     }
 
+    /**
+     * @return ModelFactoryInterface
+     */
+    protected function getWebsiteFactory()
+    {
+        return $this->container->get('presta_cms.website.factory');
+    }
+
     public function load(ObjectManager $manager)
     {
         // Get the base path name to use from the configuration
@@ -48,23 +57,16 @@ class LoadWebsite extends AbstractFixture implements ContainerAwareInterface, Or
         // Create the path in the repository
         NodeHelper::createPath($session, $basePath);
 
-        // Create a new document using StaticContent from the CMF ContentBundle
-        $website = new Website();
-        $website->setPath($basePath . DIRECTORY_SEPARATOR . 'sandbox');
-        $website->setAvailableLocales(array('fr', 'en'));
+        $website = $this->getWebsiteFactory()->create(
+            array(
+                'path' => $basePath . DIRECTORY_SEPARATOR . 'sandbox',
+                'name' => 'sandbox',
+                'available_locales' => array('fr', 'en'),
+                'default_locale' => 'fr',
+                'theme' => 'creative'
+            )
+        );
 
-        $website->setDefaultLocale('fr');
-        $website->setActive(true);
-        $website->setDefault(true);
-        $website->setTheme('creative');
-        $website->setName('sandbox');
-
-        $manager->persist($website);
-
-        $manager->bindTranslation($website, 'fr');
-        $manager->bindTranslation($website, 'en');
-
-        // Commit $document and $block to the database
         $manager->flush();
     }
 }
