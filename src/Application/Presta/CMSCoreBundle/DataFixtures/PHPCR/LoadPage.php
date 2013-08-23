@@ -42,11 +42,9 @@ class LoadPage extends BasePageFixture
             $pageConfiguration['website'] = $website;
             $pageConfiguration['parent'] = $root;
 
-            $this->container->get('presta_cms.page.factory')->create($pageConfiguration);
+            $this->getFactory()->create($pageConfiguration);
         }
 
         $this->manager->flush();
     }
-
-
 }

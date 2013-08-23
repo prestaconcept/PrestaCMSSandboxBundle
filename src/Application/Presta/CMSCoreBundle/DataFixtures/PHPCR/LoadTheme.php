@@ -9,38 +9,16 @@
  */
 namespace Application\Presta\CMSCoreBundle\DataFixtures\PHPCR;
 
-use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use PHPCR\Util\NodeHelper;
+use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseThemeFixture;
 
-use Presta\CMSCoreBundle\Doctrine\Phpcr\Zone;
-use Presta\CMSCoreBundle\Doctrine\Phpcr\Block;
 use Symfony\Component\Yaml\Parser;
 
 /**
  * @author     Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class LoadTheme extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
+class LoadTheme extends BaseThemeFixture
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function getOrder()
-    {
-        return 60;
-    }
-
-    /**
-     * @param \Symfony\Component\DependencyInjection\ContainerInterface $container
-     */
-    public function setContainer(ContainerInterface $container = null)
-    {
-        $this->container = $container;
-    }
-
     /**
      * Création des menus de navigation
      *
@@ -53,6 +31,6 @@ class LoadTheme extends AbstractFixture implements ContainerAwareInterface, Orde
         $yaml = new Parser();
         $configuration = $yaml->parse(file_get_contents(__DIR__ . '/../data/creative_theme.yml'));
 
-        $this->container->get('presta_cms.theme.factory')->initializeForWebsite($website, $configuration);
+        $this->getFactory()->initializeForWebsite($website, $configuration);
     }
 }

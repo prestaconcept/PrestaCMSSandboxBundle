@@ -12,9 +12,7 @@ namespace Application\Presta\CMSCoreBundle\DataFixtures\PHPCR;
 use Doctrine\Common\Persistence\ObjectManager;
 use PHPCR\Util\NodeHelper;
 use Symfony\Component\Yaml\Parser;
-
 use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseRouteFixture;
-
 use Presta\CMSCoreBundle\Doctrine\Phpcr\Website;
 
 /**
@@ -31,7 +29,6 @@ class LoadRoute extends BaseRouteFixture
     {
         $this->manager = $manager;
         $session = $manager->getPhpcrSession();
-        $this->contentPath = '/website/sandbox/page';
 
         //création namespace menu
         NodeHelper::createPath($session, '/website/sandbox/route');
@@ -44,10 +41,10 @@ class LoadRoute extends BaseRouteFixture
             'name' => 'en',
             'locale' => 'en'
         );
-        $home = $this->container->get('presta_cms.route.factory')->create($configuration);
+        $home = $this->getFactory()->create($configuration);
         $configuration['name'] = 'fr';
         $configuration['locale'] = 'fr';
-        $homeFr = $this->container->get('presta_cms.route.factory')->create($configuration);
+        $homeFr = $this->getFactory()->create($configuration);
 
         $yaml = new Parser();
         $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
@@ -58,11 +55,11 @@ class LoadRoute extends BaseRouteFixture
             $pageConfiguration['content_path'] = '/website/sandbox/page' . '/' .  $pageConfiguration['name'];
             $pageConfiguration['parent'] = $home;
             $pageConfiguration['locale'] = 'en';
-            $this->container->get('presta_cms.route.factory')->create($pageConfiguration);
+            $this->getFactory()->create($pageConfiguration);
 
             $pageConfiguration['parent'] = $homeFr;
             $pageConfiguration['locale'] = 'fr';
-            $this->container->get('presta_cms.route.factory')->create($pageConfiguration);
+            $this->getFactory()->create($pageConfiguration);
         }
 
         $this->manager->flush();
