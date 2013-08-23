@@ -2,6 +2,9 @@ imports:
 #    - { resource: '@PrestaCMSThemeBasicBundle/Resources/config/config.yml' }
     - { resource: '@PrestaCMSThemeBasicBundle/Resources/config/theme/creative.yml' }
 
+parameters:
+    presta_cms.page.factory.class: Application\Presta\CMSCoreBundle\Factory\PageFactory
+
 sonata_admin:
   dashboard:
       blocks:

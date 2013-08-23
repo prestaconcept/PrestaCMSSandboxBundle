@@ -14,18 +14,51 @@ pages:
                 fr: "Presta CMS Sandox by Prestaconcept"
         zones:
             content:
-                10:
-                    name: main
-                    type: presta_cms.block.simple
-                    is_editable: true
-                20:
-                    name: media
-                    type: presta_cms.block.media_advanced
-                    is_editable: true
-                30:
-                    name: container
-                    type: presta_cms.block.container
-                    is_editable: true
+                name: content
+                blocks:
+                    10:
+                        name: main
+                        type: presta_cms.block.simple
+                        is_editable: true
+                    20:
+                        name: media
+                        type: presta_cms.block.media_advanced
+                        is_editable: true
+                    30:
+                        name: container
+                        type: presta_cms.block.container
+                        is_editable: true
+                        settings:
+                            en:
+                                title: 'Container example'
+                                layout: '2-cols'
+                            fr:
+                                title: 'Exemple de conteneur'
+                                layout: '2-cols'
+                        children:
+                            10:
+                                name: col1
+                                type: presta_cms.block.simple
+                                is_editable: true
+                                settings:
+                                    en:
+                                        title: 'Left block'
+                                        content: this is just a simple text block
+                                    fr:
+                                        title: 'Block de gauche'
+                                        content: un example de bloc texte
+                            20:
+                                name: col2
+                                type: presta_cms.block.simple
+                                is_editable: true
+                                settings:
+                                    en:
+                                        title: 'Right block'
+                                        content: this is just a simple text block
+                                    fr:
+                                        title: 'Block de droite'
+                                        content: un example de bloc texte
+
         children: []
     demo:
         name: 'demo'
@@ -89,13 +122,15 @@ pages:
                         fr: "Exemple de carousel"
                 zones:
                     content:
-                        10:
-                            name: main
-                            type: presta_cms.block.carousel
-                            is_editable: true
-                            settings:
-                                format: full
-                                gallery: '1'
+                        name: content
+                        blocks:
+                            10:
+                                name: main
+                                type: presta_cms.block.carousel
+                                is_editable: true
+                                settings:
+                                    format: full
+                                    gallery: '1'
             media:
                 name: 'media'
                 template: 'default'
@@ -105,10 +140,12 @@ pages:
                         fr: "Exemple de media avancé"
                 zones:
                     content:
-                        10:
-                            name: main
-                            type: presta_cms.block.media_advanced
-                            is_editable: true
+                        name: content
+                        blocks:
+                            10:
+                                name: main
+                                type: presta_cms.block.media_advanced
+                                is_editable: true
             gallery-vertical:
                 name: 'gallery-vertical'
                 template: 'default'
@@ -118,16 +155,18 @@ pages:
                         fr: "Exemple de gallerie verticale"
                 zones:
                     content:
-                        10:
-                            name: main
-                            type: presta_cms.block.gallery_advanced
-                            is_editable: true
-                            settings:
-                                gallery: '2'
-                                title: Advanced vertical gallery
-                                content: This is an example of a advanced gallery block with a vertical layout
-                                layout: 'vertical'
-                                format: 'vertical'
+                        name: content
+                        blocks:
+                            10:
+                                name: main
+                                type: presta_cms.block.gallery_advanced
+                                is_editable: true
+                                settings:
+                                    gallery: '2'
+                                    title: Advanced vertical gallery
+                                    content: This is an example of a advanced gallery block with a vertical layout
+                                    layout: 'vertical'
+                                    format: 'vertical'
             gallery-horizontal:
                 name: 'gallery-horizontal'
                 template: 'default'
@@ -137,16 +176,18 @@ pages:
                         fr: "Exemple de gallerie horizontal"
                 zones:
                     content:
-                        10:
-                            name: main
-                            type: presta_cms.block.gallery_advanced
-                            is_editable: true
-                            settings:
-                                gallery: '3'
-                                title: Advanced horizontal gallery
-                                content: This is an example of a advanced gallery block with a horizontal layout
-                                layout: 'horizontal'
-                                format: 'horizontal'
+                        name: content
+                        blocks:
+                            10:
+                                name: main
+                                type: presta_cms.block.gallery_advanced
+                                is_editable: true
+                                settings:
+                                    gallery: '3'
+                                    title: Advanced horizontal gallery
+                                    content: This is an example of a advanced gallery block with a horizontal layout
+                                    layout: 'horizontal'
+                                    format: 'horizontal'
 
     projects:
         name: 'projects'
