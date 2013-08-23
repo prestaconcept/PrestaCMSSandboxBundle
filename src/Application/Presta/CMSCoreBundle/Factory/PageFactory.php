@@ -46,6 +46,24 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                 )
             );
         }
+        if ($page['template'] == 'right-sidebar') {
+            $page['zones'] = array(
+                'content' => array(
+                    'name' => 'content',
+                    'blocks' => array(
+                        10 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
+                    )
+                ),
+                'right' => array(
+                    'name' => 'right',
+                    'blocks' => array(
+                        10 => array('type' => 'presta_cms.block.simple'),
+                        20 => array('type' => 'presta_cms.block.media')
+                    )
+                )
+            );
+        }
+
         if (count($page['children']) > 1) {
             $page['zones']['content']['blocks'][20] = array('name' => 'children', 'type' => 'presta_cms.block.page_children');
         }

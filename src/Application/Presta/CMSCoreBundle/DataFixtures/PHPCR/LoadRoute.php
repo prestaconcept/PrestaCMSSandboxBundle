@@ -38,18 +38,31 @@ class LoadRoute extends BaseRouteFixture
         $root = $manager->find(null, '/website/sandbox/route');
 
         //Routing home
-        $homepage = $manager->find(null, '/website/sandbox/page/home');
-        $home = $this->createRoute($root, 'en', $homepage, 'en');
-        $homeFr = $this->createRoute($root, 'fr', $homepage, 'fr');
+        $configuration = array(
+            'parent' => $root,
+            'content_path' => '/website/sandbox/page/home',
+            'name' => 'en',
+            'locale' => 'en'
+        );
+        $home = $this->container->get('presta_cms.route.factory')->create($configuration);
+        $configuration['name'] = 'fr';
+        $configuration['locale'] = 'fr';
+        $homeFr = $this->container->get('presta_cms.route.factory')->create($configuration);
 
         $yaml = new Parser();
         $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
-        foreach ($datas['pages'] as $page) {
-            if ($page['name'] == 'home') {
+        foreach ($datas['pages'] as $pageConfiguration) {
+            if ($pageConfiguration['name'] == 'home') {
                 continue;
             }
-            $this->createRouteForPage($home, 'en', $page, '/website/sandbox/page');
-            $this->createRouteForPage($homeFr, 'fr', $page, '/website/sandbox/page');
+            $pageConfiguration['content_path'] = '/website/sandbox/page' . '/' .  $pageConfiguration['name'];
+            $pageConfiguration['parent'] = $home;
+            $pageConfiguration['locale'] = 'en';
+            $this->container->get('presta_cms.route.factory')->create($pageConfiguration);
+
+            $pageConfiguration['parent'] = $homeFr;
+            $pageConfiguration['locale'] = 'fr';
+            $this->container->get('presta_cms.route.factory')->create($pageConfiguration);
         }
 
         $this->manager->flush();
