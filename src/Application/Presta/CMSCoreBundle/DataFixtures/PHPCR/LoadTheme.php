@@ -98,6 +98,6 @@ class LoadTheme extends AbstractFixture implements ContainerAwareInterface, Orde
             )
         );
 
-        $this->container->get('presta_cms.theme.factory')->initializeForWebsite($website, $configuration);;
+        $this->container->get('presta_cms.theme.factory')->initializeForWebsite($website, $configuration);
     }
 }
