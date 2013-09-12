@@ -132,7 +132,7 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                 break;
 
         }
-        $block['is_editable'] = true;
+        $block['editable'] = true;
 
         return $block;
     }

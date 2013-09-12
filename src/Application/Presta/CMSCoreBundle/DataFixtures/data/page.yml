@@ -19,15 +19,15 @@ pages:
                     10:
                         name: main
                         type: presta_cms.block.simple
-                        is_editable: true
+                        editable: true
                     20:
                         name: media
                         type: presta_cms.block.media_advanced
-                        is_editable: true
+                        editable: true
                     30:
                         name: container
                         type: presta_cms.block.container
-                        is_editable: true
+                        editable: true
                         settings:
                             en:
                                 title: 'Container example'
@@ -39,7 +39,7 @@ pages:
                             10:
                                 name: col1
                                 type: presta_cms.block.simple
-                                is_editable: true
+                                editable: true
                                 settings:
                                     en:
                                         title: 'Left block'
@@ -50,7 +50,7 @@ pages:
                             20:
                                 name: col2
                                 type: presta_cms.block.simple
-                                is_editable: true
+                                editable: true
                                 settings:
                                     en:
                                         title: 'Right block'
@@ -127,7 +127,7 @@ pages:
                             10:
                                 name: main
                                 type: presta_cms.block.carousel
-                                is_editable: true
+                                editable: true
                                 settings:
                                     format: full
                                     gallery: '1'
@@ -145,7 +145,7 @@ pages:
                             10:
                                 name: main
                                 type: presta_cms.block.media_advanced
-                                is_editable: true
+                                editable: true
             gallery-vertical:
                 name: 'gallery-vertical'
                 template: 'default'
@@ -160,7 +160,7 @@ pages:
                             10:
                                 name: main
                                 type: presta_cms.block.gallery_advanced
-                                is_editable: true
+                                editable: true
                                 settings:
                                     gallery: '2'
                                     title: Advanced vertical gallery
@@ -181,7 +181,7 @@ pages:
                             10:
                                 name: main
                                 type: presta_cms.block.gallery_advanced
-                                is_editable: true
+                                editable: true
                                 settings:
                                     gallery: '3'
                                     title: Advanced horizontal gallery
