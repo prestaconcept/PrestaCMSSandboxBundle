@@ -1,6 +1,9 @@
 Presta CMS Sandbox [![Build Status](https://secure.travis-ci.org/prestaconcept/prestacms-sandbox.png)](http://travis-ci.org/prestaconcept/prestacms-sandbox)
 =============
 
+#this is old code based on unstable PrestaCMS 0.1 branch
+#please use the stable version
+
 ##Online demo
 
 :information_source: PrestaCMS Demo is online in english and french :
