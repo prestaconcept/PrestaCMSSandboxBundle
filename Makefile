@@ -29,7 +29,7 @@ r:
 	app/console doctrine:phpcr:fixtures:load --no-interaction
 
 cc:
-	app/console cache:clear --env=prod
+	rm -rf app/cache/*
 
 cs:
 	phpcs --extensions=php -n --standard=PSR2 --report=full src
