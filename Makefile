@@ -13,7 +13,7 @@ deploy-configure:
 	app/console assetic:dump --env=prod
 
 deploy-install:
-	app/console cache:clear --env=prod
+	rm -rf app/cache/*
 	chmod 777 app/database app/logs app/cache
 	chmod 777 app/database/*
 	chmod -R 777 web/uploads
@@ -24,6 +24,9 @@ refresh:
 	app/console doctrine:phpcr:fixtures:load --no-interaction
 	app/console doctrine:fixture:load --no-interaction
 	app/console cache:clear --env=prod
+
+r:
+	app/console doctrine:phpcr:fixtures:load --no-interaction
 
 cc:
 	app/console cache:clear --env=prod
