@@ -1,5 +1,9 @@
-Presta CMS Sandbox [![Build Status](https://secure.travis-ci.org/prestaconcept/prestacms-sandbox.png)](http://travis-ci.org/prestaconcept/prestacms-sandbox)
+Presta CMS Sandbox
 =============
+
+[![Build Status](https://secure.travis-ci.org/prestaconcept/prestacms-sandbox.png)](http://travis-ci.org/prestaconcept/prestacms-sandbox)
+[![Latest Stable Version](https://poser.pugx.org/presta/cms-sandbox/v/stable.png)](https://packagist.org/packages/presta/cms-sandbox)
+[![Total Downloads](https://poser.pugx.org/presta/cms-sandbox/downloads.png)](https://packagist.org/packages/presta/cms-sandbox)
 
 ##Online demo
 

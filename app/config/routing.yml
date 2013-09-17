@@ -26,8 +26,7 @@ PrestaCMSCoreBundle:
 #    resource: @SonataDoctrinePHPCRAdminBundle/Resources/config/routing/phpcrodmbrowser.xml
 #    prefix: /admin/browser
 tree:
-    resource: "@SonataDoctrinePHPCRAdminBundle/Resources/config/routing/phpcrodmbrowser.xml"
-    prefix: /phpcrodmbrowser
+    resource: "@SonataDoctrinePHPCRAdminBundle/Resources/config/routing/tree.xml"
 
 gallery:
     resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'
