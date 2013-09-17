@@ -61,7 +61,7 @@
         "symfony-web-dir":"web",
         "symfony-assets-install":"symlink",
         "branch-alias":{
-            "dev-master":"2.1.x-dev"
+            "dev-master":"0.1.x-dev"
         }
     }
 }
