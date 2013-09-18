@@ -795,12 +795,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/phpcr-odm.git",
-                "reference": "58ed651061a05122ce790104599829f9c26ec4d6"
+                "reference": "709d9d787453165562641d4a7210249bdcb4953f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/58ed651061a05122ce790104599829f9c26ec4d6",
-                "reference": "58ed651061a05122ce790104599829f9c26ec4d6",
+                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/709d9d787453165562641d4a7210249bdcb4953f",
+                "reference": "709d9d787453165562641d4a7210249bdcb4953f",
                 "shasum": ""
             },
             "require": {
@@ -860,7 +860,7 @@
                 "odm",
                 "phpcr"
             ],
-            "time": "2013-09-17 06:33:03"
+            "time": "2013-09-18 07:18:01"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1716,12 +1716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "c48a7cad248f692dc29bfc7781ff93572d56f184"
+                "reference": "600a484e931e046cd9f91c319a77d077ac9c5ce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/c48a7cad248f692dc29bfc7781ff93572d56f184",
-                "reference": "c48a7cad248f692dc29bfc7781ff93572d56f184",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/600a484e931e046cd9f91c319a77d077ac9c5ce6",
+                "reference": "600a484e931e046cd9f91c319a77d077ac9c5ce6",
                 "shasum": ""
             },
             "require": {
@@ -1787,7 +1787,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-09-17 08:24:08"
+            "time": "2013-09-18 07:33:57"
         },
         {
             "name": "presta/cms-media-bundle",
