@@ -170,3 +170,7 @@ As PrestaCMS depends on host configuration, you have to set up virtual hosts for
  * [**PrestaConcept Bundles**](https://github.com/prestaconcept)
  * [**Symfony CMF Documentation**](http://symfony.com/doc/master/cmf/index.html)
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/prestaconcept/prestacms-sandbox/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
