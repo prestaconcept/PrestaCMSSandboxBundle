@@ -795,12 +795,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/phpcr-odm.git",
-                "reference": "709d9d787453165562641d4a7210249bdcb4953f"
+                "reference": "5cc23f907a71eb2eb65f4e082ba40bdc73883745"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/709d9d787453165562641d4a7210249bdcb4953f",
-                "reference": "709d9d787453165562641d4a7210249bdcb4953f",
+                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/5cc23f907a71eb2eb65f4e082ba40bdc73883745",
+                "reference": "5cc23f907a71eb2eb65f4e082ba40bdc73883745",
                 "shasum": ""
             },
             "require": {
@@ -860,7 +860,7 @@
                 "odm",
                 "phpcr"
             ],
-            "time": "2013-09-18 07:18:01"
+            "time": "2013-09-23 16:26:46"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1491,16 +1491,16 @@
         },
         {
             "name": "leafo/lessphp",
-            "version": "dev-master",
+            "version": "v0.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/lessphp.git",
-                "reference": "9cfa4728e186f2679394b903bc2340926062990a"
+                "reference": "a11a6141b5715162b933c405379765d817891c5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/lessphp/zipball/9cfa4728e186f2679394b903bc2340926062990a",
-                "reference": "9cfa4728e186f2679394b903bc2340926062990a",
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/a11a6141b5715162b933c405379765d817891c5d",
+                "reference": "a11a6141b5715162b933c405379765d817891c5d",
                 "shasum": ""
             },
             "type": "library",
@@ -1528,7 +1528,7 @@
             ],
             "description": "lessphp is a compiler for LESS written in PHP.",
             "homepage": "http://leafo.net/lessphp/",
-            "time": "2013-09-11 20:11:27"
+            "time": "2013-03-02 16:13:31"
         },
         {
             "name": "monolog/monolog",
@@ -1716,12 +1716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "600a484e931e046cd9f91c319a77d077ac9c5ce6"
+                "reference": "9aa4af7b4840d6039917afc047f870b8f8809031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/600a484e931e046cd9f91c319a77d077ac9c5ce6",
-                "reference": "600a484e931e046cd9f91c319a77d077ac9c5ce6",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/9aa4af7b4840d6039917afc047f870b8f8809031",
+                "reference": "9aa4af7b4840d6039917afc047f870b8f8809031",
                 "shasum": ""
             },
             "require": {
@@ -1729,7 +1729,7 @@
                 "doctrine/phpcr-odm": "1.0.*@dev",
                 "leafo/lessphp": "0.3.*@dev",
                 "php": ">=5.3.3",
-                "sonata-project/doctrine-phpcr-admin-bundle": "1.0.0-beta5",
+                "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*@dev",
                 "sonata-project/seo-bundle": "2.1.*@dev",
                 "symfony-cmf/block-bundle": "1.0.0-RC2",
                 "symfony-cmf/content-bundle": "1.0.0-RC4",
@@ -1787,7 +1787,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-09-18 07:33:57"
+            "time": "2013-09-24 15:51:37"
         },
         {
             "name": "presta/cms-media-bundle",
@@ -2165,12 +2165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-                "reference": "c5e224cac3aa15b3abd840dfd677fbe4149df40f"
+                "reference": "4e96f86a37b89946f2c204418af0b56826bb3798"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/c5e224cac3aa15b3abd840dfd677fbe4149df40f",
-                "reference": "c5e224cac3aa15b3abd840dfd677fbe4149df40f",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/4e96f86a37b89946f2c204418af0b56826bb3798",
+                "reference": "4e96f86a37b89946f2c204418af0b56826bb3798",
                 "shasum": ""
             },
             "require": {
@@ -2218,7 +2218,7 @@
                 "block",
                 "sonata"
             ],
-            "time": "2013-09-05 08:50:39"
+            "time": "2013-09-20 08:30:37"
         },
         {
             "name": "sonata-project/doctrine-extensions",
@@ -2327,17 +2327,17 @@
         },
         {
             "name": "sonata-project/doctrine-phpcr-admin-bundle",
-            "version": "1.0.0-beta5",
+            "version": "dev-master",
             "target-dir": "Sonata/DoctrinePHPCRAdminBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrinePhpcrAdminBundle.git",
-                "reference": "2622ef22b153c8c96231d99c2a5cb436247dcfbc"
+                "reference": "d98dc716cddd19450b7502c9b0e416fa51ecc663"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrinePhpcrAdminBundle/zipball/2622ef22b153c8c96231d99c2a5cb436247dcfbc",
-                "reference": "2622ef22b153c8c96231d99c2a5cb436247dcfbc",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrinePhpcrAdminBundle/zipball/d98dc716cddd19450b7502c9b0e416fa51ecc663",
+                "reference": "d98dc716cddd19450b7502c9b0e416fa51ecc663",
                 "shasum": ""
             },
             "require": {
@@ -2385,7 +2385,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-09-09 12:51:58"
+            "time": "2013-09-23 16:36:11"
         },
         {
             "name": "sonata-project/easy-extends-bundle",
@@ -2695,12 +2695,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataSeoBundle.git",
-                "reference": "93155fbdca827c019613b92c50731e7d1f11d6db"
+                "reference": "bfa44cd3ff245010141503f3977d51b849a12614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataSeoBundle/zipball/93155fbdca827c019613b92c50731e7d1f11d6db",
-                "reference": "93155fbdca827c019613b92c50731e7d1f11d6db",
+                "url": "https://api.github.com/repos/sonata-project/SonataSeoBundle/zipball/bfa44cd3ff245010141503f3977d51b849a12614",
+                "reference": "bfa44cd3ff245010141503f3977d51b849a12614",
                 "shasum": ""
             },
             "require": {
@@ -2740,7 +2740,7 @@
                 "seo",
                 "sonata"
             ],
-            "time": "2013-07-05 17:11:16"
+            "time": "2013-09-20 08:30:43"
         },
         {
             "name": "stfalcon/tinymce-bundle",
