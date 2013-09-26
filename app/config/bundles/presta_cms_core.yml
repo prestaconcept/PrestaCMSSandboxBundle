@@ -1,5 +1,4 @@
 imports:
-#    - { resource: '@PrestaCMSThemeBasicBundle/Resources/config/config.yml' }
     - { resource: '@PrestaCMSThemeBasicBundle/Resources/config/theme/creative.yml' }
 
 parameters:

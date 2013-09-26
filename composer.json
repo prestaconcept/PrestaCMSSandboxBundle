@@ -36,7 +36,7 @@
 
         "jackalope/jackalope-doctrine-dbal": "1.0.0-beta3",
 
-        "stfalcon/tinymce-bundle":"0.3.*@dev"
+        "stfalcon/tinymce-bundle":"v0.3.1"
     },
     "scripts":{
         "post-install-cmd":[

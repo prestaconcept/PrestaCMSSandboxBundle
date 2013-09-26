@@ -1,0 +1,7 @@
+stfalcon_tinymce:
+    include_jquery: false
+    tinymce_jquery: true
+    selector: ":not(.no-wysiwyg)"
+    theme:
+        simple:
+            theme: "modern"

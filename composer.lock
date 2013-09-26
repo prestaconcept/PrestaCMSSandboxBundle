@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9719fa4fb581910397f367a34b6ae7f4",
+    "hash": "2572503ddc393cea40317cf942a7fb4f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2744,17 +2744,17 @@
         },
         {
             "name": "stfalcon/tinymce-bundle",
-            "version": "dev-master",
+            "version": "v0.3.1",
             "target-dir": "Stfalcon/Bundle/TinymceBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stfalcon/TinymceBundle.git",
-                "reference": "v0.3.0"
+                "reference": "cd00aa03c1d47067cf64216e3ecfa2605deab191"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stfalcon/TinymceBundle/zipball/v0.3.0",
-                "reference": "v0.3.0",
+                "url": "https://api.github.com/repos/stfalcon/TinymceBundle/zipball/cd00aa03c1d47067cf64216e3ecfa2605deab191",
+                "reference": "cd00aa03c1d47067cf64216e3ecfa2605deab191",
                 "shasum": ""
             },
             "require": {
@@ -2798,7 +2798,7 @@
                 "tinymce",
                 "wysiwyg"
             ],
-            "time": "2013-07-30 07:59:56"
+            "time": "2013-09-16 06:40:50"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3726,8 +3726,7 @@
         "presta/cms-core-bundle": 20,
         "presta/cms-media-bundle": 10,
         "presta/cms-theme-basic-bundle": 10,
-        "jackalope/jackalope-doctrine-dbal": 10,
-        "stfalcon/tinymce-bundle": 20
+        "jackalope/jackalope-doctrine-dbal": 10
     },
     "platform": {
         "php": ">=5.3.3"

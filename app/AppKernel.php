@@ -19,7 +19,6 @@ class AppKernel extends Kernel
 
             //Sonata
             new Sonata\BlockBundle\SonataBlockBundle(),
-//            new Sonata\CacheBundle\SonataCacheBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
