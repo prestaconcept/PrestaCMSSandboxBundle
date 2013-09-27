@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2572503ddc393cea40317cf942a7fb4f",
+    "hash": "41567d90b3ee67090ed8aac390abfc60",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -78,16 +78,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "2c9761ff1d13e188d5f7378066c1ce2882d7a336"
+                "reference": "d0e4447707a064a5814b18cb0dcc2f24185f6179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/2c9761ff1d13e188d5f7378066c1ce2882d7a336",
-                "reference": "2c9761ff1d13e188d5f7378066c1ce2882d7a336",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/d0e4447707a064a5814b18cb0dcc2f24185f6179",
+                "reference": "d0e4447707a064a5814b18cb0dcc2f24185f6179",
                 "shasum": ""
             },
             "require": {
@@ -143,7 +143,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2013-08-07 16:04:25"
+            "time": "2013-09-26 19:23:25"
         },
         {
             "name": "doctrine/collections",
@@ -860,7 +860,7 @@
                 "odm",
                 "phpcr"
             ],
-            "time": "2013-09-23 16:26:46"
+            "time": "2013-08-19 16:23:43"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1648,16 +1648,16 @@
         },
         {
             "name": "phpcr/phpcr-utils",
-            "version": "dev-master",
+            "version": "1.0.0-beta14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpcr/phpcr-utils.git",
-                "reference": "457694736bc79591cfa15759347d7425aac058d1"
+                "reference": "7003ffb510c908155e61713215bba658abb6a554"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpcr/phpcr-utils/zipball/457694736bc79591cfa15759347d7425aac058d1",
-                "reference": "457694736bc79591cfa15759347d7425aac058d1",
+                "url": "https://api.github.com/repos/phpcr/phpcr-utils/zipball/7003ffb510c908155e61713215bba658abb6a554",
+                "reference": "7003ffb510c908155e61713215bba658abb6a554",
                 "shasum": ""
             },
             "require": {
@@ -1678,7 +1678,6 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT",
                 "Apache-2.0"
             ],
             "authors": [
@@ -1707,7 +1706,7 @@
                 "contentrepository",
                 "phpcr"
             ],
-            "time": "2013-08-28 21:17:36"
+            "time": "2013-07-26 10:37:28"
         },
         {
             "name": "presta/cms-core-bundle",
@@ -1716,18 +1715,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "9aa4af7b4840d6039917afc047f870b8f8809031"
+                "reference": "a7644982262787bc535fa065688dcaeaae94a6ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/9aa4af7b4840d6039917afc047f870b8f8809031",
-                "reference": "9aa4af7b4840d6039917afc047f870b8f8809031",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/a7644982262787bc535fa065688dcaeaae94a6ec",
+                "reference": "a7644982262787bc535fa065688dcaeaae94a6ec",
                 "shasum": ""
             },
             "require": {
                 "doctrine/phpcr-bundle": "1.0.0-beta4",
                 "doctrine/phpcr-odm": "1.0.*@dev",
-                "leafo/lessphp": "0.3.*@dev",
+                "leafo/lessphp": "~0.3",
                 "php": ">=5.3.3",
                 "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*@dev",
                 "sonata-project/seo-bundle": "2.1.*@dev",
@@ -1787,21 +1786,21 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-09-24 15:51:37"
+            "time": "2013-09-27 10:47:33"
         },
         {
             "name": "presta/cms-media-bundle",
-            "version": "1.0.0-beta1",
+            "version": "dev-master",
             "target-dir": "Presta/CMSMediaBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSMediaBundle.git",
-                "reference": "6373cd4f6e8668febaaf52d9c49677053a9072dd"
+                "reference": "9d6d6145030bae7fb6fd0236435950e9022fd463"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSMediaBundle/zipball/6373cd4f6e8668febaaf52d9c49677053a9072dd",
-                "reference": "6373cd4f6e8668febaaf52d9c49677053a9072dd",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSMediaBundle/zipball/9d6d6145030bae7fb6fd0236435950e9022fd463",
+                "reference": "9d6d6145030bae7fb6fd0236435950e9022fd463",
                 "shasum": ""
             },
             "require": {
@@ -1843,21 +1842,21 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-09-17 06:56:19"
+            "time": "2013-09-20 13:28:54"
         },
         {
             "name": "presta/cms-theme-basic-bundle",
-            "version": "1.0.0-beta1",
+            "version": "dev-master",
             "target-dir": "Presta/CMSThemeBasicBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSThemeBasicBundle.git",
-                "reference": "7287ce3fa13bc659be96a43aae6111cd0eff5f6f"
+                "reference": "9000841a3336ab4dba5cdf1c09512cfe96ea9d2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/7287ce3fa13bc659be96a43aae6111cd0eff5f6f",
-                "reference": "7287ce3fa13bc659be96a43aae6111cd0eff5f6f",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/9000841a3336ab4dba5cdf1c09512cfe96ea9d2a",
+                "reference": "9000841a3336ab4dba5cdf1c09512cfe96ea9d2a",
                 "shasum": ""
             },
             "require": {
@@ -1899,7 +1898,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-09-17 06:50:33"
+            "time": "2013-09-20 14:29:39"
         },
         {
             "name": "psr/log",
@@ -2332,19 +2331,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrinePhpcrAdminBundle.git",
-                "reference": "d98dc716cddd19450b7502c9b0e416fa51ecc663"
+                "reference": "b6a1e79b1d3666ce060794830341e0ceb994a77b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrinePhpcrAdminBundle/zipball/d98dc716cddd19450b7502c9b0e416fa51ecc663",
-                "reference": "d98dc716cddd19450b7502c9b0e416fa51ecc663",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrinePhpcrAdminBundle/zipball/b6a1e79b1d3666ce060794830341e0ceb994a77b",
+                "reference": "b6a1e79b1d3666ce060794830341e0ceb994a77b",
                 "shasum": ""
             },
             "require": {
                 "doctrine/phpcr-bundle": "1.0.*",
                 "doctrine/phpcr-odm": "1.0.*",
                 "php": ">=5.3.3",
-                "sonata-project/admin-bundle": "~2.2.3",
+                "sonata-project/admin-bundle": "~2.2.5",
                 "symfony-cmf/tree-browser-bundle": "1.0.*",
                 "symfony/framework-bundle": "~2.2",
                 "symfony/property-access": "~2.2"
@@ -2385,7 +2384,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-09-23 16:36:11"
+            "time": "2013-09-27 12:01:14"
         },
         {
             "name": "sonata-project/easy-extends-bundle",
@@ -3724,8 +3723,8 @@
         "sonata-project/doctrine-orm-admin-bundle": 20,
         "sonata-project/easy-extends-bundle": 20,
         "presta/cms-core-bundle": 20,
-        "presta/cms-media-bundle": 10,
-        "presta/cms-theme-basic-bundle": 10,
+        "presta/cms-media-bundle": 20,
+        "presta/cms-theme-basic-bundle": 20,
         "jackalope/jackalope-doctrine-dbal": 10
     },
     "platform": {

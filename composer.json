@@ -31,8 +31,8 @@
         "doctrine/doctrine-fixtures-bundle":"2.1.*",
 
         "presta/cms-core-bundle": "1.0.*@dev",
-        "presta/cms-media-bundle":"1.0.0-beta1",
-        "presta/cms-theme-basic-bundle":"1.0.0-beta1",
+        "presta/cms-media-bundle":"1.0.*@dev",
+        "presta/cms-theme-basic-bundle":"1.0.*@dev",
 
         "jackalope/jackalope-doctrine-dbal": "1.0.0-beta3",
 
