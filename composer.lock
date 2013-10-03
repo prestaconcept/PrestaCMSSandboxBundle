@@ -860,7 +860,7 @@
                 "odm",
                 "phpcr"
             ],
-            "time": "2013-08-19 16:23:43"
+            "time": "2013-09-23 16:26:46"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1851,12 +1851,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSThemeBasicBundle.git",
-                "reference": "9000841a3336ab4dba5cdf1c09512cfe96ea9d2a"
+                "reference": "7708bfddcb47440a0acfdc74fbc8a530c41c6c66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/9000841a3336ab4dba5cdf1c09512cfe96ea9d2a",
-                "reference": "9000841a3336ab4dba5cdf1c09512cfe96ea9d2a",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/7708bfddcb47440a0acfdc74fbc8a530c41c6c66",
+                "reference": "7708bfddcb47440a0acfdc74fbc8a530c41c6c66",
                 "shasum": ""
             },
             "require": {
@@ -1898,7 +1898,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-09-20 14:29:39"
+            "time": "2013-09-26 16:07:29"
         },
         {
             "name": "psr/log",
