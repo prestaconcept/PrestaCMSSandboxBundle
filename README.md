@@ -101,14 +101,18 @@ Sandbox is configured to work on SQLite. Database file will be create it app/dat
     app/console doctrine:database:create
     app/console doctrine:schema:create
     chmod 777 app/database app/logs app/cache
-    chmod 777 app/database/*
-    app/console doctrine:phpcr:init:dbal
-    app/console doctrine:phpcr:register-system-node-types
+    app/console doctrine:phpcr:repository:init
     app/console doctrine:phpcr:fixtures:load --no-interaction
+    app/console doctrine:fixture:load --no-interaction
+    app/console assetic:dump --env=prod
 
 If you have 'make' installed on your machine, you can use the install command
 
     make install
+
+Another command to reload fixtures:
+
+    make refresh
 
 :speech_balloon: : if you have a permission denied error, you just need to add the execution right on your console
 
@@ -126,8 +130,8 @@ As PrestaCMS depends on host configuration, you have to set up virtual hosts for
 
 **/etc/hosts**
 
-    127.0.0.1 sandbox.prestacms.com.local
-    127.0.0.1 sandbox.prestacms.fr.local
+    127.0.0.1 sandbox.prestacms.com
+    127.0.0.1 sandbox.prestacms.fr
 
 **vhosts.conf**
 
@@ -135,8 +139,8 @@ As PrestaCMS depends on host configuration, you have to set up virtual hosts for
     <VirtualHost 127.0.0.1:80>
         DocumentRoot /home/nbastien/www/prestaconcept/prestacms-sandbox/web
 
-        Servername sandbox.prestacms.com.local
-        Serveralias sandbox.prestacms.fr.local
+        Servername sandbox.prestacms.com
+        Serveralias sandbox.prestacms.fr
 
         ErrorLog "/var/log/apache2/prestacms-sandbox-error.log"
         CustomLog "/var/log/apache2/prestacms-sandbox-access.log" common
