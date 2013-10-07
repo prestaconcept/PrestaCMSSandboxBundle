@@ -7,6 +7,7 @@ install:
 	app/console doctrine:fixture:load --no-interaction
 	chmod 777 app/database
 	chmod 777 app/database/*
+	app/console assetic:dump --env=prod
 
 deploy-configure:
 	curl -s http://getcomposer.org/installer | php
