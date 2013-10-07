@@ -104,6 +104,7 @@ Sandbox is configured to work on SQLite. Database file will be create it app/dat
     app/console doctrine:phpcr:repository:init
     app/console doctrine:phpcr:fixtures:load --no-interaction
     app/console doctrine:fixture:load --no-interaction
+    app/console assets:install --symlink
     app/console assetic:dump --env=prod
 
 If you have 'make' installed on your machine, you can use the install command
