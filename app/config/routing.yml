@@ -1,3 +1,7 @@
+presta_cms_contact:
+    resource: "@PrestaCMSContactBundle/Resources/config/routing.xml"
+    prefix:   /
+
 sandbox_service:
     resource: "@SandboxServiceBundle/Controller/"
     type:     annotation
@@ -15,7 +19,7 @@ _sonata_admin:
 
 #override sonata routes
 sonata_admin_dashboard:
-    pattern: /admin
+    pattern: /admin/dashboard
     defaults: { _controller: SonataAdminBundle:Core:dashboard }
 
 PrestaCMSCoreBundle:

@@ -3,7 +3,13 @@
 
 {# Add google analytics tags #}
 {% block javascripts %}
-    {{ parent() }}
+    {% javascripts
+        '@PrestaCMSThemeBasicBundle/Resources/public/libs/js/jquery.js'
+        '@PrestaCMSThemeBasicBundle/Resources/public/libs/bootstrap/js/*.js'
+        '@PrestaCMSContactBundle/Resources/public/js/prestacmscontact.js'
+    %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
 
     {% if (app.request.host == 'sandbox.prestacms.com') %}
         <script>

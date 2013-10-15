@@ -1,0 +1,9 @@
+parameters:
+    presta_cms_contact.strategy.email.from: no-reply@prestacms-sandbox.com
+    presta_cms_contact.strategy.email.to: no-reply@prestacms-sandbox.com
+    presta_cms_contact.strategy.email.class: Application\Presta\CMSContactBundle\Strategy\EmailStrategy
+
+presta_cms_contact:
+    persistence:
+        orm:
+            enabled: true
