@@ -226,3 +226,26 @@ pages:
             title:
                 en: "About"
                 fr: "A propos"
+        zones:
+            left:
+                name: left
+                blocks:
+                    10:
+                        name: main
+                        type: presta_cms.block.simple
+                        editable: true
+                    20:
+                        name: media
+                        type: presta_cms.block.media
+                        editable: true
+            content:
+                name: content
+                blocks:
+                    10:
+                        name: main
+                        type: presta_cms.block.simple
+                        editable: true
+                    20:
+                        name: contact
+                        type: presta_cms_contact.block.contact
+                        editable: true

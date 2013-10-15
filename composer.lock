@@ -1726,12 +1726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSContactBundle.git",
-                "reference": "44471a2feb360173cd2483e482eea33f5020718b"
+                "reference": "8b57ec46179a40c448373beeb80e6f30584a534a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSContactBundle/zipball/44471a2feb360173cd2483e482eea33f5020718b",
-                "reference": "44471a2feb360173cd2483e482eea33f5020718b",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSContactBundle/zipball/8b57ec46179a40c448373beeb80e6f30584a534a",
+                "reference": "8b57ec46179a40c448373beeb80e6f30584a534a",
                 "shasum": ""
             },
             "require": {
