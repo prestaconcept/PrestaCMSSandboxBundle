@@ -4,8 +4,8 @@ parameters:
     database_port:     ~
     database_name:     prestacms_sandbox
     database_user:     root
-    database_password: ~
-    database_path:     '%kernel.root_dir%/database/app.sqlite'
+    database_password: root
+    database_path:     %kernel.root_dir%/database/app.sqlite
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1

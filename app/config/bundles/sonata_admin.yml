@@ -38,3 +38,9 @@ sonata_admin:
             - { position: right, type: sonata.admin.block.admin_list }
         groups:
             sonata_media: ~
+
+            presta_cms_contact:
+                label_catalogue: PrestaCMSContactBundle
+                items:
+                    - presta_cms_contact.admin.contact
+                    - presta_cms_contact.admin.message

@@ -8,6 +8,7 @@ imports:
     - { resource: bundles/sonata_media.yml }
     - { resource: bundles/presta_cms_core.yml }
     - { resource: bundles/stfalcon_tinymce.yml }
+    - { resource: bundles/presta_cms_contact.yml }
 
 framework:
     #esi:             ~
@@ -38,6 +39,7 @@ assetic:
         - ApplicationPrestaCMSCoreBundle
         - PrestaCMSCoreBundle
         - PrestaCMSThemeBasicBundle
+        - PrestaCMSContactBundle
 
     filters:
         cssrewrite: ~

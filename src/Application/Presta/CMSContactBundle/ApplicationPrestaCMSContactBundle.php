@@ -7,7 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Application\Presta\CMSCoreBundle;
+namespace Application\Presta\CMSContactBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -17,15 +17,15 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  * References :
  *   bundles : http://symfony.com/doc/current/book/bundles.html
  *
- * @author     Nicolas Bastien <nbastien@prestaconcept.net>
+ * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class ApplicationPrestaCMSCoreBundle extends Bundle
+class ApplicationPrestaCMSContactBundle extends Bundle
 {
     /**
      * {@inheritdoc}
      */
     public function getParent()
     {
-        return 'PrestaCMSCoreBundle';
+        return 'PrestaCMSContactBundle';
     }
 }
