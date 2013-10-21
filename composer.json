@@ -30,12 +30,18 @@
 
         "doctrine/doctrine-fixtures-bundle": "v2.2.0",
 
-        "presta/cms-core-bundle": "1.0.*@dev",
-        "presta/cms-media-bundle":"1.0.*@dev",
-        "presta/cms-theme-basic-bundle":"1.0.*@dev",
-        "presta/cms-contact-bundle":"1.0.*@dev",
+        "presta/presta-cms": "1.0.0",
 
-        "jackalope/jackalope-doctrine-dbal": "1.0.0-RC3",
+        "doctrine/phpcr-bundle": "1.0.0",
+        "doctrine/phpcr-odm": "1.0.0",
+        "symfony-cmf/core-bundle": "1.0.0",
+        "symfony-cmf/content-bundle": "1.0.0",
+        "symfony-cmf/menu-bundle": "1.0.0",
+        "symfony-cmf/block-bundle": "1.0.0",
+        "symfony-cmf/routing-bundle": "1.1.0",
+        "symfony-cmf/tree-browser-bundle": "1.0.0",
+
+        "jackalope/jackalope-doctrine-dbal": "1.0.0",
 
         "stfalcon/tinymce-bundle":"v0.3.1"
     },
