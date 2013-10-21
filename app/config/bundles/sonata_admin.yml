@@ -33,7 +33,7 @@ sonata_admin:
                             Presta CMS is based on Symfony CMF so we would like to thanks people working on it.
                         </p>
                         <p>
-                            Presta CMS is sponsored by <a href="www.prestaconcept.net">PrestaConcept</a>
+                            Presta CMS is sponsored by <a href="http://www.prestaconcept.net">PrestaConcept</a>
                         </p>
             - { position: right, type: sonata.admin.block.admin_list }
         groups:
