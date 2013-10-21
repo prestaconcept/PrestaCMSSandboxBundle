@@ -59,17 +59,17 @@ apache:
         - rewrite
     vhosts:
         P4CU15CVGjGm:
-            servername: dev-sandbox.prestacms.com
+            servername: dev-prestacms-sandbox.com
             serveraliases:
-                - www.dev-sandbox.prestacms.com
+                - www.dev-prestacms-sandbox.com
             docroot: /var/www/web
             port: '80'
             setenv:
                 - 'APP_ENV dev'
         yLyn6qSOdjVA:
-            servername: dev-sandbox.prestacms.fr
+            servername: dev-prestacms-sandbox.fr
             serveraliases:
-                - dev-sandbox.prestacms.fr
+                - dev-prestacms-sandbox.fr
             docroot: /var/www/web
             port: '80'
             setenv:
