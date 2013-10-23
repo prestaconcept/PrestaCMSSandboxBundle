@@ -1,3 +1,7 @@
+presta_google_analytics_dashboard:
+    resource: "@PrestaGoogleAnalyticsDashboardBundle/Resources/config/routing.xml"
+    prefix:   /admin
+
 presta_cms_contact:
     resource: "@PrestaCMSContactBundle/Resources/config/routing.xml"
     prefix:   /

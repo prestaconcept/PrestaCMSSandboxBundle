@@ -57,6 +57,7 @@ class AppKernel extends Kernel
 
             new Sandbox\ServiceBundle\SandboxServiceBundle(),
             new Presta\CMSContactBundle\PrestaCMSContactBundle(),
+            new Presta\GoogleAnalyticsDashboardBundle\PrestaGoogleAnalyticsDashboardBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

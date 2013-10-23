@@ -3,3 +3,4 @@ sonata_block:
     blocks:
         sonata.block.service.text:
         sonata.admin.block.admin_list:
+        presta_google_analytics_dashboard.block.dashboard:

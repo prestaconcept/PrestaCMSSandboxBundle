@@ -31,6 +31,7 @@
         "doctrine/doctrine-fixtures-bundle": "v2.2.0",
 
         "presta/presta-cms": "1.0.0",
+        "presta/google-analytics-dashboard-bundle": "1.0.*",
 
         "doctrine/phpcr-bundle": "1.0.0",
         "doctrine/phpcr-odm": "1.0.0",
