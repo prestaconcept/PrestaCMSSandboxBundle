@@ -1,11 +1,17 @@
+def Kernel.is_windows?
+    # Detect if we are running on Windows
+    processor, platform, *rest = RUBY_PLATFORM.split("-")
+    platform == 'mingw32'
+end
+
 Vagrant.configure("2") do |config|
   config.vm.box = "precise64"
   config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210.box"
 
   config.vm.network "private_network", ip: "172.22.22.23"
 
-
-  config.vm.synced_folder "..", "/var/www", id: "webroot", :nfs => true
+  nfs = !Kernel.is_windows?
+  config.vm.synced_folder "..", "/var/www", id: "webroot", :nfs => nfs
 
   config.vm.usable_port_range = (2200..2250)
   config.vm.provider :virtualbox do |virtualbox|
