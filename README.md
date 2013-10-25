@@ -159,7 +159,9 @@ As PrestaCMS depends on host configuration, you have to set up virtual hosts for
         </Directory>
     </VirtualHost>
 
+### Getting started using Vagrant
 
+please checkout the [README.md](vagrant) in the vagrant/ folder of the project
 
 ## Ask for help ##
 
