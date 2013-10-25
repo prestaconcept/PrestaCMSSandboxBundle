@@ -1,0 +1,121 @@
+---
+vagrantfile-local:
+    vm:
+        box: precise64
+        box_url: 'http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210.box'
+        hostname: null
+        network:
+            private_network: 172.22.22.23
+            forwarded_port:
+                0ZyBcof6cl8J:
+                    host: ''
+                    guest: ''
+        provider:
+            virtualbox:
+                modifyvm:
+                    name: sandbox.prestacms
+                    natdnshostresolver1: on
+                    memory: '1024'
+                setextradata:
+                    VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root: 1
+        provision:
+            puppet:
+                manifests_path: puppet/manifests
+                options:
+                    - --verbose
+                    - '--hiera_config /vagrant/hiera.yaml'
+                    - '--parser future'
+        synced_folder:
+            AYeOj6AJbydG:
+                id: webroot
+                source: ..
+                target: /var/www
+                nfs: 'false'
+        usable_port_range: 2200..2250
+    ssh:
+        host: null
+        port: null
+        private_key_path: null
+        username: vagrant
+        guest_port: null
+        keep_alive: true
+        forward_agent: false
+        forward_x11: false
+        shell: 'bash -l'
+    vagrant:
+        host: ':detect'
+server:
+    packages:
+        - build-essential
+        - vim
+        - curl
+        - git-core
+    dot_files:
+        -
+            bash_aliases: null
+apache:
+    modules:
+        - php
+        - rewrite
+    vhosts:
+        P4CU15CVGjGm:
+            servername: dev-prestacms-sandbox.com
+            serveraliases:
+                - www.dev-prestacms-sandbox.com
+            docroot: /var/www/web
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+        yLyn6qSOdjVA:
+            servername: dev-prestacms-sandbox.fr
+            serveraliases:
+                - www.dev-prestacms-sandbox.fr
+            docroot: /var/www/web
+            port: '80'
+            setenv:
+                - 'APP_ENV dev'
+    user: www-data
+    group: www-data
+    default_vhost: true
+    mpm_module: prefork
+php:
+    version: '54'
+    composer: '1'
+    modules:
+        php:
+            - cli
+            - curl
+            - intl
+            - mcrypt
+            - sqlite
+            - gd
+        pear: {  }
+        pecl:
+            - pecl_http
+            - APC
+    ini:
+        display_errors: On
+        error_reporting: '-1'
+    timezone: UTC
+xdebug:
+    install: 0
+    settings:
+        xdebug.default_enable: '1'
+        xdebug.remote_autostart: '0'
+        xdebug.remote_connect_back: '1'
+        xdebug.remote_enable: '1'
+        xdebug.remote_handler: dbgp
+        xdebug.remote_port: '9000'
+mysql:
+    root_password: '123'
+    phpmyadmin: 0
+    databases:
+        TSZPeRDthtWt:
+            grant:
+                - ALL
+            name: prestacms_sandbox
+            host: localhost
+            user: local
+            password: local
+            sql_file: ''
+
