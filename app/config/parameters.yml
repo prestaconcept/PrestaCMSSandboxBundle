@@ -15,3 +15,8 @@ parameters:
     locale:            en
     locales:           [en, fr]
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    presta_google_analytics_dashboard.client_id: "YOUR_CLIENT_ID@developer.gserviceaccount.com"
+    presta_google_analytics_dashboard.profile_id: "ga:YOUR_PROFIL_ID"
+    presta_google_analytics_dashboard.private_key_file: "%kernel.root_dir%/Resources/bin/prestacms-sandbox-privatekey.p12"
+
