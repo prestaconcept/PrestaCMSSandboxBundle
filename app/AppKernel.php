@@ -48,7 +48,6 @@ class AppKernel extends Kernel
 
             //Utils
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
-            new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
 
             //PrestaCMS-Sandbox
             new Application\Sonata\AdminBundle\ApplicationSonataAdminBundle(),
@@ -57,6 +56,9 @@ class AppKernel extends Kernel
 
             new Sandbox\ServiceBundle\SandboxServiceBundle(),
             new Presta\CMSContactBundle\PrestaCMSContactBundle(),
+
+            new CoopTilleuls\Bundle\CKEditorSonataMediaBundle\CoopTilleulsCKEditorSonataMediaBundle(),
+            new Presta\ComposerPublicBundle\PrestaComposerPublicBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -3,8 +3,18 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d49b3ae5333441906d93486f7b3521ed",
+    "hash": "58a3235af40b70a1b71ac6e05d053231",
     "packages": [
+        {
+            "name": "ckeditor/ckeditor",
+            "version": "4.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                "reference": "tags/4.2.2/standard"
+            },
+            "type": "library"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.1.2",
@@ -867,6 +877,61 @@
                 "phpcr"
             ],
             "time": "2013-10-10 20:54:13"
+        },
+        {
+            "name": "egeloen/ckeditor-bundle",
+            "version": "dev-master",
+            "target-dir": "Ivory/CKEditorBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/egeloen/IvoryCKEditorBundle.git",
+                "reference": "f8cb2dc814d3f2cacaba153ba5da940e5964d839"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/egeloen/IvoryCKEditorBundle/zipball/f8cb2dc814d3f2cacaba153ba5da940e5964d839",
+                "reference": "f8cb2dc814d3f2cacaba153ba5da940e5964d839",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/form": ">=2.1",
+                "symfony/framework-bundle": ">=2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "twig/twig": "1.*"
+            },
+            "suggest": {
+                "helios-ag/fm-elfinder-bundle": "Allows to use the elfinder as CKEditor file manager",
+                "twig/twig": "Allows to use Ivory CKEditor twig templates"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Ivory\\CKEditorBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric GELOEN",
+                    "email": "geloen.eric@gmail.com"
+                }
+            ],
+            "description": "Provides a CKEditor integration for your Symfony2 Project.",
+            "keywords": [
+                "CKEditor"
+            ],
+            "time": "2013-10-09 16:54:18"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1786,12 +1851,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "6ccb851e5278ac5cf46399a2d34fe66556af20ad"
+                "reference": "bae808fb613c9393ad17f5bdee264982e1d0e541"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/6ccb851e5278ac5cf46399a2d34fe66556af20ad",
-                "reference": "6ccb851e5278ac5cf46399a2d34fe66556af20ad",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/bae808fb613c9393ad17f5bdee264982e1d0e541",
+                "reference": "bae808fb613c9393ad17f5bdee264982e1d0e541",
                 "shasum": ""
             },
             "require": {
@@ -1800,7 +1865,7 @@
                 "leafo/lessphp": "0.3.*",
                 "php": ">=5.3.3",
                 "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*",
-                "sonata-project/seo-bundle": "2.1.*@dev",
+                "sonata-project/seo-bundle": "1.1.*",
                 "symfony-cmf/block-bundle": "1.0.*",
                 "symfony-cmf/content-bundle": "1.0.*",
                 "symfony-cmf/core-bundle": "1.0.*",
@@ -1857,7 +1922,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-21 10:44:24"
+            "time": "2013-10-28 16:16:30"
         },
         {
             "name": "presta/cms-media-bundle",
@@ -1970,6 +2035,66 @@
                 "symfony-cmf"
             ],
             "time": "2013-10-15 10:23:23"
+        },
+        {
+            "name": "presta/composer-public-bundle",
+            "version": "dev-master",
+            "target-dir": "Presta/ComposerPublicBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prestaconcept/PrestaComposerPublicBundle.git",
+                "reference": "0797c85640557a7749ebb98212bc03903b142e57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaComposerPublicBundle/zipball/0797c85640557a7749ebb98212bc03903b142e57",
+                "reference": "0797c85640557a7749ebb98212bc03903b142e57",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/symfony": ">=2.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Presta\\ComposerPublicBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Epely",
+                    "email": "depely@prestaconcept.net",
+                    "role": "Initial developer"
+                },
+                {
+                    "name": "Nicolas Joubert",
+                    "email": "njoubert@prestaconcept.net",
+                    "role": "Maintainer, Developer"
+                }
+            ],
+            "description": "A symfony 2 bundle that provides a simple way to include public 3rd-party libraries (javascripts, css, pictures ...) into your projects and keep its up-to-date.",
+            "keywords": [
+                "3rd party",
+                "Symfony2",
+                "bundle",
+                "css",
+                "javascript",
+                "prestaconcept",
+                "public"
+            ],
+            "time": "2013-10-07 07:18:34"
         },
         {
             "name": "presta/presta-cms",
@@ -2822,12 +2947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataSeoBundle.git",
-                "reference": "1e02de74d815b396492574b47510b8fb422ac635"
+                "reference": "407375b81c4b1923b838e7d31869af69ed6e11f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataSeoBundle/zipball/1e02de74d815b396492574b47510b8fb422ac635",
-                "reference": "1e02de74d815b396492574b47510b8fb422ac635",
+                "url": "https://api.github.com/repos/sonata-project/SonataSeoBundle/zipball/407375b81c4b1923b838e7d31869af69ed6e11f6",
+                "reference": "407375b81c4b1923b838e7d31869af69ed6e11f6",
                 "shasum": ""
             },
             "require": {
@@ -2838,7 +2963,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -2867,7 +2992,7 @@
                 "seo",
                 "sonata"
             ],
-            "time": "2013-10-03 16:32:24"
+            "time": "2013-10-24 10:38:02"
         },
         {
             "name": "stfalcon/tinymce-bundle",
@@ -3739,6 +3864,62 @@
                 "framework"
             ],
             "time": "2013-10-01 17:10:09"
+        },
+        {
+            "name": "tilleuls/ckeditor-sonata-media-bundle",
+            "version": "dev-master",
+            "target-dir": "CoopTilleuls/Bundle/CKEditorSonataMediaBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coopTilleuls/CoopTilleulsCKEditorSonataMediaBundle.git",
+                "reference": "75c37036ee8de5361c440822e5c61cf3b2dcae40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coopTilleuls/CoopTilleulsCKEditorSonataMediaBundle/zipball/75c37036ee8de5361c440822e5c61cf3b2dcae40",
+                "reference": "75c37036ee8de5361c440822e5c61cf3b2dcae40",
+                "shasum": ""
+            },
+            "require": {
+                "sonata-project/media-bundle": "2.2.*@dev",
+                "symfony/symfony": ">=2.2,<2.4-dev"
+            },
+            "suggest": {
+                "egeloen/ckeditor-bundle": "for easy Symfony integration"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "CoopTilleuls\\Bundle\\CKEditorSonataMediaBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kévin Dunglas",
+                    "email": "kevin@les-tilleuls.coop",
+                    "homepage": "http://dunglas.fr"
+                }
+            ],
+            "description": "Integrates SonataMediaBundle width CKEditor",
+            "homepage": "http://les-tilleuls.coop",
+            "keywords": [
+                "CKEditor",
+                "file",
+                "image",
+                "media",
+                "sonata",
+                "upload"
+            ],
+            "time": "2013-09-13 16:50:54"
         },
         {
             "name": "twig/extensions",

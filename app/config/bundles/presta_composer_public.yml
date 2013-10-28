@@ -1,0 +1,7 @@
+presta_composer_public:
+    symlink: true
+    blend:
+        ckeditor/ckeditor:
+            vendor: ckeditor
+            name: ckeditor
+            path: /

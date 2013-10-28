@@ -7,8 +7,9 @@ imports:
     - { resource: bundles/sonata_block.yml }
     - { resource: bundles/sonata_media.yml }
     - { resource: bundles/presta_cms_core.yml }
-    - { resource: bundles/stfalcon_tinymce.yml }
     - { resource: bundles/presta_cms_contact.yml }
+    - { resource: bundles/coop_tilleuls_ck_editor_sonata_media.yml}
+    - { resource: bundles/presta_composer_public.yml}
 
 framework:
     #esi:             ~
@@ -40,6 +41,7 @@ assetic:
         - PrestaCMSCoreBundle
         - PrestaCMSThemeBasicBundle
         - PrestaCMSContactBundle
+        - PrestaComposerPublicBundle
 
     filters:
         cssrewrite: ~
