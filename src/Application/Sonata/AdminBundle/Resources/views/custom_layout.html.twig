@@ -29,7 +29,8 @@ Override standard Layout to add application css, js...
 
             $.each($('textarea.wysiwyg'), function(index, element) {
                 CKEDITOR.replace(element.name, {
-                    filebrowserImageBrowseUrl: "{{ url('admin_sonata_media_media_browser') }}"
+                    filebrowserImageBrowseUrl: "{{ url('admin_sonata_media_media_browser') }}",
+                    extraPlugins: 'internal_link'
                 });
             });
         }
@@ -46,6 +47,11 @@ Override standard Layout to add application css, js...
 
         $(document).ready(function() {
             var CKEDITOR_BASEPATH = '/bundles/prestacomposerpublic/ckeditor/ckeditor/';
+            CKEDITOR.plugins.addExternal(
+                'internal_link',
+                '/bundles/applicationprestacmscore/js/ckeditor_plugins/internal_link/',
+                'plugin.js'
+            );
             initWysiwyg();
             $('.btn-tooltip').tooltip();
         });
