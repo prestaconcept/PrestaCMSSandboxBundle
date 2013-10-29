@@ -19,27 +19,34 @@ Override standard Layout to add application css, js...
 {% block javascripts %}
     {{  parent() }}
 
-    {{ tinymce_init() }}
-
+    <script type="text/javascript" src="{{ asset('/bundles/prestacomposerpublic/ckeditor/ckeditor/ckeditor.js') }}"></script>
     <script type="text/javascript">
         function initWysiwyg()
         {
-            tinymce.remove('textarea');
-            {#
-                Tmp code from tinymce_init()
-                Should follow https://github.com/stfalcon/TinymceBundle/issues/73 and correct it
-             #}
-            initTinyMCE({"include_jquery":false,"tinymce_jquery":true,"selector":":not(.no-wysiwyg)","theme":{"simple":{"theme":"modern"}},"use_callback_tinymce_init":false,"tinymce_buttons":[],"external_plugins":[],"jquery_script_url":"\/bundles\/stfalcontinymce\/vendor\/tinymce\/tinymce.jquery.min.js"});
+            //for (name in CKEDITOR.instances) {
+            //    CKEDITOR.instances[name].destroy();
+            //}
+
+            $.each($('textarea.wysiwyg'), function(index, element) {
+                CKEDITOR.replace(element.name, {
+                    filebrowserImageBrowseUrl: "{{ url('admin_sonata_media_media_browser') }}"
+                });
+            });
         }
 
         /**
          * Trigger wysiwyg save
          */
         function wysiwygTriggerSave() {
-            tinyMCE.triggerSave();
+            for (elementId in CKEDITOR.instances) {
+                $('#'+ elementId).html( CKEDITOR.instances[elementId].getData());
+                console.log(elementId,CKEDITOR.instances[elementId].getData())
+            }
         }
 
         $(document).ready(function() {
+            var CKEDITOR_BASEPATH = '/bundles/prestacomposerpublic/ckeditor/ckeditor/';
+            initWysiwyg();
             $('.btn-tooltip').tooltip();
         });
     </script>

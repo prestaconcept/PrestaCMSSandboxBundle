@@ -8,6 +8,20 @@
         }
     },
     "minimum-stability":"dev",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/ckeditor",
+                "version": "4.2.2",
+                "source": {
+                    "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                    "type": "git",
+                    "reference": "tags/4.2.2/standard"
+                }
+            }
+        }
+    ],
     "require":{
         "php": ">=5.3.3",
         "symfony/symfony": "2.3.*",
@@ -43,20 +57,26 @@
 
         "jackalope/jackalope-doctrine-dbal": "1.0.0",
 
-        "stfalcon/tinymce-bundle":"v0.3.1"
+        "stfalcon/tinymce-bundle":"v0.3.1",
+
+        "tilleuls/ckeditor-sonata-media-bundle": "2.3.*",
+        "presta/composer-public-bundle": "1.*",
+        "ckeditor/ckeditor": "4.2.2"
     },
     "scripts":{
         "post-install-cmd":[
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Presta\\ComposerPublicBundle\\Composer\\ScriptHandler::ComposerPublic"
         ],
         "post-update-cmd":[
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Presta\\ComposerPublicBundle\\Composer\\ScriptHandler::ComposerPublic"
         ]
     },
     "extra":{
