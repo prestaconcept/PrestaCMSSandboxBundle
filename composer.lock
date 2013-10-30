@@ -1796,12 +1796,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "b2bc0a5139ccadc0895328edb34df49d98d3dfa0"
+                "reference": "ce58eec8b27371d34362c92f42192586ba95aa45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/b2bc0a5139ccadc0895328edb34df49d98d3dfa0",
-                "reference": "b2bc0a5139ccadc0895328edb34df49d98d3dfa0",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/ce58eec8b27371d34362c92f42192586ba95aa45",
+                "reference": "ce58eec8b27371d34362c92f42192586ba95aa45",
                 "shasum": ""
             },
             "require": {
@@ -1867,7 +1867,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-29 17:00:38"
+            "time": "2013-10-30 13:12:26"
         },
         {
             "name": "presta/cms-media-bundle",
