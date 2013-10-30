@@ -293,3 +293,59 @@ pages:
                         name: contact
                         type: presta_cms_contact.block.contact
                         editable: true
+    404:
+        name: '404'
+        template: 'default'
+        meta:
+            title:
+                en: "404 - Page not found"
+                fr: "404 - Page introuvable"
+        zones:
+            content:
+                name: content
+                blocks:
+                    10:
+                        name: info
+                        type: presta_cms.block.simple
+                        editable: false
+                    15:
+                        name: main
+                        type: presta_cms.block.simple
+                        editable: true
+                        settings:
+                            en:
+                                title: '404 - Page not found'
+                                content: |
+                                    404 - Page not found page can be easily customize with PrestaCMS.
+                            fr:
+                                title: '404 - Page introuvable'
+                                content: |
+                                    Cette page peut-être facilement customisé avec PrestaCMS.
+    500:
+        name: '500'
+        template: 'default'
+        meta:
+            title:
+                en: "500 - Internal Server Error"
+                fr: "500 - Erreur interne"
+        zones:
+            content:
+                name: content
+                blocks:
+                    10:
+                        name: info
+                        type: presta_cms.block.simple
+                        editable: false
+                    15:
+                        name: main
+                        type: presta_cms.block.simple
+                        editable: true
+                        settings:
+                            en:
+                                title: '500 - Internal Server Error'
+                                content: |
+                                    500 - Internal Server Error page can be easily customize with PrestaCMS.
+                            fr:
+                                title: '500 - Erreur interne'
+                                content: |
+                                    Cette page peut-être facilement customisé avec PrestaCMS.
