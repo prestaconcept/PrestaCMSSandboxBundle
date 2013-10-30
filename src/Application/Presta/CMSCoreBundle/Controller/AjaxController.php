@@ -11,6 +11,7 @@ namespace Application\Presta\CMSCoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Translation\Translator;
 
 /**
  * @author Mathieu Cottet <mcottet@prestaconcept.net>
@@ -24,7 +25,12 @@ class AjaxController extends Controller
      */
     public function parisTimeAction()
     {
-        return new Response('In Paris, it is ' . $this->getTime('Europe/Paris') . '.');
+        return new Response(
+            $this->getMessage(
+                'Paris',
+                'Europe/Paris'
+            )
+        );
     }
 
     /**
@@ -34,7 +40,12 @@ class AjaxController extends Controller
      */
     public function laTimeAction()
     {
-        return new Response('In El Pueblo de Nuestra Señora la Reina de Los Ángeles del Río de Porciúncula, it is ' . $this->getTime('America/Los_Angeles') . '.');
+        return new Response(
+            $this->getMessage(
+                'El Pueblo de Nuestra Señora la Reina de Los Ángeles del Río de Porciúncula',
+                'America/Los_Angeles'
+            )
+        );
     }
 
     /**
@@ -48,5 +59,26 @@ class AjaxController extends Controller
         $date->setTimezone(new \DateTimeZone($timeZone));
 
         return $date->format("H:i:s");
+    }
+
+    /**
+     * @param string $city
+     * @param string $timeZone
+     *
+     * @return string
+     */
+    private function getMessage($city, $timeZone)
+    {
+        /** @var Translator $translator */
+        $translator = $this->get('translator');
+
+        return $translator->trans(
+            'time.message',
+            array(
+                '%city%' => $city,
+                '%time%' => $this->getTime($timeZone),
+            ),
+            'sandbox'
+        );
     }
 }
