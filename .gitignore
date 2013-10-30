@@ -11,6 +11,7 @@ app/config/phpcr.yml
 .idea/*
 
 app.sqlite
+prestacms-sandbox-privatekey.p12
 web/uploads/media/*
 /nbproject
 
