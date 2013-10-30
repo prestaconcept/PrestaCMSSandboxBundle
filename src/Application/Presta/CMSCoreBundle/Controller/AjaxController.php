@@ -17,11 +17,21 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class AjaxController extends Controller
 {
+    /**
+     * display time in Paris
+     *
+     * @return Response
+     */
     public function parisTimeAction()
     {
         return new Response('In Paris, it is ' . $this->getTime('Europe/Paris') . '.');
     }
 
+    /**
+     * Display time in Los Angeles
+     *
+     * @return Response
+     */
     public function laTimeAction()
     {
         return new Response('In El Pueblo de Nuestra Señora la Reina de Los Ángeles del Río de Porciúncula, it is ' . $this->getTime('America/Los_Angeles') . '.');
