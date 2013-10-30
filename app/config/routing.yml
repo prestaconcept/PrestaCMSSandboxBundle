@@ -39,3 +39,11 @@ gallery:
 media:
     resource: '@SonataMediaBundle/Resources/config/routing/media.xml'
     prefix: /media
+
+#ajax
+paristime:
+    pattern: /paristime
+    defaults: {_controller: PrestaCMSCoreBundle:Ajax:paristime}
+latime:
+    pattern: /latime
+    defaults: {_controller: PrestaCMSCoreBundle:Ajax:latime}
