@@ -34,14 +34,16 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                 'content' => array(
                     'name' => 'content',
                     'blocks' => array(
-                        10 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
+                        10 => array('name' => 'main', 'type' => 'presta_cms.block.simple'),
+                        20 => array('type' => 'presta_cms.block.ajax'),
                     )
                 ),
                 'left' => array(
                     'name' => 'left',
                     'blocks' => array(
                         10 => array('type' => 'presta_cms.block.simple'),
-                        20 => array('type' => 'presta_cms.block.media')
+                        20 => array('type' => 'presta_cms.block.media'),
+                        30 => array('type' => 'presta_cms.block.ajax'),
                     )
                 )
             );
@@ -81,6 +83,9 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
         if (count($block['settings'])) {
             return $block;
         }
+
+        $block['editable']  = true;
+        $block['deletable'] = true;
 
         switch ($block['type']) {
             case 'presta_cms.block.simple':
@@ -130,10 +135,19 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                     )
                 );
                 break;
-
+            case 'presta_cms.block.ajax':
+                $routeMapping = array(
+                    1 => 'paristime',
+                    2 => 'latime',
+                );
+                $routeKey = rand(1, 2);
+                $block['settings'] = array(
+                    'en' => array('route' => $routeMapping[$routeKey]),
+                    'fr' => array('route' => $routeMapping[$routeKey]),
+                );
+                $block['editable'] = false;
+                break;
         }
-        $block['editable']  = true;
-        $block['deletable'] = true;
 
         return $block;
     }
