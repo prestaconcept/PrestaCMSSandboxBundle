@@ -879,61 +879,6 @@
             "time": "2013-10-10 20:54:13"
         },
         {
-            "name": "egeloen/ckeditor-bundle",
-            "version": "dev-master",
-            "target-dir": "Ivory/CKEditorBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/egeloen/IvoryCKEditorBundle.git",
-                "reference": "f8cb2dc814d3f2cacaba153ba5da940e5964d839"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/egeloen/IvoryCKEditorBundle/zipball/f8cb2dc814d3f2cacaba153ba5da940e5964d839",
-                "reference": "f8cb2dc814d3f2cacaba153ba5da940e5964d839",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "symfony/form": ">=2.1",
-                "symfony/framework-bundle": ">=2.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "twig/twig": "1.*"
-            },
-            "suggest": {
-                "helios-ag/fm-elfinder-bundle": "Allows to use the elfinder as CKEditor file manager",
-                "twig/twig": "Allows to use Ivory CKEditor twig templates"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Ivory\\CKEditorBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric GELOEN",
-                    "email": "geloen.eric@gmail.com"
-                }
-            ],
-            "description": "Provides a CKEditor integration for your Symfony2 Project.",
-            "keywords": [
-                "CKEditor"
-            ],
-            "time": "2013-10-09 16:54:18"
-        },
-        {
             "name": "friendsofsymfony/jsrouting-bundle",
             "version": "dev-master",
             "target-dir": "FOS/JsRoutingBundle",
@@ -1797,12 +1742,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSContactBundle.git",
-                "reference": "8b57ec46179a40c448373beeb80e6f30584a534a"
+                "reference": "f234fb31203f7396bfd380dada6316ef8bc14dca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSContactBundle/zipball/8b57ec46179a40c448373beeb80e6f30584a534a",
-                "reference": "8b57ec46179a40c448373beeb80e6f30584a534a",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSContactBundle/zipball/f234fb31203f7396bfd380dada6316ef8bc14dca",
+                "reference": "f234fb31203f7396bfd380dada6316ef8bc14dca",
                 "shasum": ""
             },
             "require": {
@@ -1842,7 +1787,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-15 12:19:14"
+            "time": "2013-10-28 11:00:49"
         },
         {
             "name": "presta/cms-core-bundle",
@@ -1851,12 +1796,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "bae808fb613c9393ad17f5bdee264982e1d0e541"
+                "reference": "b2bc0a5139ccadc0895328edb34df49d98d3dfa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/bae808fb613c9393ad17f5bdee264982e1d0e541",
-                "reference": "bae808fb613c9393ad17f5bdee264982e1d0e541",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/b2bc0a5139ccadc0895328edb34df49d98d3dfa0",
+                "reference": "b2bc0a5139ccadc0895328edb34df49d98d3dfa0",
                 "shasum": ""
             },
             "require": {
@@ -1922,7 +1867,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-28 16:16:30"
+            "time": "2013-10-29 17:00:38"
         },
         {
             "name": "presta/cms-media-bundle",
