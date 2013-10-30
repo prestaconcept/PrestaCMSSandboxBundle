@@ -17,9 +17,33 @@ pages:
                 name: content
                 blocks:
                     10:
+                        name: info
+                        type: presta_cms.block.simple
+                        editable: false
+                        settings:
+                            en:
+                                title: ''
+                                block_style: 'info'
+                                content: 'This is a demonstration website<br/>Content is refresh every 2 hours.'
+                            fr:
+                                title: ''
+                                block_style: 'info'
+                                content: 'Ceci est une démonstration.<br/>Le contenu du site est remis à jour toutes les 2 heures.'
+                    15:
                         name: main
                         type: presta_cms.block.simple
                         editable: true
+                        settings:
+                            en:
+                                title: 'Welcome on PrestaCMS demonstration'
+                                content: |
+                                    <strong>PrestaCMS</strong> is a content management bundle based on Symfony2, SymfonyCMF and Sonata.<br/>
+                                    This is an open source project supported by PrestaConcept.
+                            fr:
+                                title: 'Bienvenue sur le site de démonstration de PrestaCMS'
+                                content: |
+                                    <strong>PrestaCMS</strong> est un bundle Symfony2 de gestion de contenu basé sur SymfonyCMF et Sonata<br/>
+                                    Ce projet est open source et supporté par PrestaConcept.
                     20:
                         name: media
                         type: presta_cms.block.media_advanced
@@ -125,6 +149,10 @@ pages:
                         name: content
                         blocks:
                             10:
+                                name: info
+                                type: presta_cms.block.simple
+                                editable: false
+                            15:
                                 name: main
                                 type: presta_cms.block.carousel
                                 editable: true
@@ -143,6 +171,10 @@ pages:
                         name: content
                         blocks:
                             10:
+                                name: info
+                                type: presta_cms.block.simple
+                                editable: false
+                            15:
                                 name: main
                                 type: presta_cms.block.media_advanced
                                 editable: true
@@ -158,6 +190,10 @@ pages:
                         name: content
                         blocks:
                             10:
+                                name: info
+                                type: presta_cms.block.simple
+                                editable: false
+                            15:
                                 name: main
                                 type: presta_cms.block.gallery_advanced
                                 editable: true
@@ -179,6 +215,10 @@ pages:
                         name: content
                         blocks:
                             10:
+                                name: info
+                                type: presta_cms.block.simple
+                                editable: false
+                            15:
                                 name: main
                                 type: presta_cms.block.gallery_advanced
                                 editable: true
@@ -242,6 +282,10 @@ pages:
                 name: content
                 blocks:
                     10:
+                        name: info
+                        type: presta_cms.block.simple
+                        editable: false
+                    15:
                         name: main
                         type: presta_cms.block.simple
                         editable: true

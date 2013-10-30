@@ -24,7 +24,8 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                 'content' => array(
                     'name' => 'content',
                     'blocks' => array(
-                        10 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
+                        10 => array('name' => 'info', 'type' => 'presta_cms.block.simple'),
+                        15 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
                     )
                 ),
             );
@@ -34,8 +35,8 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                 'content' => array(
                     'name' => 'content',
                     'blocks' => array(
-                        10 => array('name' => 'main', 'type' => 'presta_cms.block.simple'),
-                        20 => array('type' => 'presta_cms.block.ajax'),
+                        10 => array('name' => 'info', 'type' => 'presta_cms.block.simple'),
+                        15 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
                     )
                 ),
                 'left' => array(
@@ -53,7 +54,8 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                 'content' => array(
                     'name' => 'content',
                     'blocks' => array(
-                        10 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
+                        10 => array('name' => 'info', 'type' => 'presta_cms.block.simple'),
+                        15 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
                     )
                 ),
                 'right' => array(
@@ -89,16 +91,31 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
 
         switch ($block['type']) {
             case 'presta_cms.block.simple':
-                $block['settings'] = array(
-                    'en' => array(
-                        'title' => 'This is a paragraph block',
-                        'content' => 'This is your text. You can edit it in the administration with a WYSIWYG editor.<br/><br/>This content is translatable and has been loaded by PrestaCMS fixtures.',
-                    ),
-                    'fr' => array(
-                        'title' => 'Exemple de bloc paragraphe',
-                        'content' => 'Ce bloc est administrable dans le backoffice avec un éditeur WYSIWYG. <br/><br/>Le contenu de ce bloc est traduisible et à été chargé par les fixtures du PrestaCMS.'
-                    )
-                );
+                if ($block['name'] == 'info') {
+                    $block['settings'] = array(
+                        'en' => array(
+                            'title' => '',
+                            'block_style' => 'info',
+                            'content' => 'This is a demonstration website<br/>Content is refresh every 2 hours.',
+                        ),
+                        'fr' => array(
+                            'title' => '',
+                            'block_style' => 'info',
+                            'content' => 'Ceci est une démonstration.<br/>Le contenu du site est remis à jour toutes les 2 heures.'
+                        )
+                    );
+                } else {
+                    $block['settings'] = array(
+                        'en' => array(
+                            'title' => 'This is a paragraph block',
+                            'content' => 'This is your text. You can edit it in the administration with a WYSIWYG editor.<br/><br/>This content is translatable and has been loaded by PrestaCMS fixtures.',
+                        ),
+                        'fr' => array(
+                            'title' => 'Exemple de bloc paragraphe',
+                            'content' => 'Ce bloc est administrable dans le backoffice avec un éditeur WYSIWYG. <br/><br/>Le contenu de ce bloc est traduisible et à été chargé par les fixtures du PrestaCMS.'
+                        )
+                    );
+                }
                 break;
             case 'presta_cms.block.page_children':
                 $block['settings'] = array(
@@ -145,7 +162,8 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                     'en' => array('route' => $routeMapping[$routeKey]),
                     'fr' => array('route' => $routeMapping[$routeKey]),
                 );
-                $block['editable'] = false;
+                $block['editable']  = false;
+                $block['deletable'] = false;
                 break;
         }
 
