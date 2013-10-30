@@ -46,20 +46,7 @@ class LoadMenu extends BaseMenuFixture
             'children_content_path' => '/website/sandbox/page',
             'children' => array()
         );
-        $yaml = new Parser();
-        $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
-        foreach ($datas['pages'] as $pageConfiguration) {
-            if (isset($pageConfiguration['meta']['title'])) {
-                $pageConfiguration['title'] = $pageConfiguration['meta']['title'];
-            }
-
-            $configuration['children'][] = $pageConfiguration;
-        }
-
-        $main = $this->getFactory()->create($configuration);
-        $main->setChildrenAttributes(array("class" => "nav"));
-
-        $configuration = array(
+        $singlePageConfiguration = array(
             'parent' => $root,
             'name' => 'singles-pages',
             'title' => array(
@@ -69,7 +56,24 @@ class LoadMenu extends BaseMenuFixture
             'children_content_path' => '/website/sandbox/page',
             'children' => array()
         );
-        $singlePages = $this->getFactory()->create($configuration);
+
+        $yaml = new Parser();
+        $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
+        foreach ($datas['pages'] as $pageConfiguration) {
+            if (isset($pageConfiguration['meta']['title'])) {
+                $pageConfiguration['title'] = $pageConfiguration['meta']['title'];
+            }
+            if (in_array($pageConfiguration['name'], array('404', '500'))) {
+                $singlePageConfiguration['children'][] = $pageConfiguration;
+            } else {
+                $configuration['children'][] = $pageConfiguration;
+            }
+        }
+
+        $main = $this->getFactory()->create($configuration);
+        $main->setChildrenAttributes(array("class" => "nav"));
+
+        $singlePages = $this->getFactory()->create($singlePageConfiguration);
 
         $manager->flush();
     }
