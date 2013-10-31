@@ -1,0 +1,12 @@
+presta_sonata_navigation:
+    menu:
+        items:
+            cms:
+                route: presta_cms_page_edit
+                children:
+                    websites:
+                        route: admin_presta_cmscore_website_list
+                    themes:
+                        route: presta_cms_theme
+                    pages:
+                        route: presta_cms_page_edit
