@@ -46,6 +46,7 @@
 
         "presta/presta-cms": "1.0.0",
         "presta/sonata-navigation-bundle": "1.0.*",
+        "presta/cms-sitemap-bridge-bundle": "1.0.*",
 
         "doctrine/phpcr-bundle": "1.0.0",
         "doctrine/phpcr-odm": "1.0.0",
