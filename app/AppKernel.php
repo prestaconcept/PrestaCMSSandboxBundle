@@ -60,6 +60,10 @@ class AppKernel extends Kernel
 
             new CoopTilleuls\Bundle\CKEditorSonataMediaBundle\CoopTilleulsCKEditorSonataMediaBundle(),
             new Presta\ComposerPublicBundle\PrestaComposerPublicBundle(),
+
+            //PrestaCMS-Sitemap
+            new Presta\CMSSitemapBridgeBundle\PrestaCMSSitemapBridgeBundle(),
+            new Presta\SitemapBundle\PrestaSitemapBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7ab30e4c876854cee6dea527bf562256",
+    "hash": "d371bc7429304099f93505a2594600fd",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -1926,6 +1926,62 @@
             "time": "2013-10-03 09:03:21"
         },
         {
+            "name": "presta/cms-sitemap-bridge-bundle",
+            "version": "dev-master",
+            "target-dir": "Presta/CMSSitemapBridgeBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prestaconcept/PrestaCMSSitemapBridgeBundle.git",
+                "reference": "891aa408d3e2c29e3d9479edfe672d362195165c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSSitemapBridgeBundle/zipball/891aa408d3e2c29e3d9479edfe672d362195165c",
+                "reference": "891aa408d3e2c29e3d9479edfe672d362195165c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "presta/cms-core-bundle": "1.0.*",
+                "presta/sitemap-bundle": "~1.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Presta\\CMSSitemapBridgeBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alain Flaus",
+                    "email": "aflaus@prestaconcept.net",
+                    "homepage": "http://www.prestaconcept.net/",
+                    "role": "Maintainer, Developer"
+                }
+            ],
+            "description": "PrestaCMS Sitemap Bridge bundle : PrestaSitemapBundle connector for PrestaCMS",
+            "homepage": "https://github.com/prestaconcept/PrestaCMSSitemapBridgeBundle",
+            "keywords": [
+                "Sitemap",
+                "Symfony2",
+                "bundle",
+                "cms",
+                "presta-cms",
+                "prestaconcept",
+                "symfony-cmf"
+            ],
+            "time": "2013-10-31 14:16:02"
+        },
+        {
             "name": "presta/cms-theme-basic-bundle",
             "version": "dev-master",
             "target-dir": "Presta/CMSThemeBasicBundle",
@@ -2097,6 +2153,69 @@
                 "symfony-cmf"
             ],
             "time": "2013-10-21 10:23:27"
+        },
+        {
+            "name": "presta/sitemap-bundle",
+            "version": "dev-master",
+            "target-dir": "Presta/SitemapBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prestaconcept/PrestaSitemapBundle.git",
+                "reference": "2ca2d789c507745ff8b18b9c3d1c64d4dbf64b20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSitemapBundle/zipball/2ca2d789c507745ff8b18b9c3d1c64d4dbf64b20",
+                "reference": "2ca2d789c507745ff8b18b9c3d1c64d4dbf64b20",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/symfony": ">=2.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*@stable"
+            },
+            "suggest": {
+                "liip/doctrine-cache-bundle": "Allows to store sitemaps in cache"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Presta\\SitemapBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Epely",
+                    "homepage": "http://www.prestaconcept.net/",
+                    "role": "Initial developer"
+                },
+                {
+                    "name": "Alain Flaus",
+                    "email": "aflaus@prestaconcept.net",
+                    "homepage": "http://www.prestaconcept.net/",
+                    "role": "Maintainer, Developer"
+                }
+            ],
+            "description": "A symfony 2 bundle that provides tools to build your application sitemap.",
+            "keywords": [
+                "Sitemap",
+                "Symfony2",
+                "bundle",
+                "prestaconcept",
+                "xml"
+            ],
+            "time": "2013-10-03 09:12:09"
         },
         {
             "name": "presta/sonata-navigation-bundle",
