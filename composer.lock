@@ -2105,12 +2105,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSonataNavigationBundle.git",
-                "reference": "03633eb1d673c2a5fc9b926fba093a31f7ffd868"
+                "reference": "221b77148ef87c5a34c320f2159c375ddc04b82f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataNavigationBundle/zipball/03633eb1d673c2a5fc9b926fba093a31f7ffd868",
-                "reference": "03633eb1d673c2a5fc9b926fba093a31f7ffd868",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataNavigationBundle/zipball/221b77148ef87c5a34c320f2159c375ddc04b82f",
+                "reference": "221b77148ef87c5a34c320f2159c375ddc04b82f",
                 "shasum": ""
             },
             "require": {
@@ -2149,7 +2149,7 @@
                 "prestaconcept",
                 "sonata-admin"
             ],
-            "time": "2013-10-31 09:52:46"
+            "time": "2013-10-31 13:15:26"
         },
         {
             "name": "psr/log",
