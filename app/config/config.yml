@@ -10,6 +10,7 @@ imports:
     - { resource: bundles/presta_cms_contact.yml }
     - { resource: bundles/coop_tilleuls_ck_editor_sonata_media.yml}
     - { resource: bundles/presta_composer_public.yml}
+    - { resource: bundles/presta_sonata_navigation.yml }
 
 framework:
     #esi:             ~

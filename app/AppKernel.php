@@ -45,6 +45,7 @@ class AppKernel extends Kernel
             new Presta\CMSCoreBundle\PrestaCMSCoreBundle(),
             new Presta\CMSMediaBundle\PrestaCMSMediaBundle(),
             new Presta\CMSThemeBasicBundle\PrestaCMSThemeBasicBundle(),
+            new Presta\SonataNavigationBundle\PrestaSonataNavigationBundle(),
 
             //Utils
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
