@@ -58,13 +58,6 @@ Override standard Layout to add application css, js...
     </script>
 {% endblock %}
 
-{% block top_bar_after_nav %}
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'dashboard.block.cms.title'|trans({}, 'PrestaCMSCoreBundle') }} <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li><a href="{{ path('admin_presta_cmscore_website_list') }}">{{ 'dashboard.block.website.title'|trans({}, 'PrestaCMSCoreBundle') }}</a></li>
-            <li><a href="{{ path('presta_cms_theme') }}">{{ 'dashboard.block.theme.title'|trans({}, 'PrestaCMSCoreBundle') }}</a></li>
-            <li><a href="{{ path('presta_cms_page_edit') }}">{{ 'dashboard.block.page.title'|trans({}, 'PrestaCMSCoreBundle') }}</a></li>
-        </ul>
-    </li>
+{% block sonata_top_bar_nav %}
+    {{ knp_menu_render('presta_sonata_navigation.menu.main', {'allow_safe_labels' : true}, 'list') }}
 {% endblock %}

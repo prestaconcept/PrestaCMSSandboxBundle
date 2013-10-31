@@ -1796,12 +1796,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "589a2445449ce5431ad9e689567c72c6db1dd301"
+                "reference": "f99c3c216002963320db839df4615404b36b35c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/589a2445449ce5431ad9e689567c72c6db1dd301",
-                "reference": "589a2445449ce5431ad9e689567c72c6db1dd301",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/f99c3c216002963320db839df4615404b36b35c4",
+                "reference": "f99c3c216002963320db839df4615404b36b35c4",
                 "shasum": ""
             },
             "require": {
@@ -1867,7 +1867,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-30 15:44:27"
+            "time": "2013-10-31 13:42:54"
         },
         {
             "name": "presta/cms-media-bundle",
@@ -2105,12 +2105,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSonataNavigationBundle.git",
-                "reference": "221b77148ef87c5a34c320f2159c375ddc04b82f"
+                "reference": "9b035d96d6968034c2e36ef0fcc1612eea907370"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataNavigationBundle/zipball/221b77148ef87c5a34c320f2159c375ddc04b82f",
-                "reference": "221b77148ef87c5a34c320f2159c375ddc04b82f",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataNavigationBundle/zipball/9b035d96d6968034c2e36ef0fcc1612eea907370",
+                "reference": "9b035d96d6968034c2e36ef0fcc1612eea907370",
                 "shasum": ""
             },
             "require": {
@@ -2149,7 +2149,7 @@
                 "prestaconcept",
                 "sonata-admin"
             ],
-            "time": "2013-10-31 13:15:26"
+            "time": "2013-10-31 13:41:38"
         },
         {
             "name": "psr/log",
