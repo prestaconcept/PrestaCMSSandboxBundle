@@ -15,6 +15,7 @@ sandbox_service:
 #Sonata Project
 admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin/{_locale}
 
 _sonata_admin:
     resource: .
