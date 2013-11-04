@@ -28,7 +28,7 @@ sonata_admin_dashboard:
     defaults: { _controller: SonataAdminBundle:Core:dashboard }
 
 PrestaCMSCoreBundle:
-    resource: "@PrestaCMSCoreBundle/Resources/config/routing.yml"
+    resource: "@PrestaCMSCoreBundle/Resources/config/routing.xml"
     prefix:   /admin
 
 #phpcrodmbrowser:

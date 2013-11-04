@@ -1796,12 +1796,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "f99c3c216002963320db839df4615404b36b35c4"
+                "reference": "bd6551fe242d58f1d51372ee4f7ba95c9b82ac03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/f99c3c216002963320db839df4615404b36b35c4",
-                "reference": "f99c3c216002963320db839df4615404b36b35c4",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/bd6551fe242d58f1d51372ee4f7ba95c9b82ac03",
+                "reference": "bd6551fe242d58f1d51372ee4f7ba95c9b82ac03",
                 "shasum": ""
             },
             "require": {
@@ -1867,7 +1867,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-31 13:42:54"
+            "time": "2013-11-04 09:40:14"
         },
         {
             "name": "presta/cms-media-bundle",
@@ -1932,12 +1932,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSSitemapBridgeBundle.git",
-                "reference": "891aa408d3e2c29e3d9479edfe672d362195165c"
+                "reference": "b1c9c0582799c5bfca6e126cb3f7b9c3dded8ab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSSitemapBridgeBundle/zipball/891aa408d3e2c29e3d9479edfe672d362195165c",
-                "reference": "891aa408d3e2c29e3d9479edfe672d362195165c",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSSitemapBridgeBundle/zipball/b1c9c0582799c5bfca6e126cb3f7b9c3dded8ab1",
+                "reference": "b1c9c0582799c5bfca6e126cb3f7b9c3dded8ab1",
                 "shasum": ""
             },
             "require": {
@@ -1979,7 +1979,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-31 14:16:02"
+            "time": "2013-10-31 14:18:35"
         },
         {
             "name": "presta/cms-theme-basic-bundle",
@@ -2224,12 +2224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSonataNavigationBundle.git",
-                "reference": "9b035d96d6968034c2e36ef0fcc1612eea907370"
+                "reference": "32a05f76772043ad16078b754dca779d51bc1f13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataNavigationBundle/zipball/9b035d96d6968034c2e36ef0fcc1612eea907370",
-                "reference": "9b035d96d6968034c2e36ef0fcc1612eea907370",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataNavigationBundle/zipball/32a05f76772043ad16078b754dca779d51bc1f13",
+                "reference": "32a05f76772043ad16078b754dca779d51bc1f13",
                 "shasum": ""
             },
             "require": {
@@ -2268,7 +2268,7 @@
                 "prestaconcept",
                 "sonata-admin"
             ],
-            "time": "2013-10-31 13:41:38"
+            "time": "2013-10-31 14:58:31"
         },
         {
             "name": "psr/log",
