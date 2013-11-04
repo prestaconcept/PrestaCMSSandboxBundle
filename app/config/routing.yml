@@ -12,24 +12,23 @@ sandbox_service:
     type:     annotation
     prefix:   /
 
-#Sonata Admin
+#Sonata Project
 admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
-    prefix: /admin
 
 _sonata_admin:
     resource: .
     type: sonata_admin
-    prefix: /admin
+    prefix: /admin/{_locale}
 
 #override sonata routes
 sonata_admin_dashboard:
-    pattern: /admin/dashboard
+    pattern: /admin/{_locale}/
     defaults: { _controller: SonataAdminBundle:Core:dashboard }
 
 PrestaCMSCoreBundle:
     resource: "@PrestaCMSCoreBundle/Resources/config/routing.xml"
-    prefix:   /admin
+    prefix:   /admin/{_locale}/
 
 #phpcrodmbrowser:
 #    resource: @SonataDoctrinePHPCRAdminBundle/Resources/config/routing/phpcrodmbrowser.xml

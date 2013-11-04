@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d371bc7429304099f93505a2594600fd",
+    "hash": "a75cb14e14309486d9b0738543b046fc",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -2218,6 +2218,117 @@
             "time": "2013-10-03 09:12:09"
         },
         {
+            "name": "presta/sonata-admin-extended-bundle",
+            "version": "dev-master",
+            "target-dir": "Presta/SonataAdminExtendedBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prestaconcept/PrestaSonataAdminExtendedBundle.git",
+                "reference": "7c2ce3b836e973223a27a65a0fa155f83b031f5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataAdminExtendedBundle/zipball/7c2ce3b836e973223a27a65a0fa155f83b031f5c",
+                "reference": "7c2ce3b836e973223a27a65a0fa155f83b031f5c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "presta/sonata-navigation-bundle": "1.0.*",
+                "sonata-project/admin-bundle": "2.2.*"
+            },
+            "suggest": {
+                "presta/cms-core-bundle": "1.0.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Presta\\SonataAdminExtendedBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Bastien",
+                    "email": "nbastien@prestaconcept.net",
+                    "homepage": "http://www.prestaconcept.net/"
+                }
+            ],
+            "description": "PrestaSonataAdminExtendedBundle : Extension for Sonata Admin - translation, dashboard...",
+            "homepage": "https://github.com/prestaconcept/PrestaSonataAdminExtendedBundle",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "prestaconcept",
+                "sonata-admin"
+            ],
+            "time": "2013-11-04 09:29:34"
+        },
+        {
+            "name": "presta/sonata-gedmo-doctrine-extensions-bundle",
+            "version": "dev-master",
+            "target-dir": "Presta/SonataGedmoDoctrineExtensions",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prestaconcept/PrestaSonataGedmoDoctrineExtensions.git",
+                "reference": "f6bba7fb5f8d69e6d04e246dae05dc4198897bbd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataGedmoDoctrineExtensions/zipball/f6bba7fb5f8d69e6d04e246dae05dc4198897bbd",
+                "reference": "f6bba7fb5f8d69e6d04e246dae05dc4198897bbd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "presta/sonata-navigation-bundle": "1.0.*",
+                "sonata-project/admin-bundle": "2.2.*"
+            },
+            "suggest": {
+                "presta/cms-core-bundle": "1.0.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Presta\\SonataGedmoDoctrineExtensions": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Bastien",
+                    "email": "nbastien@prestaconcept.net",
+                    "homepage": "http://www.prestaconcept.net/"
+                }
+            ],
+            "description": "PrestaSonataGedmoDoctrineExtensions : integrates gedmo doctrine extenions in Sonata Admin",
+            "homepage": "https://github.com/prestaconcept/PrestaSonataGedmoDoctrineExtensions",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "gedmo",
+                "prestaconcept",
+                "sonata-admin"
+            ],
+            "time": "2013-11-04 10:23:04"
+        },
+        {
             "name": "presta/sonata-navigation-bundle",
             "version": "dev-master",
             "target-dir": "Presta/SonataNavigationBundle",
@@ -4147,7 +4258,8 @@
         "sonata-project/admin-bundle": 20,
         "sonata-project/media-bundle": 20,
         "sonata-project/doctrine-orm-admin-bundle": 20,
-        "sonata-project/easy-extends-bundle": 20
+        "sonata-project/easy-extends-bundle": 20,
+        "presta/sonata-admin-extended-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
