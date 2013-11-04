@@ -3,7 +3,6 @@
  *
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
-CKEDITOR.scriptLoader.load('/admin/cms/page/wysiwyg_list');
 CKEDITOR.plugins.add(
     'internal_link',
     {
