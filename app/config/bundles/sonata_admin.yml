@@ -1,5 +1,6 @@
 sonata_admin:
     title:      Presta CMS Sandbox
+    title_logo: ./bundles/prestasonataadminextended/img/logo_title.jpg
     templates:
         # default global templates
         layout:  ApplicationSonataAdminBundle::custom_layout.html.twig

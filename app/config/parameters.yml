@@ -15,3 +15,5 @@ parameters:
     locale:            en
     locales:           [en, fr]
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    presta_sonata_admin_extended.locales: [en, fr]

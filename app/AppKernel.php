@@ -64,6 +64,7 @@ class AppKernel extends Kernel
             //PrestaCMS-Sitemap
             new Presta\CMSSitemapBridgeBundle\PrestaCMSSitemapBridgeBundle(),
             new Presta\SitemapBundle\PrestaSitemapBundle(),
+            new Presta\SonataAdminExtendedBundle\PrestaSonataAdminExtendedBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
