@@ -29,7 +29,10 @@ Override standard Layout to add application css, js...
 
             $.each($('textarea.wysiwyg'), function(index, element) {
                 CKEDITOR.replace(element.name, {
-                    filebrowserImageBrowseUrl: "{{ url('admin_sonata_media_media_browser') }}",
+                    filebrowserImageUploadUrl: "{{ url('admin_sonata_media_media_upload', {
+                        provider: "sonata.media.provider.image",
+                        context: "prestacms"
+                    }) }}",
                     extraPlugins: 'internal_link'
                 });
             });
