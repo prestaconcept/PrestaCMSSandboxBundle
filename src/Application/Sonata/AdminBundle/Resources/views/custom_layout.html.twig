@@ -23,19 +23,31 @@ Override standard Layout to add application css, js...
     <script type="text/javascript">
         function initWysiwyg()
         {
-            //for (name in CKEDITOR.instances) {
-            //    CKEDITOR.instances[name].destroy();
-            //}
-
-            $.each($('textarea.wysiwyg'), function(index, element) {
-                CKEDITOR.replace(element.name, {
-                    filebrowserImageUploadUrl: "{{ url('admin_sonata_media_media_upload', {
-                        provider: "sonata.media.provider.image",
-                        context: "prestacms"
-                    }) }}",
-                    extraPlugins: 'internal_link'
+            try {
+                for (name in CKEDITOR.instances) {
+                    CKEDITOR.instances[name].destroy(true);
+                }
+            } catch (e) {
+                //usually fail with but this is not blocking
+                //TypeError: Cannot read property 'document' of undefined
+                console.log('destroy-error : ' + e.message);
+            }
+            try {
+                $.each($('textarea.wysiwyg'), function(index, element) {
+                    CKEDITOR.replace(element.name, {
+                        filebrowserImageBrowseUrl: "{{ url('admin_sonata_media_media_browser') }}",
+                        filebrowserImageUploadUrl: "{{ url('admin_sonata_media_media_upload', {
+                            provider: "sonata.media.provider.image",
+                            context: "prestacms"
+                        }) }}",
+                        extraPlugins: 'internal_link'
+                    });
                 });
-            });
+            } catch (e) {
+                //usually fail with but this is not blocking
+                //TypeError: Cannot read property 'document' of undefined
+                console.log('init-error : ' + e.message);
+            }
         }
 
         /**
