@@ -11,7 +11,8 @@ imports:
     - { resource: bundles/coop_tilleuls_ck_editor_sonata_media.yml}
     - { resource: bundles/presta_composer_public.yml}
     - { resource: bundles/presta_sonata_navigation.yml }
-    - { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/config.yml' }
+    - { resource: bundles/presta_sonata_admin_extended.yml }
+
 
 framework:
     #esi:             ~
@@ -38,12 +39,15 @@ assetic:
     debug:          "%kernel.debug%"
     use_controller: false
     bundles:
+        - SonataAdminBundle
+        - PrestaSonataAdminExtendedBundle
         - ApplicationSonataAdminBundle
         - ApplicationPrestaCMSCoreBundle
         - PrestaCMSCoreBundle
         - PrestaCMSThemeBasicBundle
         - PrestaCMSContactBundle
         - PrestaComposerPublicBundle
+
 
     filters:
         cssrewrite: ~

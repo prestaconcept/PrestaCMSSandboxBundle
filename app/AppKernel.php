@@ -30,6 +30,10 @@ class AppKernel extends Kernel
             new Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
 
+            new FOS\UserBundle\FOSUserBundle(),
+            new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+
             // Doctrine PHPCR
             new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
 

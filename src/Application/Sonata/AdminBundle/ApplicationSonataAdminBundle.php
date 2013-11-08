@@ -26,6 +26,6 @@ class ApplicationSonataAdminBundle extends Bundle
      */
     public function getParent()
     {
-        return 'SonataAdminBundle';
+        return 'PrestaSonataAdminExtendedBundle';
     }
 }

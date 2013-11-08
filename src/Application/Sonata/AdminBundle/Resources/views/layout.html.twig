@@ -62,7 +62,7 @@ Override standard Layout to add application css, js...
 
         $(document).ready(function() {
             var CKEDITOR_BASEPATH = '/bundles/prestacomposerpublic/ckeditor/ckeditor/';
-            CKEDITOR.scriptLoader.load("{{ path('presta_cms_page_wysiwyg_list', { '_locale': locale }) }}");
+            CKEDITOR.scriptLoader.load("{{ path('presta_cms_page_wysiwyg_list', { '_locale': app.request.locale }) }}");
             CKEDITOR.plugins.addExternal(
                 'internal_link',
                 '/bundles/applicationprestacmscore/js/ckeditor_plugins/internal_link/',
