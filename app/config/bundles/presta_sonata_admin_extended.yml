@@ -2,10 +2,10 @@ imports:
     - { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/config.yml' }
     - { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/user/config.yml'}
     - { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/user/config_navigation.yml' }
-    - { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/user/config_dashboard.yml' }
+    #- { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/user/config_dashboard.yml' }
     - { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/media/config.yml'}
     - { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/media/config_navigation.yml' }
-    - { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/media/config_dashboard.yml' }
+    #- { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/media/config_dashboard.yml' }
 
 sonata_admin:
     title:      ' '

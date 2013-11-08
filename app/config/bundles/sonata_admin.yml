@@ -36,7 +36,8 @@ sonata_admin:
                         <p>
                             Presta CMS is sponsored by <a href="http://www.prestaconcept.net">PrestaConcept</a>
                         </p>
-            - { position: right, type: sonata.admin.block.admin_list }
+            - { position: right, type: presta_sonata_admin_extended.block.dashboard.user }
+            - { position: right, type: presta_sonata_admin_extended.block.dashboard.media }
         groups:
             sonata_media: ~
 

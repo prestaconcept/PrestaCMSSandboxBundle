@@ -3,3 +3,5 @@ sonata_block:
     blocks:
         sonata.block.service.text:
         sonata.admin.block.admin_list:
+        presta_sonata_admin_extended.block.dashboard.user:
+        presta_sonata_admin_extended.block.dashboard.media:
