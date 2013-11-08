@@ -9,6 +9,7 @@ Override standard Layout to add application css, js...
 {% block stylesheets %}
     {{  parent() }}
     {% stylesheets
+    '@PrestaSonataAdminExtendedBundle/Resources/public/less/presta_sonata_admin_extended.less'
     '@PrestaCMSCoreBundle/Resources/public/admin/less/prestacmscore.less'
     %}
 
