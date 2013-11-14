@@ -20,56 +20,10 @@ Override standard Layout to add application css, js...
 {% block javascripts %}
     {{  parent() }}
 
-    <script type="text/javascript" src="{{ asset('/bundles/prestacomposerpublic/ckeditor/ckeditor/ckeditor.js') }}"></script>
+    {{ include('PrestaCMSCKEditorBundle:include:layout.html.twig') }}
+
     <script type="text/javascript">
-        function initWysiwyg()
-        {
-            try {
-                for (name in CKEDITOR.instances) {
-                    CKEDITOR.instances[name].destroy(true);
-                }
-            } catch (e) {
-                //usually fail with but this is not blocking
-                //TypeError: Cannot read property 'document' of undefined
-                console.log('destroy-error : ' + e.message);
-            }
-            try {
-                $.each($('textarea.wysiwyg'), function(index, element) {
-                    CKEDITOR.replace(element.name, {
-                        filebrowserImageBrowseUrl: "{{ url('admin_sonata_media_media_browser') }}",
-                        filebrowserImageUploadUrl: "{{ url('admin_sonata_media_media_upload', {
-                            provider: "sonata.media.provider.image",
-                            context: "prestacms"
-                        }) }}",
-                        extraPlugins: 'internal_link'
-                    });
-                });
-            } catch (e) {
-                //usually fail with but this is not blocking
-                //TypeError: Cannot read property 'document' of undefined
-                console.log('init-error : ' + e.message);
-            }
-        }
-
-        /**
-         * Trigger wysiwyg save
-         */
-        function wysiwygTriggerSave() {
-            for (elementId in CKEDITOR.instances) {
-                $('#'+ elementId).html( CKEDITOR.instances[elementId].getData());
-                console.log(elementId,CKEDITOR.instances[elementId].getData())
-            }
-        }
-
         $(document).ready(function() {
-            var CKEDITOR_BASEPATH = '/bundles/prestacomposerpublic/ckeditor/ckeditor/';
-            CKEDITOR.scriptLoader.load("{{ path('presta_cms_page_wysiwyg_list', { '_locale': app.request.locale }) }}");
-            CKEDITOR.plugins.addExternal(
-                'internal_link',
-                '/bundles/applicationprestacmscore/js/ckeditor_plugins/internal_link/',
-                'plugin.js'
-            );
-            initWysiwyg();
             $('.btn-tooltip').tooltip();
         });
     </script>

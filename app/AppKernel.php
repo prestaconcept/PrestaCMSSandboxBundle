@@ -70,6 +70,7 @@ class AppKernel extends Kernel
             new Presta\SitemapBundle\PrestaSitemapBundle(),
             new Presta\SonataAdminExtendedBundle\PrestaSonataAdminExtendedBundle(),
             new Presta\SonataGedmoDoctrineExtensionsBundle\PrestaSonataGedmoDoctrineExtensionsBundle(),
+            new Presta\CMSCKEditorBundle\PrestaCMSCKEditorBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
