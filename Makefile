@@ -38,3 +38,6 @@ cc:
 
 cs:
 	phpcs --extensions=php -n --standard=PSR2 --report=full src
+
+ai:
+	app/console assets:install web

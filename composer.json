@@ -47,7 +47,8 @@
         "presta/presta-cms": "1.0.0",
         "presta/sonata-navigation-bundle": "1.0.*",
         "presta/cms-sitemap-bridge-bundle": "1.0.*",
-        "presta/sonata-admin-extended-bundle": "1.0.*@dev",
+        "presta/sonata-admin-extended-bundle": "1.0.*",
+        "presta/cms-ckeditor-bundle": "1.0.*",
 
         "doctrine/phpcr-bundle": "1.0.0",
         "doctrine/phpcr-odm": "1.0.0",
@@ -58,11 +59,7 @@
         "symfony-cmf/routing-bundle": "1.1.0",
         "symfony-cmf/tree-browser-bundle": "1.0.0",
 
-        "jackalope/jackalope-doctrine-dbal": "1.0.0",
-
-        "tilleuls/ckeditor-sonata-media-bundle": "2.3.*",
-        "presta/composer-public-bundle": "1.*",
-        "ckeditor/ckeditor": "4.2.2"
+        "jackalope/jackalope-doctrine-dbal": "1.0.0"
     },
     "scripts":{
         "post-install-cmd":[
