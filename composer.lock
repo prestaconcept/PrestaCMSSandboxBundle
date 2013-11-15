@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "45351229a9e6073176e4c173107af277",
+    "hash": "f76432da3ec543c64cd8c2c517c7c211",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -2085,6 +2085,60 @@
             "time": "2013-11-04 09:40:14"
         },
         {
+            "name": "presta/cms-faq-bundle",
+            "version": "dev-master",
+            "target-dir": "Presta/CMSFAQBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prestaconcept/PrestaCMSFAQBundle.git",
+                "reference": "2db26da6664b32daa5224c495c3398179177af36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSFAQBundle/zipball/2db26da6664b32daa5224c495c3398179177af36",
+                "reference": "2db26da6664b32daa5224c495c3398179177af36",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "presta/cms-core-bundle": "1.*",
+                "presta/sonata-admin-extended-bundle": "1.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Presta\\CMSFAQBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Bastien",
+                    "email": "nbastien@prestaconcept.net",
+                    "homepage": "http://www.prestaconcept.net/"
+                }
+            ],
+            "description": "PrestaCMS FAQ bundle : Adds FAQ in PrestaCMS. FAQ are structured by category and administrated with SonataAdmin",
+            "homepage": "https://github.com/prestaconcept/PrestaCMSFAQBundle",
+            "keywords": [
+                "FAQ",
+                "Symfony2",
+                "bundle",
+                "cms",
+                "prestaconcept",
+                "symfony-cmf"
+            ],
+            "time": "2013-11-15 11:13:37"
+        },
+        {
             "name": "presta/cms-media-bundle",
             "version": "dev-master",
             "target-dir": "Presta/CMSMediaBundle",
@@ -2439,12 +2493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSonataAdminExtendedBundle.git",
-                "reference": "7ce6320b4e9a644a29753dbbae14bb17fcf67283"
+                "reference": "2fc6b1d69ab436ba1164b638554555b938e11307"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataAdminExtendedBundle/zipball/7ce6320b4e9a644a29753dbbae14bb17fcf67283",
-                "reference": "7ce6320b4e9a644a29753dbbae14bb17fcf67283",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataAdminExtendedBundle/zipball/2fc6b1d69ab436ba1164b638554555b938e11307",
+                "reference": "2fc6b1d69ab436ba1164b638554555b938e11307",
                 "shasum": ""
             },
             "require": {
@@ -2492,7 +2546,7 @@
                 "prestaconcept",
                 "sonata-admin"
             ],
-            "time": "2013-11-08 14:32:37"
+            "time": "2013-11-15 11:58:38"
         },
         {
             "name": "presta/sonata-gedmo-doctrine-extensions-bundle",
@@ -2501,12 +2555,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaSonataGedmoDoctrineExtensionsBundle.git",
-                "reference": "22584ae005f7e569356b5bf33a8149ad1a6d1922"
+                "reference": "fede0945f5e3fd89f654440564bd38f1de48b5e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataGedmoDoctrineExtensionsBundle/zipball/22584ae005f7e569356b5bf33a8149ad1a6d1922",
-                "reference": "22584ae005f7e569356b5bf33a8149ad1a6d1922",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaSonataGedmoDoctrineExtensionsBundle/zipball/fede0945f5e3fd89f654440564bd38f1de48b5e2",
+                "reference": "fede0945f5e3fd89f654440564bd38f1de48b5e2",
                 "shasum": ""
             },
             "require": {
@@ -2548,7 +2602,7 @@
                 "prestaconcept",
                 "sonata-admin"
             ],
-            "time": "2013-11-06 16:07:49"
+            "time": "2013-11-15 13:07:15"
         },
         {
             "name": "presta/sonata-navigation-bundle",
@@ -4756,8 +4810,7 @@
         "sonata-project/admin-bundle": 20,
         "sonata-project/media-bundle": 20,
         "sonata-project/doctrine-orm-admin-bundle": 20,
-        "sonata-project/easy-extends-bundle": 20,
-        "presta/sonata-admin-extended-bundle": 20
+        "sonata-project/easy-extends-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
