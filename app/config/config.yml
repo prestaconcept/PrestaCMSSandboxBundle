@@ -71,7 +71,39 @@ doctrine:
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
+#        auto_mapping: true
+
+        entity_managers:
+            default:
+                mappings:
+                    gedmo_translatable:
+                        type: annotation
+                        prefix: Gedmo\Translatable\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity"
+                        alias: GedmoTranslatable # this one is optional and will default to the name set for the mapping
+                    gedmo_translator:
+                        type: annotation
+                        prefix: Gedmo\Translator\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity"
+                        alias: GedmoTranslator # this one is optional and will default to the name set for the mapping
+
+                    ApplicationSonataUserBundle: ~
+                    ApplicationSonataMediaBundle: ~
+                    ApplicationPrestaCMSCoreBundle: ~
+                    PrestaCMSContactBundle: ~
+                    PrestaCMSFAQBundle: ~
+
+stof_doctrine_extensions:
+    default_locale: en
+    orm:
+    #By default the bundle does not attach any listener. For each of your entity manager, declare the extensions you want to enable:
+        default:
+            tree: false
+            timestampable: false
+            sluggable: false
+            translatable: true
+            loggable: false
+            softdeleteable: false
 
 # Swiftmailer Configuration
 swiftmailer:

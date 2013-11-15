@@ -1,0 +1,54 @@
+
+faq_general_10:
+    en:
+        question: Why this sandbox ?
+        answer: |
+            As we believe that a live demonstration is better than any documentation, we made this sandbox to show
+            how to use your bundles.
+    fr:
+        question: Pourquoi cette sandbox ?
+        answer: |
+            Parce que nous pensons qu'une démonstration vos mieux qu'une documentation, nous avons mis en ligne cette
+            sandbox pour découvrir nos bundles en action.
+
+faq_general_20:
+    en:
+        question: How can I contribute to the project
+        answer: |
+            All our bundles are available on <a href="https://github.com/prestaconcept">Prestaconcept Github page</a>.</br>
+            Feel free to download, use, fork them. Any stars will be great to show your interest and give us some motivation.
+            You can recommend them on <a href="http://knpbundles.com/organization/prestaconcept/profile">KNPBundles</a> too.</br>
+            You can help us by testing them and send some feedbacks.</br>
+            Feel free to open issues and any Pull Request will be appreciate.
+    fr:
+        question: Comment contribuer au projet ?
+        answer: |
+            Tout nos bundles sont disponibles sur la page <a href="https://github.com/prestaconcept">Github de Prestaconcept</a>.</br>
+            Vous pouvez les utilisés, les forker. Si nos bundles vous intéresse, pensez à leur mettre une étoile et les
+            recommender sur <a href="http://knpbundles.com/organization/prestaconcept/profile">KNPBundles</a>.</br>
+            Vous pouvez également nous aider en testant et en nous envoyant vos retours.</br>en ouvrant des tickets sur Github.</br>
+
+faq_prestaconcept_10:
+    en:
+        question: Who is Prestaconcept ?
+        answer: |
+            PrestaConcept is a small french company located in Lyon.</br>
+            We are specialised in web developement. Expert on PHP technologies and Symfony.</br>
+    fr:
+        question: Qui est Prestaconcept ?
+        answer: |
+            Prestaconcept est une société à taille humaine situé à Lyon (France).<br/>
+            Nous sommes expert en développement web et plus particulièrement en PHP, Symfony.
+
+faq_prestaconcept_20:
+    en:
+        question: Why does Prestaconcept release so many code as open source ?
+        answer: |
+            At Prestaconcept we believe that open source is great way to imporve code quality and work with great developpers
+            from all around the world.
+
+    fr:
+        question: Pourquoi Prestaconcept partage autant de code en open source ?
+        answer: |
+            Chez Prestaconcept nous pensons que l'open source est l'un des meilleurs moyen pour avoir un code de qualité et
+            partager avec d'autres développeurs d'horizon divers.</br>
