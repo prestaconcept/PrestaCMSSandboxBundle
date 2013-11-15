@@ -20,20 +20,20 @@ use Symfony\Component\Yaml\Parser;
 /**
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class LoadFAQ extends AbstractYmlLoader implements OrderedFixtureInterface
+class LoadContact extends AbstractYmlLoader implements OrderedFixtureInterface
 {
     /**
      * @param ObjectManager $manager
      */
     public function load(ObjectManager $manager)
     {
-        $this->fileDir  = __DIR__ . '/../data/faq/faq.yml';
-        $this->class    = '\Presta\CMSFAQBundle\Entity\FAQ';
+        $this->fileDir  = __DIR__ . '/../data/contact/contact.yml';
+        $this->class    = '\Presta\CMSContactBundle\Doctrine\Orm\Contact';
 
         parent::load($manager);
 
-        $this->fileDir  = __DIR__ . '/../data/faq/faq_category.yml';
-        $this->class    = '\Presta\CMSFAQBundle\Entity\FAQCategory';
+        $this->fileDir  = __DIR__ . '/../data/contact/message.yml';
+        $this->class    = '\Presta\CMSContactBundle\Doctrine\Orm\Message';
 
         parent::load($manager);
     }
@@ -43,6 +43,6 @@ class LoadFAQ extends AbstractYmlLoader implements OrderedFixtureInterface
      */
     public function getOrder()
     {
-        return 50;
+        return 40;
     }
 }

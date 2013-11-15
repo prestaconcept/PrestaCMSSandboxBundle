@@ -3,6 +3,8 @@ presta_sonata_navigation:
         items:
             cms:
                 route: presta_cms_page_edit
+                roles:
+                    - ROLE_ADMIN_CMS
                 children:
                     websites:
                         route: admin_presta_cmscore_website_list

@@ -7,6 +7,7 @@ imports:
     - { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/media/config_navigation.yml' }
     #- { resource: '@PrestaSonataAdminExtendedBundle/Resources/config/media/config_dashboard.yml' }
     - { resource: '@PrestaCMSFAQBundle/Resources/config/config_navigation.yml'}
+    - { resource: '@PrestaCMSContactBundle/Resources/config/config_navigation.yml'}
 
 parameters:
     presta_sonata_admin_extended.default_locale: en
