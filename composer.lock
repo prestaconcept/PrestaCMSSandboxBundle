@@ -1898,12 +1898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCKEditorBundle.git",
-                "reference": "ba29cf1174a518cf7ee1e1f2047ae7c750f20bfd"
+                "reference": "6e08a519793180f41e7ce87a590d631234247759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCKEditorBundle/zipball/ba29cf1174a518cf7ee1e1f2047ae7c750f20bfd",
-                "reference": "ba29cf1174a518cf7ee1e1f2047ae7c750f20bfd",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCKEditorBundle/zipball/6e08a519793180f41e7ce87a590d631234247759",
+                "reference": "6e08a519793180f41e7ce87a590d631234247759",
                 "shasum": ""
             },
             "require": {
@@ -1948,7 +1948,7 @@
                 "symfony-cmf",
                 "wysiwyg"
             ],
-            "time": "2013-11-14 08:05:17"
+            "time": "2013-11-14 10:02:30"
         },
         {
             "name": "presta/cms-contact-bundle",
