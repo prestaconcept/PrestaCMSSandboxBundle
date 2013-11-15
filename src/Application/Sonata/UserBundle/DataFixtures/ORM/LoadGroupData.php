@@ -44,5 +44,4 @@ class LoadGroupData extends AbstractFixture implements OrderedFixtureInterface
     {
         return 1;
     }
-
 }
