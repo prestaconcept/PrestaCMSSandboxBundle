@@ -13,6 +13,3 @@ web_profiler:
 swiftmailer:
     disable_delivery: true
 
-parameters:
-    phpcr_workspace: sandbox_test
-

@@ -1,7 +1,6 @@
 language: php
 
 php:
-  - 5.3
   - 5.4
   - 5.5
 
@@ -11,7 +10,11 @@ before_script:
   - cp app/config/parameters.yml.dist app/config/parameters.yml
   - wget http://getcomposer.org/composer.phar
   - php composer.phar install
+  - php composer.phar dump-autoload --optimize
   - make install
+  #- export NODE_PATH="$(pwd)/node_modules"
+  #- npm install zombie@1.4.1
+  - vendor/bin/behat
 
 script:
   - phpcs --extensions=php -n --standard=PSR2 --report=full src
