@@ -293,6 +293,28 @@ pages:
                         name: contact
                         type: presta_cms_contact.block.contact
                         editable: true
+    faq:
+        name: 'faq'
+        template: 'left-sidebar'
+        url:
+            en: 'faq'
+            fr: 'faq'
+        meta:
+            title:
+                en: "Frequently asked questions"
+                fr: "Questions fréquentes"
+        zones:
+            content:
+                name: content
+                blocks:
+                    10:
+                        name: info
+                        type: presta_cms.block.simple
+                        editable: false
+                    15:
+                        name: faq
+                        type: presta_cms_faq.block.faq
+                        editable: false
     404:
         name: '404'
         template: 'default'
