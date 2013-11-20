@@ -1,7 +1,7 @@
 pages:
     home:
         name: 'home'
-        template: 'default'
+        template: 'right-sidebar'
         meta:
             title:
                 en: "Homepage"

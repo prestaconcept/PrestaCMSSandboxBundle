@@ -10,8 +10,8 @@ faq_category_general:
 
 faq_category_prestaconcept:
     en:
-        title: 'Prestaconcept'
+        title: 'About PrestaConcept'
         position: 20
         enabled: true
     fr:
-        title: 'Prestaconcept'
+        title: 'A propos de PrestaConcept'

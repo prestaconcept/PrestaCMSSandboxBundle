@@ -2091,12 +2091,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSFAQBundle.git",
-                "reference": "2db26da6664b32daa5224c495c3398179177af36"
+                "reference": "b97640363bbaaa54d006cd5c3f0660525287e4e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSFAQBundle/zipball/2db26da6664b32daa5224c495c3398179177af36",
-                "reference": "2db26da6664b32daa5224c495c3398179177af36",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSFAQBundle/zipball/b97640363bbaaa54d006cd5c3f0660525287e4e4",
+                "reference": "b97640363bbaaa54d006cd5c3f0660525287e4e4",
                 "shasum": ""
             },
             "require": {
@@ -2136,7 +2136,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-11-15 11:13:37"
+            "time": "2013-11-20 11:09:16"
         },
         {
             "name": "presta/cms-media-bundle",
@@ -2257,12 +2257,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSThemeBasicBundle.git",
-                "reference": "1ee70e72a859b52de2a777c41eebf1940d62c489"
+                "reference": "16883ffeacf5d8fcdfe297cbf729812da2bb4da6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/1ee70e72a859b52de2a777c41eebf1940d62c489",
-                "reference": "1ee70e72a859b52de2a777c41eebf1940d62c489",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/16883ffeacf5d8fcdfe297cbf729812da2bb4da6",
+                "reference": "16883ffeacf5d8fcdfe297cbf729812da2bb4da6",
                 "shasum": ""
             },
             "require": {
@@ -2304,7 +2304,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-15 10:23:23"
+            "time": "2013-11-20 13:16:41"
         },
         {
             "name": "presta/composer-public-bundle",

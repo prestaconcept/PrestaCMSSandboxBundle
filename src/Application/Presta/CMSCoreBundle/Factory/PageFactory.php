@@ -16,54 +16,34 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
      */
     protected function configureZones(array $page)
     {
-        if (count($page['zones']) > 0) {
-            return $page;
-        }
-        if ($page['template'] == 'default') {
-            $page['zones'] = array(
-                'content' => array(
-                    'name' => 'content',
-                    'blocks' => array(
-                        10 => array('name' => 'info', 'type' => 'presta_cms.block.simple'),
-                        15 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
-                    )
-                ),
-            );
-        }
-        if ($page['template'] == 'left-sidebar') {
-            $page['zones'] = array(
-                'content' => array(
-                    'name' => 'content',
-                    'blocks' => array(
-                        10 => array('name' => 'info', 'type' => 'presta_cms.block.simple'),
-                        15 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
-                    )
-                ),
-                'left' => array(
-                    'name' => 'left',
-                    'blocks' => array(
-                        10 => array('type' => 'presta_cms.block.simple'),
-                        20 => array('type' => 'presta_cms.block.media'),
-                        30 => array('type' => 'presta_cms.block.ajax'),
-                    )
+        if (!isset($page['zones']['content'])) {
+            $page['zones']['content'] = array(
+                'name' => 'content',
+                'blocks' => array(
+                    10 => array('name' => 'info', 'type' => 'presta_cms.block.simple'),
+                    15 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
                 )
             );
         }
-        if ($page['template'] == 'right-sidebar') {
-            $page['zones'] = array(
-                'content' => array(
-                    'name' => 'content',
-                    'blocks' => array(
-                        10 => array('name' => 'info', 'type' => 'presta_cms.block.simple'),
-                        15 => array('name' => 'main', 'type' => 'presta_cms.block.simple')
-                    )
-                ),
-                'right' => array(
-                    'name' => 'right',
-                    'blocks' => array(
-                        10 => array('type' => 'presta_cms.block.simple'),
-                        20 => array('type' => 'presta_cms.block.media')
-                    )
+        if (!isset($page['zones']['left']) && $page['template'] == 'left-sidebar') {
+            $page['zones']['left'] = array(
+                'name' => 'left',
+                'blocks' => array(
+                    10 => array('name' => 'admin', 'type' => 'presta_cms.block.simple'),
+                    15 => array('name' => 'help', 'type' => 'presta_cms.block.simple'),
+                    20 => array('type' => 'presta_cms.block.media'),
+                    30 => array('type' => 'presta_cms.block.ajax'),
+                )
+            );
+        }
+        if (!isset($page['zones']['right']) && $page['template'] == 'right-sidebar') {
+            $page['zones']['right'] = array(
+                'name' => 'right',
+                'blocks' => array(
+                    10 => array('name' => 'admin', 'type' => 'presta_cms.block.simple'),
+                    15 => array('name' => 'help', 'type' => 'presta_cms.block.simple'),
+                    20 => array('type' => 'presta_cms.block.media'),
+                    30 => array('type' => 'presta_cms.block.ajax'),
                 )
             );
         }
@@ -102,6 +82,32 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                             'title' => '',
                             'block_style' => 'info',
                             'content' => 'Ceci est une démonstration.<br/>Le contenu du site est remis à jour toutes les 2 heures.'
+                        )
+                    );
+                } elseif ($block['name'] == 'help') {
+                    $block['settings'] = array(
+                        'en' => array(
+                            'title' => 'Need help ?',
+                            'block_style' => 'info',
+                            'content' => 'If you need help or want to have some news about PrestaCMS development, please register to our <br/><a class="btn link" href="https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs"><i class="icon-question-sign"></i>&nbsp;Google group</a>.'
+                        ),
+                        'fr' => array(
+                            'title' => 'Besoin d\'aide ?',
+                            'block_style' => 'info',
+                            'content' => 'Si vous avez des questions ou que vous voulez être au courant du développement de PrestaCMS, abonner vous à notre <br/><a class="btn link" href="https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs"><i class="icon-question-sign"></i>&nbsp;Google group</a>.'
+                        )
+                    );
+                } elseif ($block['name'] == 'admin') {
+                    $block['settings'] = array(
+                        'en' => array(
+                            'title' => 'Administration',
+                            'block_style' => 'headline',
+                            'content' => 'Discover PrestaCMS backend based on SonataAdmin to easily administrate your website <br/><a class="btn link" href="/admin"><i class="icon-wrench"></i>&nbsp;Login</a>.'
+                        ),
+                        'fr' => array(
+                            'title' => 'Administration',
+                            'block_style' => 'headline',
+                            'content' => 'Découvrez le backend de PrestaCMS pour facilement administrer le site <br/><a class="btn link" href="/admin"><i class="icon-wrench"></i>&nbsp;Connexion</a>.'
                         )
                     );
                 } else {

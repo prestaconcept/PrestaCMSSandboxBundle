@@ -28,7 +28,7 @@ class LoadMedia implements FixtureInterface
      * @param \Doctrine\Common\Persistence\ObjectManager $manager
      */
     public function load(ObjectManager $manager)
-    {
+    {return;
         $adapter = new LocalAdapter(__DIR__ . '/../data/media');
         $filesystem = new Filesystem($adapter);
 
