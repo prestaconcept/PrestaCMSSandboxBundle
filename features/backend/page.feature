@@ -1,4 +1,5 @@
 #@mink:zombie
+@backend
 Feature: Page Administration
     In order to manage pages
     I need to be able to list, read and update pages
