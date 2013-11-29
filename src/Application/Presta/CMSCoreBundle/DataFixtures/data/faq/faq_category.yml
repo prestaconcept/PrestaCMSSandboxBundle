@@ -6,7 +6,7 @@ faq_category_general:
     fr:
         title: 'Questions générales'
     associations:
-        faq: [faq_general_10]
+        faq: [faq_general_10, faq_general_20]
 
 faq_category_prestaconcept:
     en:
@@ -15,3 +15,5 @@ faq_category_prestaconcept:
         enabled: true
     fr:
         title: 'A propos de PrestaConcept'
+    associations:
+        faq: [faq_prestaconcept_10, faq_prestaconcept_20]
