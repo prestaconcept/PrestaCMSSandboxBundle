@@ -30,3 +30,6 @@ presta_cms_core:
                     fr:
                         locale: fr
                         host:  sandbox.prestacms.fr
+    blocks:
+        - excluded:
+            - presta_cms.block.ajax
