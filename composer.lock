@@ -2011,12 +2011,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "1564f457d5bb0884dcfd6c6ff69e688bc93efff8"
+                "reference": "1f978aa066cf85e290d59c5b4c782309a2f767d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/1564f457d5bb0884dcfd6c6ff69e688bc93efff8",
-                "reference": "1564f457d5bb0884dcfd6c6ff69e688bc93efff8",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/1f978aa066cf85e290d59c5b4c782309a2f767d8",
+                "reference": "1f978aa066cf85e290d59c5b4c782309a2f767d8",
                 "shasum": ""
             },
             "require": {
@@ -2035,11 +2035,6 @@
                 "symfony/framework-bundle": "~2.2"
             },
             "require-dev": {
-                "behat/behat": "~2.4@stable",
-                "behat/mink-browserkit-driver": "~1.1@stable",
-                "behat/mink-extension": "~1.1@stable",
-                "behat/mink-zombie-driver": "~1.1@stable",
-                "behat/symfony2-extension": "~1.0@stable",
                 "doctrine/doctrine-bundle": "1.2.*",
                 "doctrine/doctrine-fixtures-bundle": "2.1.*",
                 "doctrine/orm": ">=2.2.3,<2.4-dev",
@@ -2082,7 +2077,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-11-08 16:57:26"
+            "time": "2013-11-29 14:01:55"
         },
         {
             "name": "presta/cms-faq-bundle",
@@ -2145,12 +2140,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSMediaBundle.git",
-                "reference": "e5abcc96a5cba1507da82ef1769c400ad31f9e83"
+                "reference": "280ff8e2c7c88b3e53d362e13eac57dda4f70ddd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSMediaBundle/zipball/e5abcc96a5cba1507da82ef1769c400ad31f9e83",
-                "reference": "e5abcc96a5cba1507da82ef1769c400ad31f9e83",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSMediaBundle/zipball/280ff8e2c7c88b3e53d362e13eac57dda4f70ddd",
+                "reference": "280ff8e2c7c88b3e53d362e13eac57dda4f70ddd",
                 "shasum": ""
             },
             "require": {
@@ -2192,7 +2187,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-30 09:20:14"
+            "time": "2013-11-28 11:01:36"
         },
         {
             "name": "presta/cms-sitemap-bridge-bundle",
