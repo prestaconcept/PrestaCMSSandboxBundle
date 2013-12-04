@@ -55,33 +55,64 @@ pages:
                         settings:
                             en:
                                 title: 'Container example'
-                                layout: '2-cols'
+                                layout: '3-cols'
                             fr:
                                 title: 'Exemple de conteneur'
-                                layout: '2-cols'
+                                layout: '3-cols'
                         children:
-                            10:
+                            40:
                                 name: col1
                                 type: presta_cms.block.simple
-                                editable: true
+                                editable: false
                                 settings:
                                     en:
-                                        title: 'Left block'
-                                        content: this is just a simple text block
+                                        title: 'Developer Guide'
+                                        content: |
+                                          You are a web developer and you want to use the PrestaCMS?<br />
+                                          Here is where you can find the documentation to integrate the CMS.<br />
+                                          You can also find documentation on block system, model adaptation, fixture making...<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/developer-guide/index.html">Developer Guide</a>
                                     fr:
-                                        title: 'Block de gauche'
-                                        content: un example de bloc texte
-                            20:
+                                        title: 'Guide du Développeur'
+                                        content: |
+                                          Vous êtes un développeur et vous désirez utiliser le PrestaCMS ?<br />
+                                          Vous pouvez trouver ici la documentation pour l'installation du PrestaCMS, comment l'utiliser.<br />
+                                          Vous trouverez également une documentation sur le système de block, l'adaptation avec le model, comment créer des fixtures...<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/developer-guide/index.html">Guide du Développeur</a>
+                            50:
                                 name: col2
                                 type: presta_cms.block.simple
-                                editable: true
+                                editable: false
                                 settings:
                                     en:
-                                        title: 'Right block'
-                                        content: this is just a simple text block
+                                        title: 'Designer Guide'
+                                        content: |
+                                          You are a web designer and you want to use the PrestaCMS?<br />
+                                          Here is where you can find the documentation to customate the PrestaCMS.<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/theming-guide/index.html">Designer Guide</a>
                                     fr:
-                                        title: 'Block de droite'
-                                        content: un example de bloc texte
+                                        title: 'Guide du Graphiste'
+                                        content: |
+                                          Vous êtes un graphiste et vous désirez utiliser le PrestaCMS ?<br />
+                                          Vous trouverez ici la documentation pour customiser le PrestaCMS.<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/theming-guide/index.html">Guide du Graphiste</a>
+                            60:
+                                name: col3
+                                type: presta_cms.block.simple
+                                editable: false
+                                settings:
+                                    en:
+                                        title: 'User Guide'
+                                        content: |
+                                          You are a user and you want to know what PrestaCMS can bring to you?<br />
+                                          Here is where you can find the documentation of all features bring by the PrestaCMS.<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/user-guide/index.html">User Guide</a>
+                                    fr:
+                                        title: 'Guide de l''utilisateur'
+                                        content: |
+                                          Vous êtes un utilisateur et vous voulez savoir quelles fonctionnalités le PrestaCMS peut vous apporter ?<br />
+                                          Vous trouverez ici la documentation pour customiser le PrestaCMS.<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/user-guide/index.html">Guide de l'Utilisateur</a>
 
         children: []
     demo:
