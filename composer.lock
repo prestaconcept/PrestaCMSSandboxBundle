@@ -2011,12 +2011,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "03c3372eac2c6ac85b908886aa1d67fcc396f943"
+                "reference": "be5d20c49a749b76ed8138713c05fe9565c3e0ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/03c3372eac2c6ac85b908886aa1d67fcc396f943",
-                "reference": "03c3372eac2c6ac85b908886aa1d67fcc396f943",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/be5d20c49a749b76ed8138713c05fe9565c3e0ca",
+                "reference": "be5d20c49a749b76ed8138713c05fe9565c3e0ca",
                 "shasum": ""
             },
             "require": {
@@ -2077,7 +2077,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-12-04 14:29:13"
+            "time": "2013-12-05 08:35:23"
         },
         {
             "name": "presta/cms-faq-bundle",
