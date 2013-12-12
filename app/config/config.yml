@@ -11,6 +11,7 @@ imports:
     - { resource: '@PrestaCMSCKEditorBundle/Resources/config/config.yml' }
     - { resource: bundles/presta_sonata_navigation.yml }
     - { resource: bundles/presta_sonata_admin_extended.yml }
+    - { resource: '@PrestaCMSUserBundle/Resources/config/config.yml' }
 
 
 framework:

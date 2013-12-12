@@ -50,6 +50,7 @@
         "presta/sonata-admin-extended-bundle": "1.0.*",
         "presta/cms-ckeditor-bundle": "1.0.*",
         "presta/cms-faq-bundle": "1.0.*",
+        "presta/cms-user-bundle": "1.0.*",
 
         "doctrine/phpcr-bundle": "1.0.0",
         "doctrine/phpcr-odm": "1.0.0",
