@@ -2011,18 +2011,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "be5d20c49a749b76ed8138713c05fe9565c3e0ca"
+                "reference": "706b0b6bc0cf9cf7cf03b364931b206260a19805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/be5d20c49a749b76ed8138713c05fe9565c3e0ca",
-                "reference": "be5d20c49a749b76ed8138713c05fe9565c3e0ca",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/706b0b6bc0cf9cf7cf03b364931b206260a19805",
+                "reference": "706b0b6bc0cf9cf7cf03b364931b206260a19805",
                 "shasum": ""
             },
             "require": {
                 "doctrine/phpcr-bundle": "1.0.*",
                 "doctrine/phpcr-odm": "1.0.*",
-                "leafo/lessphp": "0.3.*",
+                "leafo/lessphp": "~0.3",
                 "php": ">=5.3.3",
                 "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*",
                 "sonata-project/seo-bundle": "1.1.*",
@@ -2077,7 +2077,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-12-05 08:35:23"
+            "time": "2013-12-12 15:27:22"
         },
         {
             "name": "presta/cms-faq-bundle",
@@ -2252,12 +2252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSThemeBasicBundle.git",
-                "reference": "16883ffeacf5d8fcdfe297cbf729812da2bb4da6"
+                "reference": "3d3a62b64412a044e87e80b29be2701d42c0b8c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/16883ffeacf5d8fcdfe297cbf729812da2bb4da6",
-                "reference": "16883ffeacf5d8fcdfe297cbf729812da2bb4da6",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSThemeBasicBundle/zipball/3d3a62b64412a044e87e80b29be2701d42c0b8c5",
+                "reference": "3d3a62b64412a044e87e80b29be2701d42c0b8c5",
                 "shasum": ""
             },
             "require": {
@@ -2299,7 +2299,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-11-20 13:16:41"
+            "time": "2013-12-12 15:22:05"
         },
         {
             "name": "presta/cms-user-bundle",
@@ -2308,12 +2308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSUserBundle.git",
-                "reference": "813e39b6cfae4d4180a0e9a02269e9cba0e3e10b"
+                "reference": "b973c60126df42f9576e005ec2c7b6179e7e6dc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSUserBundle/zipball/813e39b6cfae4d4180a0e9a02269e9cba0e3e10b",
-                "reference": "813e39b6cfae4d4180a0e9a02269e9cba0e3e10b",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSUserBundle/zipball/b973c60126df42f9576e005ec2c7b6179e7e6dc7",
+                "reference": "b973c60126df42f9576e005ec2c7b6179e7e6dc7",
                 "shasum": ""
             },
             "require": {
@@ -2353,7 +2353,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-12-12 14:27:54"
+            "time": "2013-12-12 14:48:33"
         },
         {
             "name": "presta/composer-public-bundle",
