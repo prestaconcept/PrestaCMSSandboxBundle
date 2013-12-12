@@ -35,6 +35,10 @@ PrestaCMSCoreBundle:
     resource: "@PrestaCMSCoreBundle/Resources/config/routing.xml"
     prefix:   /admin/{_locale}/
 
+prestacms_user:
+    resource: "@PrestaCMSUserBundle/Resources/config/routing.xml"
+    prefix: /user
+
 #presta_cms_page_redirect:
 #    pattern: /redirect
 #    defaults: {_controller: PrestaCMSCoreBundle:Page:redirect}

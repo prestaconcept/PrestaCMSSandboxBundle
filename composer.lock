@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7fd1ade9d8eb41a43fec086b30702917",
+    "hash": "e30625bfe3fbcdb282943e0494b8b40e",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -2300,6 +2300,60 @@
                 "symfony-cmf"
             ],
             "time": "2013-11-20 13:16:41"
+        },
+        {
+            "name": "presta/cms-user-bundle",
+            "version": "dev-master",
+            "target-dir": "Presta/CMSUserBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prestaconcept/PrestaCMSUserBundle.git",
+                "reference": "813e39b6cfae4d4180a0e9a02269e9cba0e3e10b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSUserBundle/zipball/813e39b6cfae4d4180a0e9a02269e9cba0e3e10b",
+                "reference": "813e39b6cfae4d4180a0e9a02269e9cba0e3e10b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "presta/cms-core-bundle": "1.0.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Presta\\CMSUserBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Bastien",
+                    "email": "nbastien@prestaconcept.net",
+                    "homepage": "http://www.prestaconcept.net/"
+                }
+            ],
+            "description": "PrestaCMS User bundle : allow you to managed your front users",
+            "homepage": "https://github.com/prestaconcept/PrestaCMSUserBundle",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "cms",
+                "prestaconcept",
+                "symfony-cmf"
+            ],
+            "time": "2013-12-12 14:27:54"
         },
         {
             "name": "presta/composer-public-bundle",
