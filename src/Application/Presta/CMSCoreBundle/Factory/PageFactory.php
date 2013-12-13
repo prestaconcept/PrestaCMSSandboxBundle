@@ -29,6 +29,7 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
             $page['zones']['left'] = array(
                 'name' => 'left',
                 'blocks' => array(
+                    5 => array('name' => 'user-info', 'type' => 'presta_cms_user.block.user_info'),
                     10 => array('name' => 'admin', 'type' => 'presta_cms.block.simple'),
                     15 => array('name' => 'help', 'type' => 'presta_cms.block.simple'),
                     20 => array('type' => 'presta_cms.block.media'),
@@ -40,6 +41,7 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
             $page['zones']['right'] = array(
                 'name' => 'right',
                 'blocks' => array(
+                    5 => array('name' => 'user-info', 'type' => 'presta_cms_user.block.user_info'),
                     10 => array('name' => 'admin', 'type' => 'presta_cms.block.simple'),
                     15 => array('name' => 'help', 'type' => 'presta_cms.block.simple'),
                     20 => array('type' => 'presta_cms.block.media'),
@@ -171,6 +173,8 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                 $block['editable']  = false;
                 $block['deletable'] = false;
                 break;
+            case 'presta_cms_user.block.user_info':
+                $block['settings']['block_style'] = 'headline';
         }
 
         return $block;
