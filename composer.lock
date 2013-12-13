@@ -2308,12 +2308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSUserBundle.git",
-                "reference": "b973c60126df42f9576e005ec2c7b6179e7e6dc7"
+                "reference": "937d804f4a619d1fe14347995c212c59e66661dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSUserBundle/zipball/b973c60126df42f9576e005ec2c7b6179e7e6dc7",
-                "reference": "b973c60126df42f9576e005ec2c7b6179e7e6dc7",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSUserBundle/zipball/937d804f4a619d1fe14347995c212c59e66661dd",
+                "reference": "937d804f4a619d1fe14347995c212c59e66661dd",
                 "shasum": ""
             },
             "require": {
@@ -2353,7 +2353,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-12-12 14:48:33"
+            "time": "2013-12-13 09:56:34"
         },
         {
             "name": "presta/composer-public-bundle",
