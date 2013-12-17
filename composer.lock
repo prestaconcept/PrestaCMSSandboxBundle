@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c4857bf6077e75bf249797fd92dd6839",
+    "hash": "e30625bfe3fbcdb282943e0494b8b40e",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -2362,12 +2362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaComposerPublicBundle.git",
-                "reference": "20a5ec4d822f26ec9d9e0544fb8beaba20c1e37a"
+                "reference": "0341c3fe07c52b7ce300c7c97939446662a2d7c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaComposerPublicBundle/zipball/20a5ec4d822f26ec9d9e0544fb8beaba20c1e37a",
-                "reference": "20a5ec4d822f26ec9d9e0544fb8beaba20c1e37a",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaComposerPublicBundle/zipball/0341c3fe07c52b7ce300c7c97939446662a2d7c7",
+                "reference": "0341c3fe07c52b7ce300c7c97939446662a2d7c7",
                 "shasum": ""
             },
             "require": {
@@ -2413,7 +2413,7 @@
                 "prestaconcept",
                 "public"
             ],
-            "time": "2013-12-17 08:08:16"
+            "time": "2013-12-17 14:39:42"
         },
         {
             "name": "presta/presta-cms",
