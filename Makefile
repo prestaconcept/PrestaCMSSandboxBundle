@@ -8,8 +8,6 @@ install:
 	chmod -R 777 app/database
 	app/console assets:install --symlink
 	app/console assetic:dump --env=prod
-	app/console presta:composer-public --force
-	app/console presta:composer-public --copy
 
 deploy-configure:
 	curl -s http://getcomposer.org/installer | php

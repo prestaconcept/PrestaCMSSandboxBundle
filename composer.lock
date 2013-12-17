@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e30625bfe3fbcdb282943e0494b8b40e",
+    "hash": "c4857bf6077e75bf249797fd92dd6839",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -1898,12 +1898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCKEditorBundle.git",
-                "reference": "7b4fddcd0fa89a3014b33ce5f895cece9b0e62ea"
+                "reference": "00c89eb44ec794167548564cbbdc43d089b17c9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCKEditorBundle/zipball/7b4fddcd0fa89a3014b33ce5f895cece9b0e62ea",
-                "reference": "7b4fddcd0fa89a3014b33ce5f895cece9b0e62ea",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCKEditorBundle/zipball/00c89eb44ec794167548564cbbdc43d089b17c9b",
+                "reference": "00c89eb44ec794167548564cbbdc43d089b17c9b",
                 "shasum": ""
             },
             "require": {
@@ -1948,7 +1948,7 @@
                 "symfony-cmf",
                 "wysiwyg"
             ],
-            "time": "2013-11-15 15:29:04"
+            "time": "2013-12-17 09:18:54"
         },
         {
             "name": "presta/cms-contact-bundle",
@@ -2362,12 +2362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaComposerPublicBundle.git",
-                "reference": "0797c85640557a7749ebb98212bc03903b142e57"
+                "reference": "20a5ec4d822f26ec9d9e0544fb8beaba20c1e37a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaComposerPublicBundle/zipball/0797c85640557a7749ebb98212bc03903b142e57",
-                "reference": "0797c85640557a7749ebb98212bc03903b142e57",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaComposerPublicBundle/zipball/20a5ec4d822f26ec9d9e0544fb8beaba20c1e37a",
+                "reference": "20a5ec4d822f26ec9d9e0544fb8beaba20c1e37a",
                 "shasum": ""
             },
             "require": {
@@ -2413,7 +2413,7 @@
                 "prestaconcept",
                 "public"
             ],
-            "time": "2013-10-07 07:18:34"
+            "time": "2013-12-17 08:08:16"
         },
         {
             "name": "presta/presta-cms",
