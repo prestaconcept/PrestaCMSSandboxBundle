@@ -6,6 +6,7 @@ install:
 	app/console doctrine:phpcr:fixtures:load --no-interaction
 	app/console doctrine:fixture:load --no-interaction
 	chmod -R 777 app/database
+	rm -rf app/cache/*
 	app/console assets:install --symlink
 	app/console assetic:dump --env=prod
 

@@ -24,13 +24,28 @@ zones:
         name: footer_middle
         blocks:
             10:
-                type: presta_cms.block.sitemap
+                type: presta_cms_social.block.twitter.latest_tweets
+                editable: false
+                deletable: false
                 settings:
                     en:
-                        title: Useful Links
-                        depth: 1
-                        root_node: /website/sandbox/page/demo
+                        title: Latest Tweet
+                        twitter_username: PrestaBundles
+                        limit: 10
+                        exclude_replies: true
+                        include_retweets: true
                     fr:
-                        title: Liens utiles
-                        depth: 1
-                        root_node: /website/sandbox/page/demo
+                        title: Derniers tweets
+                        twitter_username: PrestaBundles
+                        limit: 10
+                        exclude_replies: true
+                        include_retweets: true
+    footer_right:
+        name: footer_right
+        editable: true
+        blocks:
+            10:
+                type: presta_cms_social.block.twitter.followers_count
+                settings:
+                    title: @PrestaBundles
+                    twitter_username: PrestaBundles

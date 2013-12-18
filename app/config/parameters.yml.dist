@@ -17,3 +17,9 @@ parameters:
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     presta_sonata_admin_extended.locales: [en, fr]
+
+    twitter.api_url: https://api.twitter.com/1.1/
+    twitter.consumer_key: MyTwitterConsumerKey
+    twitter.consumer_secret: MyTwitterConsumerSecret
+    twitter.access_token: MyTwitterAccessToken
+    twitter.access_token_secret: MyTwitterAccessTokenSecret

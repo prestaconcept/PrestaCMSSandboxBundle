@@ -1,0 +1,7 @@
+presta_cms_social:
+    twitter:
+        url: %twitter.api_url%
+        consumer_key: %twitter.consumer_key%
+        consumer_secret: %twitter.consumer_secret%
+        token: %twitter.access_token%
+        token_secret: %twitter.access_token_secret%

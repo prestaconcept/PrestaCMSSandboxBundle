@@ -46,7 +46,7 @@ class AdminThemeContext extends BehatContext
 
         //Block content
         $this->getMainContext()->assertPageContainsText('About US');
-        $this->getMainContext()->assertPageContainsText('Useful Links');
+        $this->getMainContext()->assertPageContainsText('Latest Tweets');
         $this->getMainContext()->assertPageContainsText(
             'PrestaCMS is an open-source CMS base on Symfony2, CMF and Sonata.'
         );
