@@ -13,13 +13,20 @@ use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 
+use FOS\UserBundle\Doctrine\UserManager;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 class LoadUserData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
+    /**
+     * @var ContainerInterface
+     */
     private $container;
 
+    /**
+     * @param ContainerInterface $container
+     */
     public function setContainer(ContainerInterface $container = null)
     {
         $this->container = $container;
@@ -30,7 +37,7 @@ class LoadUserData extends AbstractFixture implements ContainerAwareInterface, O
      */
     public function load(ObjectManager $manager)
     {
-        $userManager = $this->container->get('fos_user.user_manager');
+        $userManager = $this->getUserManager();
 
         /**
          * admin
@@ -46,6 +53,15 @@ class LoadUserData extends AbstractFixture implements ContainerAwareInterface, O
 
         $userManager->updateUser($userAdmin, true);
 
+        $user = $userManager->createUser();
+        $user
+            ->setUsername('user')
+            ->setEmail('user@prestaconcept.net')
+            ->setPlainPassword('user')
+            ->setEnabled(true)
+            ->addRole('ROLE_ACCES_ADMIN');
+
+        $userManager->updateUser($user, true);
     }
 
     /**
@@ -54,5 +70,13 @@ class LoadUserData extends AbstractFixture implements ContainerAwareInterface, O
     public function getOrder()
     {
         return 2;
+    }
+
+    /**
+     * @return UserManager
+     */
+    protected function getUserManager()
+    {
+        return $this->container->get('fos_user.user_manager');
     }
 }
