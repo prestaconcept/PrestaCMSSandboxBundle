@@ -9,7 +9,7 @@ before_script:
   - phpenv rehash
   - cp app/config/parameters.yml.dist app/config/parameters.yml
   - wget http://getcomposer.org/composer.phar
-  - php composer.phar install
+  - php composer.phar install -n
   - php composer.phar dump-autoload --optimize
   - make install
   #- export NODE_PATH="$(pwd)/node_modules"
