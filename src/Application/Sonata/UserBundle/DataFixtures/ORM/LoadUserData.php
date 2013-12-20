@@ -35,6 +35,22 @@ class LoadUserData extends AbstractFixture implements ContainerAwareInterface, O
     /**
      * {@inheritDoc}
      */
+    public function getOrder()
+    {
+        return 2;
+    }
+
+    /**
+     * @return UserManager
+     */
+    protected function getUserManager()
+    {
+        return $this->container->get('fos_user.user_manager');
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function load(ObjectManager $manager)
     {
         $userManager = $this->getUserManager();
@@ -62,21 +78,5 @@ class LoadUserData extends AbstractFixture implements ContainerAwareInterface, O
             ->addRole('ROLE_ACCES_ADMIN');
 
         $userManager->updateUser($user, true);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getOrder()
-    {
-        return 2;
-    }
-
-    /**
-     * @return UserManager
-     */
-    protected function getUserManager()
-    {
-        return $this->container->get('fos_user.user_manager');
     }
 }
