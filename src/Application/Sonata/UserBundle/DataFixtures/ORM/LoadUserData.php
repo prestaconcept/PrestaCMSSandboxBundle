@@ -75,7 +75,7 @@ class LoadUserData extends AbstractFixture implements ContainerAwareInterface, O
             ->setEmail('user@prestaconcept.net')
             ->setPlainPassword('user')
             ->setEnabled(true)
-            ->addRole('ROLE_ACCES_ADMIN');
+            ->addRole('ROLE_ADMIN_CMS_ACCESS');
 
         $userManager->updateUser($user, true);
     }
