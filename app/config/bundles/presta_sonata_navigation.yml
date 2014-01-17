@@ -4,11 +4,17 @@ presta_sonata_navigation:
             cms:
                 route: presta_cms_page_edit
                 roles:
-                    - ROLE_ADMIN_CMS
+                    - ROLE_ADMIN_CMS_ACCESS
                 children:
                     websites:
                         route: admin_presta_cmscore_website_list
+                        roles:
+                            - ROLE_ADMIN_CMS_WEBSITE_ACCESS
                     themes:
                         route: presta_cms_theme
+                        roles:
+                            - ROLE_ADMIN_CMS_THEME_ACCESS
                     pages:
                         route: presta_cms_page_edit
+                        roles:
+                            - ROLE_ADMIN_CMS_PAGE_ACCESS

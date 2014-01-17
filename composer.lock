@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "904e4585327d77fa05f9f016546edf01",
+    "hash": "217b6e9784094ca532858b92404250ed",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -2011,12 +2011,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSCoreBundle.git",
-                "reference": "3132341ef189703d6e365c4e95fe97415dc31d45"
+                "reference": "20775b408a10565de2a2a937ad8fb3629d7de3fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/3132341ef189703d6e365c4e95fe97415dc31d45",
-                "reference": "3132341ef189703d6e365c4e95fe97415dc31d45",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSCoreBundle/zipball/20775b408a10565de2a2a937ad8fb3629d7de3fa",
+                "reference": "20775b408a10565de2a2a937ad8fb3629d7de3fa",
                 "shasum": ""
             },
             "require": {
@@ -2039,6 +2039,7 @@
                 "doctrine/doctrine-fixtures-bundle": "2.1.*",
                 "doctrine/orm": ">=2.2.3,<2.4-dev",
                 "jackalope/jackalope-doctrine-dbal": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*",
                 "symfony-cmf/testing": "1.0.*"
             },
             "suggest": {
@@ -2077,7 +2078,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-12-13 10:39:10"
+            "time": "2014-01-16 14:45:04"
         },
         {
             "name": "presta/cms-faq-bundle",

@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: phpcr_doctrine_dbal.yml }
     - { resource: security.yml }
+    - { resource: '@PrestaCMSCoreBundle/Resources/config/roles.yml' }
     - { resource: '@PrestaCMSCoreBundle/Resources/config/config.yml' }
     - { resource: bundles/sonata_admin.yml }
     - { resource: bundles/sonata_block.yml }

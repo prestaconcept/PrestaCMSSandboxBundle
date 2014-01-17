@@ -11,6 +11,7 @@ security:
           - ROLE_ADMIN_USER
           - ROLE_ADMIN_MEDIA
           - ROLE_ADMIN_CMS
+          - ROLE_ADMIN_CMS_ACCESS
 
     providers:
         fos_userbundle:
@@ -69,6 +70,6 @@ security:
         # Secured part of the site
         # This config requires being logged for the whole site and having the admin role for the admin part.
         # Change these rules to adapt them to your needs
-        - { path: /admin/, role: [ROLE_ADMIN] }
+        - { path: /admin/, role: [ROLE_ADMIN_CMS_ACCESS] }
         - { path: ^/.*, role: IS_AUTHENTICATED_ANONYMOUSLY }
     # ...
