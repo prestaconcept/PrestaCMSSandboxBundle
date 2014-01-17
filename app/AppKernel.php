@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Sonata\SeoBundle\SonataSeoBundle(),
             new Sonata\MediaBundle\SonataMediaBundle(),
+            new Sonata\IntlBundle\SonataIntlBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
 
             new Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle(),
@@ -50,6 +51,7 @@ class AppKernel extends Kernel
             new Presta\CMSMediaBundle\PrestaCMSMediaBundle(),
             new Presta\CMSThemeBasicBundle\PrestaCMSThemeBasicBundle(),
             new Presta\SonataNavigationBundle\PrestaSonataNavigationBundle(),
+            new Presta\CMSSocialBundle\PrestaCMSSocialBundle(),
 
             //Utils
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
