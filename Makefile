@@ -1,34 +1,21 @@
+ENV = "dev"
+
+clean:
+	app/console doctrine:database:drop --force --env=$(ENV)
+
 install:
-	app/console doctrine:database:drop --force
-	app/console doctrine:database:create
-	app/console doctrine:schema:create
-	app/console doctrine:phpcr:repository:init
-	app/console doctrine:phpcr:fixtures:load --no-interaction
-	app/console doctrine:fixture:load --no-interaction
-	chmod -R 777 app/database
-	rm -rf app/cache/*
-	app/console assets:install --symlink
-	app/console assetic:dump --env=prod
-
-deploy-configure:
-	curl -s http://getcomposer.org/installer | php
-	php composer.phar install
-	php composer.phar dump-autoload --optimize
-	app/console assets:install web
-	app/console assetic:dump --env=prod
-
-deploy-install:
-	rm -rf app/cache/*
-	chmod 777 app/database app/logs app/cache
+	app/console doctrine:database:create --env=$(ENV)
 	chmod 777 app/database/*
-	chmod -R 777 web/uploads
-
-deploy-update: cc install
+	app/console doctrine:schema:create --env=$(ENV)
+	app/console doctrine:phpcr:repository:init --env=$(ENV)
+	app/console doctrine:phpcr:fixtures:load --no-interaction --env=$(ENV)
+	app/console doctrine:fixture:load --no-interaction --env=$(ENV)
+	app/console assetic:dump --env=$(ENV)
 
 refresh:
-	app/console doctrine:phpcr:fixtures:load --no-interaction
-	app/console doctrine:fixture:load --no-interaction
-	app/console cache:clear --env=prod
+	app/console doctrine:phpcr:fixtures:load --no-interaction --env=$(ENV)
+	app/console doctrine:fixture:load --no-interaction --env=$(ENV)
+	app/console cache:clear --env=$(ENV)
 
 pr:
 	app/console doctrine:phpcr:fixtures:load --no-interaction
@@ -44,3 +31,21 @@ cs:
 
 ai:
 	app/console assets:install web
+
+## Launch this on first deploy
+deploy-install: ENV = "prod"
+deploy-install: install
+
+## Launch this when you already have an instance
+deploy-update: ENV = "prod"
+deploy-update: clean
+deploy-update: deploy-install
+
+deploy-refresh: ENV = "prod"
+deploy-refresh: refresh
+
+test-clean: ENV = "test"
+test-clean: clean
+
+test-install: ENV = "test"
+test-install: install
