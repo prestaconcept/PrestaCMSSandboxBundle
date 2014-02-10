@@ -3,6 +3,8 @@ imports:
 
 framework:
     test: ~
+    profiler:
+        enabled: false
     session:
         storage_id: session.storage.mock_file
 
