@@ -2335,12 +2335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/prestaconcept/PrestaCMSSitemapBridgeBundle.git",
-                "reference": "b1c9c0582799c5bfca6e126cb3f7b9c3dded8ab1"
+                "reference": "146f34851e81eef3242f31baa9edfcb6aa84ef6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSSitemapBridgeBundle/zipball/b1c9c0582799c5bfca6e126cb3f7b9c3dded8ab1",
-                "reference": "b1c9c0582799c5bfca6e126cb3f7b9c3dded8ab1",
+                "url": "https://api.github.com/repos/prestaconcept/PrestaCMSSitemapBridgeBundle/zipball/146f34851e81eef3242f31baa9edfcb6aa84ef6b",
+                "reference": "146f34851e81eef3242f31baa9edfcb6aa84ef6b",
                 "shasum": ""
             },
             "require": {
@@ -2382,7 +2382,7 @@
                 "prestaconcept",
                 "symfony-cmf"
             ],
-            "time": "2013-10-31 14:18:35"
+            "time": "2013-12-06 16:03:29"
         },
         {
             "name": "presta/cms-social-bundle",
