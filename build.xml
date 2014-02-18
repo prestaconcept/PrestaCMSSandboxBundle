@@ -91,6 +91,10 @@
             <arg line="composer.phar install --no-dev --verbose --prefer-dist --optimize-autoloader --no-progress"/>
         </exec>
 
+        <exec executable="php" failonerror="true" >
+            <arg line="app/console assetic:dump --env=prod" />
+        </exec>
+
         <exec executable="tar" failonerror="true">
             <arg value="-cz" />
             <arg line=" --exclude build" />
