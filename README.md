@@ -2,17 +2,9 @@ Presta CMS Sandbox
 =============
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/prestacms-sandbox.png)](http://travis-ci.org/prestaconcept/prestacms-sandbox)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/prestacms-sandbox/badges/quality-score.png?s=cd36439a03b3de8dd2d17f53de075aded6e11ddc)](https://scrutinizer-ci.com/g/prestaconcept/prestacms-sandbox/)
 [![Latest Stable Version](https://poser.pugx.org/presta/cms-sandbox/v/stable.png)](https://packagist.org/packages/presta/cms-sandbox)
 [![Total Downloads](https://poser.pugx.org/presta/cms-sandbox/downloads.png)](https://packagist.org/packages/presta/cms-sandbox)
-
-##Online demo
-
-:information_source: PrestaCMS Demo is online in english and french :
-
-http://sandbox.prestacms.com and http://sandbox.prestacms.fr
-
-Administration is under /admin
-
 
 ## Overview ##
 
@@ -22,22 +14,24 @@ It is based on :
 * [**Symfony Standard edition**](https://github.com/symfony/symfony-standard)
 * [**Symfony CMF**](http://symfony.com/doc/master/cmf/index.html)
 
-** Important ** :construction: [WIP] This project is still under heaving development and is not yet ready to use in production.
-PrestaConcept is currently developing it for their new website.
+## Documentation ##
+
+:book: Documentation is available on [prestaconcept.github.io][4]
+
+## Online Demonstration ##
+
+Sandbox is also deployed for a live demonstration :
+
+-   [Frontend site][5]
+-   [Administration Site][6]
+
 
 If you want to have some informations about the projet progession you can register to our :speech_balloon: [google group](https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs)
 
-## Features ##
+## Issue tracker ##
 
-- [x] Multiple website
-- [x] Custom theming
-- [x] Page edition
-- [x] WYSIWYG integration
+:clipboard: Issues are managed in [prestaconcept/open-source-management](https://github.com/prestaconcept/open-source-management) to centralize our open source activity.
 
-**Todo**
-- [ ] Demonstration multiple website
-- [ ] Add media block
-- [ ] Add a nice documentation
 
 ### Front website with custom theming ###
 
@@ -163,21 +157,30 @@ As PrestaCMS depends on host configuration, you have to set up virtual hosts for
 
 please checkout the [README.md](vagrant) in the vagrant/ folder of the project
 
+
 ## Ask for help ##
 
-:speech_balloon: If you need help about this project you can [post a message on our google group](https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs)
+:speech_balloon: If you need help about this project you can [post a message on our google group][3]
 
+## Contributing
+
+Pull requests are welcome.
+
+
+Thanks to
+[everyone who has contributed](https://github.com/prestaconcept/prestacms-sandbox/graphs/contributors) already.
 
 ---
 
 *This project is supported by [PrestaConcept](http://www.prestaconcept.net)*
 
-:book: **Usefull links**
- * [**PrestaCMSCorebundle Documentation**](https://github.com/prestaconcept/PrestaCMSCoreBundle)
- * [**PrestaConcept Bundles**](https://github.com/prestaconcept)
- * [**Symfony CMF Documentation**](http://symfony.com/doc/master/cmf/index.html)
+**Lead Developer** : [@nicolas-bastien](https://github.com/nicolas-bastien)
 
+Released under the MIT License
+
+[4]: http://prestaconcept.github.io
+[5]: http://sandbox.prestacms.com/
+[6]: http://sandbox.prestacms.com/admin
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/prestaconcept/prestacms-sandbox/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
