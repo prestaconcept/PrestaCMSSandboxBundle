@@ -178,6 +178,7 @@ Thanks to
 
 Released under the MIT License
 
+[3]: https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs
 [4]: http://prestaconcept.github.io
 [5]: http://sandbox.prestacms.com/
 [6]: http://sandbox.prestacms.com/admin
