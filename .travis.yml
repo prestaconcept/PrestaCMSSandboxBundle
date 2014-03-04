@@ -4,22 +4,13 @@ php:
   - 5.4
   - 5.5
 
-env:
-  - SYMFONY_VERSION=2.3.*
-  - SYMFONY_VERSION=dev-master
-
 before_script:
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
-  - composer selfupdate
-  - composer require symfony/symfony:${SYMFONY_VERSION}
+  - composer install
 
 script:
   - phpcs --ignore=/vendor/* --extensions=php --encoding=utf-8 --standard=PSR2 -np .
-
-matrix:
-  allow_failures:
-    - env: SYMFONY_VERSION=dev-master
 
 notifications:
   email: "nbastien@prestaconcept.net"
