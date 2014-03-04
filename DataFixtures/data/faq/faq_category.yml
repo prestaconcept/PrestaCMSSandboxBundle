@@ -1,0 +1,19 @@
+faq_category_general:
+    en:
+        title: 'General questions'
+        position: 10
+        enabled: true
+    fr:
+        title: 'Questions générales'
+    associations:
+        faq: [faq_general_10, faq_general_20]
+
+faq_category_prestaconcept:
+    en:
+        title: 'About PrestaConcept'
+        position: 20
+        enabled: true
+    fr:
+        title: 'A propos de PrestaConcept'
+    associations:
+        faq: [faq_prestaconcept_10, faq_prestaconcept_20]
