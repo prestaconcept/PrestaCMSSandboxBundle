@@ -9,7 +9,6 @@
  */
 namespace Presta\CMSSandboxBundle\Factory;
 
-use Presta\CMSCoreBundle\Doctrine\Phpcr\Page;
 use Presta\CMSCoreBundle\Factory\ModelFactoryInterface;
 use Presta\CMSCoreBundle\Factory\PageFactory as BasePageFactory;
 

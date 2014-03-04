@@ -13,7 +13,6 @@ use Doctrine\Common\Persistence\ObjectManager;
 use PHPCR\Util\NodeHelper;
 use Symfony\Component\Yaml\Parser;
 use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseRouteFixture;
-use Presta\CMSCoreBundle\Doctrine\Phpcr\Website;
 
 /**
  * @author     Nicolas Bastien <nbastien@prestaconcept.net>
@@ -26,13 +25,8 @@ class LoadRoute extends BaseRouteFixture
     public function load(ObjectManager $manager)
     {
         $this->manager = $manager;
-        $session = $manager->getPhpcrSession();
 
-        //création namespace menu
-        NodeHelper::createPath($session, '/website/symfony-prestacms/route');
-        $root = $manager->find(null, '/website/symfony-prestacms/route');
-
-        $home = $manager->find(null, '/website/symfony-prestacms/route/en');
+        $home   = $manager->find(null, '/website/symfony-prestacms/route/en');
         $homeFr = $manager->find(null, '/website/symfony-prestacms/route/fr');
 
         $yaml = new Parser();

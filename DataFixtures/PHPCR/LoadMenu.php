@@ -12,10 +12,7 @@ namespace Presta\CMSSandboxBundle\DataFixtures\PHPCR;
 use Doctrine\Common\Persistence\ObjectManager;
 use PHPCR\Util\NodeHelper;
 use Symfony\Component\Yaml\Parser;
-
 use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseMenuFixture;
-
-use Presta\CMSCoreBundle\Doctrine\Phpcr\Website;
 
 /**
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
