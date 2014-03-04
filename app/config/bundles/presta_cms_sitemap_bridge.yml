@@ -1,5 +1,0 @@
-presta_cms_sitemap_bridge:
-    url:
-        excluded:
-            - /404
-            - /500
