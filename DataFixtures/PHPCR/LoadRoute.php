@@ -32,13 +32,6 @@ class LoadRoute extends BaseRouteFixture
         NodeHelper::createPath($session, '/website/symfony-prestacms/route');
         $root = $manager->find(null, '/website/symfony-prestacms/route');
 
-        //Routing home
-        $configuration = array(
-            'parent' => $root,
-            'content_path' => '/website/symfony-prestacms/page',
-            'name' => 'en',
-            'locale' => 'en'
-        );
         $home = $manager->find(null, '/website/symfony-prestacms/route/en');
         $homeFr = $manager->find(null, '/website/symfony-prestacms/route/fr');
 
