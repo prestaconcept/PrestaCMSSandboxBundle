@@ -1,0 +1,17 @@
+parameters:
+    presta_cms.page.factory.class: Presta\CMSSandboxBundle\Factory\PageFactory
+
+presta_cms_core:
+    default_website: /website/sandbox
+    default_locale: en
+    websites:
+        sandbox:
+            path: /website/sandbox
+            hosts:
+                dev:
+                    en:
+                        locale: en
+                        host: sandbox.prestacms.dev
+                    fr:
+                        locale: fr
+                        host: sandbox.prestacms.fr.dev
