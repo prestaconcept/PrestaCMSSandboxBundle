@@ -1,7 +1,0 @@
-sonata_block:
-    default_contexts: [cms]
-    blocks:
-        sonata.block.service.text:
-        sonata.admin.block.admin_list:
-        presta_sonata_admin_extended.block.dashboard.user:
-        presta_sonata_admin_extended.block.dashboard.media:
