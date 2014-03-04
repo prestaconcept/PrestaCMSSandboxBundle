@@ -147,8 +147,8 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
             case 'presta_cms.block.media':
                 $media = rand(1, 30);
                 $block['settings'] = array(
-                    'en' => array('media' => (string)$media, 'format' => 'prestacms_page_sidebar'),
-                    'fr' => array('media' => (string)$media, 'format' => 'prestacms_page_sidebar')
+                    'en' => array('media' => (string) $media, 'format' => 'prestacms_page_sidebar'),
+                    'fr' => array('media' => (string) $media, 'format' => 'prestacms_page_sidebar')
                 );
                 break;
             case 'presta_cms.block.media_advanced':

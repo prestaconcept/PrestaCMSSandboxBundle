@@ -14,7 +14,6 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Presta\CMSFAQBundle\Entity\FAQ;
 use Presta\CMSFAQBundle\Entity\FAQCategory;
 use Presta\SonataAdminExtendedBundle\Fixture\Loader\AbstractYmlLoader;
-use Symfony\Component\Yaml\Parser;
 
 /**
  * @author Nicolas Bastien <nbastien@prestaconcept.net>

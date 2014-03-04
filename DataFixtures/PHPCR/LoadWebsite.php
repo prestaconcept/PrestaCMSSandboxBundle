@@ -9,13 +9,8 @@
  */
 namespace Presta\CMSSandboxBundle\DataFixtures\PHPCR;
 
-use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseWebsiteFixture;
-use Presta\CMSCoreBundle\Factory\ModelFactoryInterface;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use PHPCR\Util\NodeHelper;
 
 use Presta\CMSCoreBundle\Doctrine\Phpcr\Website;
