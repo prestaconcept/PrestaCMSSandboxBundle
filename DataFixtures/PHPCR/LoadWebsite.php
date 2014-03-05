@@ -12,12 +12,21 @@ namespace Presta\CMSSandboxBundle\DataFixtures\PHPCR;
 use Doctrine\Common\Persistence\ObjectManager;
 use Presta\CMSCoreBundle\DataFixtures\PHPCR\BaseWebsiteFixture;
 use PHPCR\Util\NodeHelper;
+use Presta\CMSCoreBundle\Doctrine\Phpcr\Website;
 
 /**
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
 class LoadWebsite extends BaseWebsiteFixture
 {
+    /**
+     * {@inheritdoc}
+     */
+    public function getOrder()
+    {
+        return 100;
+    }
+
     /**
      * {@inheritdoc}
      */

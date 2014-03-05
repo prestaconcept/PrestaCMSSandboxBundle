@@ -22,6 +22,14 @@ class LoadMenu extends BaseMenuFixture
     /**
      * {@inheritdoc}
      */
+    public function getOrder()
+    {
+        return 300;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function load(ObjectManager $manager)
     {
         $this->manager = $manager;

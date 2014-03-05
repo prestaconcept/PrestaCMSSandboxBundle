@@ -22,6 +22,14 @@ class LoadRoute extends BaseRouteFixture
     /**
      * {@inheritdoc}
      */
+    public function getOrder()
+    {
+        return 400;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function load(ObjectManager $manager)
     {
         $this->manager = $manager;
@@ -29,7 +37,7 @@ class LoadRoute extends BaseRouteFixture
         $home   = $manager->find(null, '/website/symfony-prestacms/route/en');
         $homeFr = $manager->find(null, '/website/symfony-prestacms/route/fr');
 
-        $yaml = new Parser();
+        $yaml  = new Parser();
         $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
         foreach ($datas['pages'] as $pageConfiguration) {
             if ($pageConfiguration['name'] == 'home') {

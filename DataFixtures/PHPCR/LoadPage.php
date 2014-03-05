@@ -22,6 +22,14 @@ class LoadPage extends BasePageFixture
     /**
      * {@inheritdoc}
      */
+    public function getOrder()
+    {
+        return 200;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function load(ObjectManager $manager)
     {
         $this->manager = $manager;
