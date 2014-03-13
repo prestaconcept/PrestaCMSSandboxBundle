@@ -15,3 +15,17 @@ presta_cms_core:
                     fr:
                         locale: fr
                         host: sandbox.prestacms.fr.dev
+                prod:
+                    en:
+                        locale: en
+                        host: sandbox.prestacms.com
+                    fr:
+                        locale: fr
+                        host:  sandbox.prestacms.fr
+                integration:
+                    en:
+                        locale: en
+                        host:  en.prestacms-sandbox.integration54.local
+                    fr:
+                        locale: fr
+                        host:  fr.prestacms-sandbox.integration54.local
