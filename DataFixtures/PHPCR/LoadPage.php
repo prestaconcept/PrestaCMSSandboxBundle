@@ -35,11 +35,11 @@ class LoadPage extends BasePageFixture
         $this->manager = $manager;
         $session = $manager->getPhpcrSession();
 
-        $website = $manager->find(null, '/website/symfony-prestacms');
+        $website = $manager->find(null, '/website/sandbox');
 
         //création namespace menu
-        NodeHelper::createPath($session, '/website/symfony-prestacms/page');
-        $root = $manager->find(null, '/website/symfony-prestacms/page');
+        NodeHelper::createPath($session, '/website/sandbox/page');
+        $root = $manager->find(null, '/website/sandbox/page');
 
         $yaml = new Parser();
         $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));

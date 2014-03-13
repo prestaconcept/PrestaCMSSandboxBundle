@@ -1,122 +1,124 @@
 pages:
-#    home:
-#        name: 'home'
-#        template: 'right-sidebar'
-#        meta:
-#            title:
-#                en: "Homepage"
-#                fr: "Accueil"
-#            keywords:
-#                en: "cms symfony 2"
-#                fr: "cms symfony 2"
-#            description:
-#                en: "Presta CMS Sandox by Prestaconcept"
-#                fr: "Presta CMS Sandox by Prestaconcept"
-#        zones:
-#            content:
-#                name: content
-#                blocks:
-#                    10:
-#                        name: info
-#                        type: presta_cms.block.simple
-#                        editable: false
-#                        settings:
-#                            en:
-#                                title: ''
-#                                block_style: 'info'
-#                                content: 'This is a demonstration website<br/>Content is refresh every 2 hours.'
-#                            fr:
-#                                title: ''
-#                                block_style: 'info'
-#                                content: 'Ceci est une démonstration.<br/>Le contenu du site est remis à jour toutes les 2 heures.'
-#                    15:
-#                        name: main
-#                        type: presta_cms.block.simple
-#                        editable: true
-#                        settings:
-#                            en:
-#                                title: 'Welcome on PrestaCMS demonstration'
-#                                content: |
-#                                    <strong>PrestaCMS</strong> is a content management bundle based on Symfony2, SymfonyCMF and Sonata.<br/>
-#                                    This is an open source project supported by PrestaConcept.
-#                            fr:
-#                                title: 'Bienvenue sur le site de démonstration de PrestaCMS'
-#                                content: |
-#                                    <strong>PrestaCMS</strong> est un bundle Symfony2 de gestion de contenu basé sur SymfonyCMF et Sonata<br/>
-#                                    Ce projet est open source et supporté par PrestaConcept.
-#                    20:
-#                        name: media
-#                        type: presta_cms.block.media_advanced
-#                        editable: true
-#                    30:
-#                        name: container
-#                        type: presta_cms.block.container
-#                        editable: true
-#                        settings:
-#                            en:
-#                                title: 'Container example'
-#                                layout: '3-cols'
-#                            fr:
-#                                title: 'Exemple de conteneur'
-#                                layout: '3-cols'
-#                        children:
-#                            40:
-#                                name: col1
-#                                type: presta_cms.block.simple
-#                                editable: false
-#                                settings:
-#                                    en:
-#                                        title: 'Developer Guide'
-#                                        content: |
-#                                          You are a web developer and you want to use the PrestaCMS?<br />
-#                                          Here is where you can find the documentation to integrate the CMS.<br />
-#                                          You can also find documentation on block system, model adaptation, fixture making...<br />
-#                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/developer-guide/index.html">Developer Guide</a>
-#                                    fr:
-#                                        title: 'Guide du Développeur'
-#                                        content: |
-#                                          Vous êtes un développeur et vous désirez utiliser le PrestaCMS ?<br />
-#                                          Vous pouvez trouver ici la documentation pour l'installation du PrestaCMS, comment l'utiliser.<br />
-#                                          Vous trouverez également une documentation sur le système de block, l'adaptation avec le model, comment créer des fixtures...<br />
-#                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/developer-guide/index.html">Guide du Développeur</a>
-#                            50:
-#                                name: col2
-#                                type: presta_cms.block.simple
-#                                editable: false
-#                                settings:
-#                                    en:
-#                                        title: 'Designer Guide'
-#                                        content: |
-#                                          You are a web designer and you want to use the PrestaCMS?<br />
-#                                          Here is where you can find the documentation to customate the PrestaCMS.<br />
-#                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/theming-guide/index.html">Designer Guide</a>
-#                                    fr:
-#                                        title: 'Guide du Graphiste'
-#                                        content: |
-#                                          Vous êtes un graphiste et vous désirez utiliser le PrestaCMS ?<br />
-#                                          Vous trouverez ici la documentation pour customiser le PrestaCMS.<br />
-#                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/theming-guide/index.html">Guide du Graphiste</a>
-#                            60:
-#                                name: col3
-#                                type: presta_cms.block.simple
-#                                editable: false
-#                                settings:
-#                                    en:
-#                                        title: 'User Guide'
-#                                        content: |
-#                                          You are a user and you want to know what PrestaCMS can bring to you?<br />
-#                                          Here is where you can find the documentation of all features bring by the PrestaCMS.<br />
-#                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/user-guide/index.html">User Guide</a>
-#                                    fr:
-#                                        title: 'Guide de l''utilisateur'
-#                                        content: |
-#                                          Vous êtes un utilisateur et vous voulez savoir quelles fonctionnalités le PrestaCMS peut vous apporter ?<br />
-#                                          Vous trouverez ici la documentation pour customiser le PrestaCMS.<br />
-#                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/user-guide/index.html">Guide de l'Utilisateur</a>
-#
-#        children: []
+    home:
+        name: 'home'
+        template: 'right-sidebar'
+        in_navigation: true
+        meta:
+            title:
+                en: "Homepage"
+                fr: "Accueil"
+            keywords:
+                en: "cms symfony 2"
+                fr: "cms symfony 2"
+            description:
+                en: "Presta CMS Sandox by Prestaconcept"
+                fr: "Presta CMS Sandox by Prestaconcept"
+        zones:
+            content:
+                name: content
+                blocks:
+                    10:
+                        name: info
+                        type: presta_cms.block.simple
+                        editable: false
+                        settings:
+                            en:
+                                title: ''
+                                block_style: 'info'
+                                content: 'This is a demonstration website<br/>Content is refresh every 2 hours.'
+                            fr:
+                                title: ''
+                                block_style: 'info'
+                                content: 'Ceci est une démonstration.<br/>Le contenu du site est remis à jour toutes les 2 heures.'
+                    15:
+                        name: main
+                        type: presta_cms.block.simple
+                        editable: true
+                        settings:
+                            en:
+                                title: 'Welcome on PrestaCMS demonstration'
+                                content: |
+                                    <strong>PrestaCMS</strong> is a content management bundle based on Symfony2, SymfonyCMF and Sonata.<br/>
+                                    This is an open source project supported by PrestaConcept.
+                            fr:
+                                title: 'Bienvenue sur le site de démonstration de PrestaCMS'
+                                content: |
+                                    <strong>PrestaCMS</strong> est un bundle Symfony2 de gestion de contenu basé sur SymfonyCMF et Sonata<br/>
+                                    Ce projet est open source et supporté par PrestaConcept.
+                    20:
+                        name: media
+                        type: presta_cms.block.media_advanced
+                        editable: true
+                    30:
+                        name: container
+                        type: presta_cms.block.container
+                        editable: true
+                        settings:
+                            en:
+                                title: 'Container example'
+                                layout: '3-cols'
+                            fr:
+                                title: 'Exemple de conteneur'
+                                layout: '3-cols'
+                        children:
+                            40:
+                                name: col1
+                                type: presta_cms.block.simple
+                                editable: false
+                                settings:
+                                    en:
+                                        title: 'Developer Guide'
+                                        content: |
+                                          You are a web developer and you want to use the PrestaCMS?<br />
+                                          Here is where you can find the documentation to integrate the CMS.<br />
+                                          You can also find documentation on block system, model adaptation, fixture making...<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/developer-guide/index.html">Developer Guide</a>
+                                    fr:
+                                        title: 'Guide du Développeur'
+                                        content: |
+                                          Vous êtes un développeur et vous désirez utiliser le PrestaCMS ?<br />
+                                          Vous pouvez trouver ici la documentation pour l'installation du PrestaCMS, comment l'utiliser.<br />
+                                          Vous trouverez également une documentation sur le système de block, l'adaptation avec le model, comment créer des fixtures...<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/developer-guide/index.html">Guide du Développeur</a>
+                            50:
+                                name: col2
+                                type: presta_cms.block.simple
+                                editable: false
+                                settings:
+                                    en:
+                                        title: 'Designer Guide'
+                                        content: |
+                                          You are a web designer and you want to use the PrestaCMS?<br />
+                                          Here is where you can find the documentation to customate the PrestaCMS.<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/theming-guide/index.html">Designer Guide</a>
+                                    fr:
+                                        title: 'Guide du Graphiste'
+                                        content: |
+                                          Vous êtes un graphiste et vous désirez utiliser le PrestaCMS ?<br />
+                                          Vous trouverez ici la documentation pour customiser le PrestaCMS.<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/theming-guide/index.html">Guide du Graphiste</a>
+                            60:
+                                name: col3
+                                type: presta_cms.block.simple
+                                editable: false
+                                settings:
+                                    en:
+                                        title: 'User Guide'
+                                        content: |
+                                          You are a user and you want to know what PrestaCMS can bring to you?<br />
+                                          Here is where you can find the documentation of all features bring by the PrestaCMS.<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/user-guide/index.html">User Guide</a>
+                                    fr:
+                                        title: 'Guide de l''utilisateur'
+                                        content: |
+                                          Vous êtes un utilisateur et vous voulez savoir quelles fonctionnalités le PrestaCMS peut vous apporter ?<br />
+                                          Vous trouverez ici la documentation pour customiser le PrestaCMS.<br />
+                                          <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/user-guide/index.html">Guide de l'Utilisateur</a>
+
+        children: []
     demo:
         name: 'demo'
+        in_navigation: true
         meta:
             title:
                 en: "Demonstration"
@@ -157,6 +159,7 @@ pages:
                         fr: "Thème par d'exemple"
     medias:
         name: 'medias'
+        in_navigation: true
         meta:
             title:
                 en: "Medias integration"
@@ -263,6 +266,7 @@ pages:
     projects:
         name: 'projects'
         template: 'default'
+        in_navigation: true
         meta:
             title:
                 en: "Projects"
@@ -290,6 +294,7 @@ pages:
     about:
         name: 'about'
         template: 'left-sidebar'
+        in_navigation: true
         url:
             en: 'about'
             fr: 'a-propos'
@@ -327,6 +332,7 @@ pages:
     faq:
         name: 'faq'
         template: 'left-sidebar'
+        in_navigation: true
         url:
             en: 'faq'
             fr: 'faq'
@@ -346,3 +352,59 @@ pages:
                         name: faq
                         type: presta_cms_faq.block.faq
                         editable: false
+    404:
+        name: '404'
+        template: 'default'
+        meta:
+            title:
+                en: "404 - Page not found"
+                fr: "404 - Page introuvable"
+        zones:
+            content:
+                name: content
+                blocks:
+                    10:
+                        name: info
+                        type: presta_cms.block.simple
+                        editable: false
+                    15:
+                        name: main
+                        type: presta_cms.block.simple
+                        editable: true
+                        settings:
+                            en:
+                                title: '404 - Page not found'
+                                content: |
+                                    404 - Page not found page can be easily customize with PrestaCMS.
+                            fr:
+                                title: '404 - Page introuvable'
+                                content: |
+                                    Cette page peut-être facilement customisé avec PrestaCMS.
+    500:
+        name: '500'
+        template: 'default'
+        meta:
+            title:
+                en: "500 - Internal Server Error"
+                fr: "500 - Erreur interne"
+        zones:
+            content:
+                name: content
+                blocks:
+                    10:
+                        name: info
+                        type: presta_cms.block.simple
+                        editable: false
+                    15:
+                        name: main
+                        type: presta_cms.block.simple
+                        editable: true
+                        settings:
+                            en:
+                                title: '500 - Internal Server Error'
+                                content: |
+                                    500 - Internal Server Error page can be easily customize with PrestaCMS.
+                            fr:
+                                title: '500 - Erreur interne'
+                                content: |
+                                    Cette page peut-être facilement customisé avec PrestaCMS.

@@ -33,9 +33,23 @@ class LoadRoute extends BaseRouteFixture
     public function load(ObjectManager $manager)
     {
         $this->manager = $manager;
+        $session = $manager->getPhpcrSession();
 
-        $home   = $manager->find(null, '/website/symfony-prestacms/route/en');
-        $homeFr = $manager->find(null, '/website/symfony-prestacms/route/fr');
+        //création namespace menu
+        NodeHelper::createPath($session, '/website/sandbox/route');
+        $root = $manager->find(null, '/website/sandbox/route');
+
+        //Routing home
+        $configuration = array(
+            'parent'        => $root,
+            'content_path'  => '/website/sandbox/page/home',
+            'name'          => 'en',
+            'locale'        => 'en'
+        );
+        $home = $this->getFactory()->create($configuration);
+        $configuration['name']   = 'fr';
+        $configuration['locale'] = 'fr';
+        $homeFr = $this->getFactory()->create($configuration);
 
         $yaml  = new Parser();
         $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
@@ -43,7 +57,7 @@ class LoadRoute extends BaseRouteFixture
             if ($pageConfiguration['name'] == 'home') {
                 continue;
             }
-            $pageConfiguration['content_path'] = '/website/symfony-prestacms/page' . '/' .  $pageConfiguration['name'];
+            $pageConfiguration['content_path'] = '/website/sandbox/page' . '/' .  $pageConfiguration['name'];
             $pageConfiguration['parent'] = $home;
             $pageConfiguration['locale'] = 'en';
             $this->getFactory()->create($pageConfiguration);
