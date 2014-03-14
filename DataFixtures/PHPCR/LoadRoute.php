@@ -35,7 +35,6 @@ class LoadRoute extends BaseRouteFixture
         $this->manager = $manager;
         $session = $manager->getPhpcrSession();
 
-        //création namespace menu
         NodeHelper::createPath($session, '/website/sandbox/route');
         $root = $manager->find(null, '/website/sandbox/route');
 
