@@ -11,10 +11,10 @@ presta_cms_core:
                 dev:
                     en:
                         locale: en
-                        host: sandbox.prestacms.dev
+                        host: sandbox-prestacms.dev
                     fr:
                         locale: fr
-                        host: sandbox.prestacms.fr.dev
+                        host: sandbox-prestacms.fr.dev
                 prod:
                     en:
                         locale: en
@@ -22,6 +22,10 @@ presta_cms_core:
                     fr:
                         locale: fr
                         host:  sandbox.prestacms.fr
+                jenkins:
+                    en:
+                        locale: en
+                        host: sandbox-prestacms.loc
                 integration:
                     en:
                         locale: en
