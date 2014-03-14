@@ -35,21 +35,34 @@ class LoadMenu extends BaseMenuFixture
         $this->manager = $manager;
         $session = $manager->getPhpcrSession();
 
-        //Create namespace menu
-        NodeHelper::createPath($session, '/website/symfony-prestacms/menu/main');
-        $mainMenu    = $manager->find(null, '/website/symfony-prestacms/menu/main');
-        $contentPath = '/website/symfony-prestacms/page';
+        NodeHelper::createPath($session, '/website/sandbox/menu');
+        $root = $manager->find(null, '/website/sandbox/menu');
+
+        $configuration = array(
+            'parent'    => $root,
+            'name'      => 'main',
+            'title'     => array(
+                'en' => 'Main navigation',
+                'fr' => 'Menu principal'
+            ),
+            'children_content_path' => '/website/sandbox/page',
+            'children'              => array()
+        );
 
         $yaml = new Parser();
         $datas = $yaml->parse(file_get_contents(__DIR__ . '/../data/page.yml'));
-        foreach ($datas['pages'] as $pageConfiguration) {
-            $pageConfiguration['parent'] = $mainMenu;
-            if (isset($pageConfiguration['meta']['title'])) {
-                $pageConfiguration['title'] = $pageConfiguration['meta']['title'];
+        foreach ($datas['pages'] as $key => $pageConfiguration) {
+            if (isset($pageConfiguration['in_navigation']) && $pageConfiguration['in_navigation'] === true) {
+                if (isset($pageConfiguration['meta']['title'])) {
+                    $pageConfiguration['title'] = $pageConfiguration['meta']['title'];
+                }
+
+                $configuration['children'][] = $pageConfiguration;
             }
-            $pageConfiguration['content_path'] = $contentPath . '/' . $pageConfiguration['name'];
-            $this->getFactory()->create($pageConfiguration);
         }
+
+        $main = $this->getFactory()->create($configuration);
+        $main->setChildrenAttributes(array("class" => "nav"));
 
         $manager->flush();
     }

@@ -1,0 +1,51 @@
+name: creative
+zones:
+    footer_left:
+        name: footer_left
+        blocks:
+            10:
+                type: presta_cms.block.simple
+                settings:
+                    en:
+                        title: About US
+                        content: |
+                            <p>PrestaCMS is an open-source CMS base on Symfony2, CMF and Sonata.</p>
+                            <p>It can be easily added to any Symfony2 project to provide content management
+                            functionnalities.</p>
+                            <p>This project is sponsored by PrestaConcept.</p>
+                    fr:
+                        title: A propos
+                        content: |
+                            <p>PrestaCMS est un CMS open source basé sur Symfony 2, CMF et Sonata.</p>
+                            <p>Ce bundle peut être ajouter sur n'importe quel projet Symfony 2 pour ajouter
+                            de la gestion de contenu.</p>
+                            <p>Ce projet est sponsorisé par PrestaConcept.</p>
+    footer_middle:
+        name: footer_middle
+        blocks:
+            10:
+                type: presta_cms_social.block.twitter.latest_tweets
+                editable: false
+                deletable: false
+                settings:
+                    en:
+                        title: Latest Tweet
+                        twitter_username: PrestaBundles
+                        limit: 10
+                        exclude_replies: true
+                        include_retweets: true
+                    fr:
+                        title: Derniers tweets
+                        twitter_username: PrestaBundles
+                        limit: 10
+                        exclude_replies: true
+                        include_retweets: true
+    footer_right:
+        name: footer_right
+        editable: true
+        blocks:
+            10:
+                type: presta_cms_social.block.twitter.followers_count
+                settings:
+                    title: @PrestaBundles
+                    twitter_username: PrestaBundles
