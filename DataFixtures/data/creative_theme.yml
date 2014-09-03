@@ -9,7 +9,7 @@ zones:
                     en:
                         title: About US
                         content: |
-                            <p>PrestaCMS is an open-source CMS base on Symfony2, CMF and Sonata.</p>
+                            <p>PrestaCMS is an open-source CMS based on Symfony2, CMF and Sonata.</p>
                             <p>It can be easily added to any Symfony2 project to provide content management
                             functionnalities.</p>
                             <p>This project is sponsored by PrestaConcept.</p>
