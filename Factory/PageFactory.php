@@ -172,8 +172,8 @@ class PageFactory extends BasePageFactory implements ModelFactoryInterface
                 $block['settings'] = array(
                     'en' => array(
                         'title' => 'Advanced Media Block',
-                        'content' => 'This block type allow you to add a media with a tile, a content and an layout '
-                            . 'option to choose how the block should display.',
+                        'content' => 'This block type allow you to add a media with a title, a content and a layout '
+                            . 'to choose how the block should be displayed.',
                         'media' => 4,
                         'format' => 'prestacms_page_wide'
                     ),

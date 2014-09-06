@@ -89,7 +89,7 @@ pages:
                                         title: 'Designer Guide'
                                         content: |
                                           You are a web designer and you want to use the PrestaCMS?<br />
-                                          Here is where you can find the documentation to customate the PrestaCMS.<br />
+                                          Here is where you can find the documentation to customize the PrestaCMS.<br />
                                           <a class="btn link" target="_blank" href="http://prestaconcept.github.io/presta-cms-core/theming-guide/index.html">Designer Guide</a>
                                     fr:
                                         title: 'Guide du Graphiste'

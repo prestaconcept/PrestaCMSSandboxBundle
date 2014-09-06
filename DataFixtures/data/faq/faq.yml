@@ -4,7 +4,7 @@ faq_general_10:
         question: Why this sandbox ?
         answer: |
             As we believe that a live demonstration is better than any documentation, we made this sandbox to show
-            how to use your bundles.
+            how to use our bundles.
     fr:
         question: Pourquoi cette sandbox ?
         answer: |
@@ -33,7 +33,7 @@ faq_prestaconcept_10:
         question: Who is Prestaconcept ?
         answer: |
             PrestaConcept is a small french company located in Lyon.</br>
-            We are specialised in web developement. Expert on PHP technologies and Symfony.</br>
+            We are specialised in web development. Expert on PHP technologies and Symfony.</br>
     fr:
         question: Qui est Prestaconcept ?
         answer: |
